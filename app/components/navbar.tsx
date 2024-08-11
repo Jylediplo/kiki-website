@@ -34,10 +34,10 @@ export default function Navbar() {
           <Link href="/" className={linkStyle('/')}>
             Magasin
           </Link>
-          <Link href="/services" className={linkStyle('/services')}>
+          <Link href="/produits" className={linkStyle('/produits')}>
             Produits
           </Link>
-          <Link href="/resume" className={linkStyle('/resume')}>
+          <Link href="/marques" className={linkStyle('/marques')}>
             Marques
           </Link>
           <Link
@@ -73,10 +73,10 @@ export default function Navbar() {
           <Link href="/" className={linkStyle('/')}>
             Magasin
           </Link>
-          <Link href="/services" className={linkStyle('/services')}>
+          <Link href="/produits" className={linkStyle('/produits')}>
             Produits
           </Link>
-          <Link href="/resume" className={linkStyle('/resume')}>
+          <Link href="/marques" className={linkStyle('/marques')}>
             Marques
           </Link>
           <Link
