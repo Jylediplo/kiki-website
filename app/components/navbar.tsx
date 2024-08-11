@@ -25,10 +25,9 @@ export default function Navbar() {
   return (
     <header className="flex flex-col items-center justify-between p-8">
       <div className="z-10 w-full max-w-5xl flex items-center justify-between font-bold text-sm">
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center gap-2">
             <h1 className="font-bold text-4xl">Le surplus</h1>
-            <div className="w-2 h-2 bg-blue-900 rounded-full"></div>
           </Link>
         </div>
         <nav className="hidden md:flex flex-row space-x-8 w-full justify-end">
