@@ -23,38 +23,36 @@ export default function Navbar() {
   const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
 
   return (
-    <main className="flex flex-col items-center justify-between p-8">
+    <header className="flex flex-col items-center justify-between p-8">
       <div className="z-10 w-full max-w-5xl flex items-center justify-between font-bold text-sm">
         <div className="flex items-center gap-4">
-          <a
-            className="pointer-events-none flex gap-2 lg:pointer-events-auto"
-            href="/"
-            rel="noopener noreferrer"
-          >
+          <Link href="/" className="flex items-center gap-2">
             <h1 className="font-bold text-4xl">Le surplus</h1>
-            <div className="self-end mb-2 w-2 h-2 bg-blue-900 rounded-full"></div>
-          </a>
-        </div>
-        <div className="hidden md:flex flex-row space-x-8 w-full justify-end">
-          <Link href="/">
-            <p className={linkStyle('/')}>Home</p>
-          </Link>
-          <Link href="/services">
-            <p className={linkStyle('/services')}>Services</p>
-          </Link>
-          <Link href="/resume">
-            <p className={linkStyle('/resume')}>Profile</p>
-          </Link>
-          <Link href="/work">
-            <p className={linkStyle('/work')}>Work</p>
-          </Link>
-          <Link href="/contact">
-            <p className={`${linkStyle('/contact')} ${contactStyle}`}>
-              Contact
-            </p>
+            <div className="w-2 h-2 bg-blue-900 rounded-full"></div>
           </Link>
         </div>
-        <button className="md:hidden" onClick={toggleSidebar}>
+        <nav className="hidden md:flex flex-row space-x-8 w-full justify-end">
+          <Link href="/" className={linkStyle('/')}>
+            Magasin
+          </Link>
+          <Link href="/services" className={linkStyle('/services')}>
+            Produits
+          </Link>
+          <Link href="/resume" className={linkStyle('/resume')}>
+            Marques
+          </Link>
+          <Link
+            href="/contact"
+            className={`${linkStyle('/contact')} ${contactStyle}`}
+          >
+            Contact
+          </Link>
+        </nav>
+        <button
+          className="md:hidden"
+          onClick={toggleSidebar}
+          aria-label="Toggle Sidebar"
+        >
           <FaBars size={24} />
         </button>
       </div>
@@ -65,31 +63,31 @@ export default function Navbar() {
           isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        <button className="absolute top-4 right-4" onClick={toggleSidebar}>
+        <button
+          className="absolute top-4 right-4"
+          onClick={toggleSidebar}
+          aria-label="Close Sidebar"
+        >
           <FaTimes size={24} />
         </button>
-        <div className="flex flex-col items-center mt-16 space-y-4">
-          <Link href="/">
-            <p className={linkStyle('/')}>Home</p>
+        <nav className="flex flex-col items-center mt-16 space-y-4">
+          <Link href="/" className={linkStyle('/')}>
+            Magasin
           </Link>
-          <Link href="/services">
-            <p className={linkStyle('/services')}>Services</p>
+          <Link href="/services" className={linkStyle('/services')}>
+            Produits
           </Link>
-          <Link href="/resume">
-            <p className={linkStyle('/resume')}>Profile</p>
+          <Link href="/resume" className={linkStyle('/resume')}>
+            Marques
           </Link>
-          <Link href="/work">
-            <p className={linkStyle('/work')}>Work</p>
+          <Link
+            href="/contact"
+            className={`${linkStyle('/contact')} ${contactStyle}`}
+          >
+            Contact
           </Link>
-          <Link href="/contact">
-            <p className={`${linkStyle('/contact')} ${contactStyle}`}>
-              Contact
-            </p>
-          </Link>
-        </div>
+        </nav>
       </div>
-
-      <div className="mt-16 relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]"></div>
-    </main>
+    </header>
   );
 }
