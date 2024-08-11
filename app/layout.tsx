@@ -1,5 +1,5 @@
 import Navbar from './components/navbar';
-import './globals.css'; // Assurez-vous d'avoir un fichier CSS global si nécessaire
+import './globals.css';
 
 export const metadata = {
   title: 'Next.js',
