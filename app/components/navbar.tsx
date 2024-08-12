@@ -24,7 +24,7 @@ export default function Navbar() {
 
   return (
     <header className="flex flex-col items-center justify-between p-8">
-      <div className="z-10 w-full max-w-7xl flex items-center justify-between font-bold text-sm">
+      <div className="z-10 w-full max-w-5xl flex items-center justify-between font-bold text-sm">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center gap-2">
             <h1 className="font-bold text-4xl">Surplus</h1>
