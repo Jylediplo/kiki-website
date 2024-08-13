@@ -1,6 +1,4 @@
-import { FaClock } from 'react-icons/fa';
-
-const StoreStatus = () => {
+const StoreStatus: React.FC = () => {
   const currentDay: number = new Date().getDay();
 
   const hours: { [key: number]: string } = {
@@ -13,18 +11,26 @@ const StoreStatus = () => {
     6: '9h00 - 12h00, 14h00 - 19h00', // Samedi
   };
 
-  const isOpen = hours[currentDay] !== 'Fermé';
-  const statusMessage = isOpen ? 'Ouvert' : 'Fermé';
+  const isOpen: boolean = hours[currentDay] !== 'Fermé';
+  const statusMessage: string = isOpen ? 'Ouvert' : 'Fermé';
 
   return (
-    <div className="p-6 bg-gray-100 shadow-lg rounded-md flex flex-col items-center">
-      <h2 className="text-3xl font-bold mb-4 text-center text-blue-900 flex items-center justify-center">
-        <FaClock className="mr-2" />{' '}
-        {`Le magasin est actuellement : ${statusMessage}`}
+    <div className="p-6 bg-gray-900 shadow-lg rounded-md flex flex-col items-center">
+      <h2 className="text-2xl font-bold mb-4 text-center text-white flex items-center justify-center">
+        {`Le surplus est actuellement : ${statusMessage}`}
       </h2>
-      <p className="text-lg text-gray-800 mb-4 text-center">
+      <p className="text-md text-gray-400 mb-4 text-center">
         Aujourd&apos;hui :{' '}
         <span className="font-semibold">{hours[currentDay]}</span>
+      </p>
+      <p className="text-md text-gray-400 text-center">
+        Tél :{' '}
+        <a
+          href="tel:0475572010"
+          className="font-semibold text-blue-500 hover:underline"
+        >
+          04 75 57 20 10
+        </a>
       </p>
     </div>
   );
