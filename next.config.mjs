@@ -5,7 +5,10 @@ const nextConfig = {
       'www.gilbert-production.fr',
       'www.catalogue.mp-sec.fr',
       'www.madeinchasse.com',
-      'gkpro.fr', // Corrigez le domaine ici
+      'gkpro.fr',
+      'www.promodis.net',
+      'www.equipements-militaire.com',
+      'www.military1st.fr',
     ],
   },
 };

@@ -1,7 +1,7 @@
 const fetch = require('cross-fetch');
 const cheerio = require('cheerio');
 
-async function run() {
+async function fetchProductBrandit(reference) {
   const rawResponse = await fetch('https://commerce.adobe.io/search/graphql', {
     method: 'POST',
     headers: {
@@ -14,21 +14,19 @@ async function run() {
       'x-api-key': 'search_gql',
       'x-request-id': '4979f14c-91ce-4009-84e6-67f0f5c37f3c',
     },
-    body: `{"query":"\n    query quickSearch(\n        $phrase: String!\n        $pageSize: Int = 20\n        $currentPage: Int = 1\n        $filter: [SearchClauseInput!]\n        $sort: [ProductSearchSortInput!]\n        $context: QueryContextInput\n    ) {\n        productSearch(\n            phrase: $phrase\n            page_size: $pageSize\n            current_page: $currentPage\n            filter: $filter\n            sort: $sort\n            context: $context\n        ){\n            items {\n                ...Product\n            }\n            page_info {\n                current_page\n                page_size\n                total_pages\n            }\n        }\n    }\n    \n    fragment Product on ProductSearchItem {\n        product {\n            __typename\n            sku\n            name\n            canonical_url\n            small_image {\n                url\n            }\n            image {\n                url\n            }\n            thumbnail {\n                url\n            }\n            price_range {\n                minimum_price {\n                    fixed_product_taxes {\n                        amount {\n                            value\n                            currency\n                        }\n                        label\n                    }\n                    regular_price {\n                        value\n                        currency\n                    }\n                    final_price {\n                        value\n                        currency\n                    }\n                    discount {\n                        percent_off\n                        amount_off\n                    }\n                }\n                maximum_price {\n                    fixed_product_taxes {\n                        amount {\n                            value\n                            currency\n                        }\n                        label\n                    }\n                    regular_price {\n                        value\n                        currency\n                    }\n                    final_price {\n                        value\n                        currency\n                    }\n                    discount {\n                        percent_off\n                        amount_off\n                    }\n                }\n            }\n        }\n    }\n\n","variables":{"phrase":"4002","pageSize":8,"filter":[{"attribute":"visibility","in":["Search","Catalog, Search"]}],"context":{"customerGroup":"b6589fc6ab0dc82cf12099d1c2d40ab994e8410c","userViewHistory":[]}}}`,
+    body: `{"query":"\n    query quickSearch(\n        $phrase: String!\n        $pageSize: Int = 20\n        $currentPage: Int = 1\n        $filter: [SearchClauseInput!]\n        $sort: [ProductSearchSortInput!]\n        $context: QueryContextInput\n    ) {\n        productSearch(\n            phrase: $phrase\n            page_size: $pageSize\n            current_page: $currentPage\n            filter: $filter\n            sort: $sort\n            context: $context\n        ){\n            items {\n                ...Product\n            }\n            page_info {\n                current_page\n                page_size\n                total_pages\n            }\n        }\n    }\n    \n    fragment Product on ProductSearchItem {\n        product {\n            __typename\n            sku\n            name\n            canonical_url\n            small_image {\n                url\n            }\n            image {\n                url\n            }\n            thumbnail {\n                url\n            }\n            price_range {\n                minimum_price {\n                    fixed_product_taxes {\n                        amount {\n                            value\n                            currency\n                        }\n                        label\n                    }\n                    regular_price {\n                        value\n                        currency\n                    }\n                    final_price {\n                        value\n                        currency\n                    }\n                    discount {\n                        percent_off\n                        amount_off\n                    }\n                }\n                maximum_price {\n                    fixed_product_taxes {\n                        amount {\n                            value\n                            currency\n                        }\n                        label\n                    }\n                    regular_price {\n                        value\n                        currency\n                    }\n                    final_price {\n                        value\n                        currency\n                    }\n                    discount {\n                        percent_off\n                        amount_off\n                    }\n                }\n            }\n        }\n    }\n\n","variables":{"phrase":"${reference}","pageSize":8,"filter":[{"attribute":"visibility","in":["Search","Catalog, Search"]}],"context":{"customerGroup":"b6589fc6ab0dc82cf12099d1c2d40ab994e8410c","userViewHistory":[]}}}`,
   });
   const response = await rawResponse.json();
-  const image = response.data.productSearch.items[0].product.image.url.replace(
-    /^\/\//,
-    'http://'
-  ); // Remplace les // par http://
-  console.log('Image URL:', image);
+  let image = response.data.productSearch.items[0].product.image.url;
+  if (image.startsWith('//')) {
+    image = 'http:' + image;
+  }
   const itemUrl = response.data.productSearch.items[0].product.canonical_url;
-  console.log('Item URL:', itemUrl);
 
-  await getItem(itemUrl);
+  return await getItem(itemUrl, image);
 }
 
-async function getItem(url) {
+async function getItem(url, image) {
   try {
     const response = await fetch(url, {
       method: 'GET',
@@ -50,14 +48,22 @@ async function getItem(url) {
       descriptions.push($(element).text().trim());
     });
 
-    console.log('Descriptions:', descriptions);
+    // Joindre les descriptions en un seul string
+    const descriptionString = descriptions.join(' ');
 
     // Récupérer le titre
     const title = $('meta[name="title"]').attr('content');
-    console.log('Title:', title);
+
+    // Retourner le titre, l'image et la description
+    return {
+      title,
+      image,
+      description: descriptionString,
+    };
   } catch (error) {
     console.error('Failed to fetch item:', error);
+    return null; // Retourner null en cas d'erreur
   }
 }
 
-run();
+module.exports = fetchProductBrandit;

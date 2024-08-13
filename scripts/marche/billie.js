@@ -41,7 +41,16 @@ async function getDescription(url) {
     const html = await response.text();
     const $ = cheerio.load(html);
 
-    const description = $('.description-inner').text().trim();
+    let description = $('.description-inner').text().trim();
+    description = description.replace(/\n/g, ' '); // Remove newlines
+
+    // Exclude the unwanted part
+    const unwantedText = 'Licence officielle Europe Billy Eight';
+    const cutoffIndex = description.indexOf(unwantedText);
+    if (cutoffIndex !== -1) {
+      description = description.substring(0, cutoffIndex).trim(); // Cut off before the unwanted text
+    }
+
     console.log('Description:', description);
   } catch (error) {
     console.error('Failed to fetch item description:', error);

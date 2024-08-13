@@ -8,9 +8,9 @@ async function loadProcessedReferences() {
   if (fs.existsSync('output.csv')) {
     const readStream = fs.createReadStream('output.csv').pipe(csvParser());
     for await (const row of readStream) {
-      references.add(row.title); // Assurez-vous que le titre est unique
+      references.add(row.Reference); // Assurez-vous que le titre de la colonne correspond
     }
-    console.log('Loaded processed references:', Array.from(references));
+    console.log('Processed references:', Array.from(references));
   } else {
     console.log(
       'No output.csv file found, starting with an empty set of processed references.'
@@ -46,10 +46,12 @@ async function processArticles() {
     path: 'output.csv',
     header: [
       { id: 'supplierName', title: 'Supplier' },
+      { id: 'reference', title: 'Reference' },
       { id: 'title', title: 'Title' },
       { id: 'image', title: 'Image' },
       { id: 'description', title: 'Description' },
     ],
+    append: true, // Append to the existing file instead of overwriting
   });
 
   const results = [];
@@ -73,7 +75,10 @@ async function processArticles() {
       FOURNISSEUR_NOM === 'MP-SEC' ||
       FOURNISSEUR_NOM === 'GILBERT' ||
       FOURNISSEUR_NOM === 'TREESCO' ||
-      FOURNISSEUR_NOM === 'GK' // Ajouter CK ici
+      FOURNISSEUR_NOM === 'GK' ||
+      FOURNISSEUR_NOM === 'PROMODIS' ||
+      FOURNISSEUR_NOM === 'WOOLPOWER' ||
+      FOURNISSEUR_NOM === 'Brandit'
     ) {
       console.log(
         `Processing supplier: ${FOURNISSEUR_NOM} with reference ${FOURNISSEUR_REFERENCE}`
@@ -82,9 +87,11 @@ async function processArticles() {
         FOURNISSEUR_NOM,
         FOURNISSEUR_REFERENCE
       );
-      if (productDetails) {
+      if (productDetails && productDetails.title) {
+        // Vérifier que productDetails et le titre ne sont pas null
         results.push({
           supplierName: FOURNISSEUR_NOM, // Inclure le nom du fournisseur
+          reference: FOURNISSEUR_REFERENCE, // Ajouter la référence ici
           ...productDetails,
         });
         processedReferenceSet.add(FOURNISSEUR_REFERENCE); // Marquer cette référence comme traitée

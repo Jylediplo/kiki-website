@@ -46,7 +46,9 @@ async function fetchDescription(url) {
     const html = await response.text();
     const $ = cheerio.load(html);
 
-    const description = $('#tab-description').text().trim();
+    let description = $('#tab-description').text().trim();
+    description = description.replace(/\n/g, ' '); // Remove newlines
+
     return description;
   } catch (error) {
     console.error('Failed to fetch item description:', error);

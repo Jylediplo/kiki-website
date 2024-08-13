@@ -1,29 +1,28 @@
 const fetch = require('cross-fetch');
 const cheerio = require('cheerio');
 
-async function run() {
+async function fetchProductDetails(reference) {
   const rawResponse = await fetch(
-    'https://www.promodis.net/search/ajax/suggest/?q=9515'
+    `https://www.promodis.net/search/ajax/suggest/?q=${reference}`
   );
   const response = await rawResponse.json();
 
   const product = response.find((item) => item.type === 'product');
   if (!product) {
-    console.log('No product found');
-    return;
+    console.error(`No product found for reference: ${reference}`);
+    return null;
   }
 
-  const { title, image, url } = product;
-
-  console.log('Title:', title);
-  console.log('Image URL:', image);
-  console.log('Product URL:', url);
+  const { title, url } = product;
 
   // Fetch product details from the link
-  await fetchProductDetails(url);
+  const imageUrl = await fetchImageUrlAndDescription(url);
+  const description = await fetchDescription(url);
+
+  return { title, image: imageUrl, description };
 }
 
-async function fetchProductDetails(url) {
+async function fetchImageUrlAndDescription(url) {
   try {
     const response = await fetch(url, {
       method: 'GET',
@@ -37,14 +36,41 @@ async function fetchProductDetails(url) {
     const html = await response.text();
     const $ = cheerio.load(html);
 
-    // Extract the description from the specified class
-    const description = $('.product.attribute.description .value')
-      .text()
-      .trim();
-    console.log('Description:', description);
+    // Extract the image URL directly from the HTML using regex
+    const imageUrlMatch = html.match(
+      /https:\/\/www\.promodis\.net\/media\/catalog\/product\/cache\/[^\s"]+/
+    );
+    const imageUrl = imageUrlMatch ? imageUrlMatch[0] : null;
+
+    return imageUrl;
   } catch (error) {
     console.error('Failed to fetch product details:', error);
+    return null;
   }
 }
 
-run();
+async function fetchDescription(url) {
+  try {
+    const response = await fetch(url, {
+      method: 'GET',
+      headers: {
+        accept: 'text/html',
+      },
+    });
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const html = await response.text();
+    const $ = cheerio.load(html);
+
+    const description = $('.product.attribute.description .value')
+      .text()
+      .trim();
+    return description;
+  } catch (error) {
+    console.error('Failed to fetch item description:', error);
+    return '';
+  }
+}
+
+module.exports = fetchProductDetails;
