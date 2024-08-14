@@ -2,87 +2,160 @@
 
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
-
-type Product = {
-  Title: string;
-  Image: string;
-  Description: string;
-  SupplierName: string;
-  Category: string;
-};
+import {
+  Product,
+  categorizeProduct,
+  groupByCategory,
+} from '../Utils/categoryUtils';
 
 const MAX_DESCRIPTION_LENGTH = 300;
 
 const Products: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
-  const [activeCategory, setActiveCategory] = useState<string>('Vêtements');
+  const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
+  const [activeCategory, setActiveCategory] = useState<string>('');
+  const [activeSubcategory, setActiveSubcategory] = useState<string>('');
+  const [activeSubSubcategory, setActiveSubSubcategory] = useState<string>('');
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const response = await fetch('/api/products');
-      const data: Product[] = await response.json();
+      try {
+        const response = await fetch('/api/products');
+        if (!response.ok) {
+          throw new Error('Failed to fetch products');
+        }
+        const data: Product[] = await response.json();
 
-      const categorizedProducts = data.map((product) => ({
-        ...product,
-        Category: categorizeProduct(product.Title),
-      }));
+        const categorizedProducts = data.map((product) => ({
+          ...product,
+          ...categorizeProduct(product.Title),
+        }));
 
-      setProducts(categorizedProducts);
+        setProducts(categorizedProducts);
+
+        if (categorizedProducts.length > 0) {
+          const defaultCategory = categorizedProducts[0].Category;
+          setActiveCategory(defaultCategory);
+        }
+      } catch (error) {
+        console.error('Error fetching products:', error);
+      }
     };
 
     fetchProducts();
   }, []);
 
-  const categorizeProduct = (title: string): string => {
-    if (title.match(/Blouson|Shirt|Veste|Pantalon|Chemise|Parka|Gilet|Pull/i)) {
-      return 'Vêtements';
-    } else if (title.match(/Casquette|Gant|Bonnet|Ceinturon|Guêtre/i)) {
-      return 'Accessoires';
-    } else if (title.match(/Chaussure|Sabot/i)) {
-      return 'Chaussures';
-    } else if (title.match(/Fourreau|Sac|Bâton/i)) {
-      return 'Équipements';
-    } else if (title.match(/Viseur|Monoculaire/i)) {
-      return 'Optiques';
-    } else {
-      return 'Autres';
-    }
+  useEffect(() => {
+    const filtered = products.filter(
+      (product) =>
+        (activeCategory === '' || product.Category === activeCategory) &&
+        (activeSubcategory === '' ||
+          product.Subcategory === activeSubcategory) &&
+        (activeSubSubcategory === '' ||
+          product.SubSubcategory === activeSubSubcategory)
+    );
+    setFilteredProducts(filtered);
+  }, [activeCategory, activeSubcategory, activeSubSubcategory, products]);
+
+  const handleCategoryClick = (category: string) => {
+    setActiveCategory(category);
+    setActiveSubcategory('');
+    setActiveSubSubcategory('');
   };
 
-  const groupByCategory = (products: Product[]) => {
-    return products.reduce((acc, product) => {
-      const category = product.Category;
-      if (!acc[category]) {
-        acc[category] = [];
-      }
-      acc[category].push(product);
-      return acc;
-    }, {} as Record<string, Product[]>);
+  const handleSubcategoryClick = (category: string, subcategory: string) => {
+    setActiveCategory(category);
+    setActiveSubcategory(subcategory);
+    setActiveSubSubcategory('');
   };
 
-  const categorizedProducts = groupByCategory(products);
+  const handleSubSubcategoryClick = (
+    category: string,
+    subcategory: string,
+    subSubcategory: string
+  ) => {
+    setActiveCategory(category);
+    setActiveSubcategory(subcategory);
+    setActiveSubSubcategory(subSubcategory);
+  };
 
   return (
     <div className="flex flex-col gap-8 p-6">
-      <div className="flex justify-center space-x-4 mb-6">
-        {Object.keys(categorizedProducts).map((category) => (
-          <button
-            key={category}
-            className={`px-4 py-2 rounded ${
-              activeCategory === category
-                ? 'bg-indigo-800 text-white'
-                : 'bg-gray-200 text-gray-800'
-            }`}
-            onClick={() => setActiveCategory(category)}
-          >
-            {category}
-          </button>
+      <ul className="flex justify-center mb-6 relative z-10">
+        {Object.keys(groupByCategory(products)).map((category) => (
+          <li key={category} className="relative group">
+            <button
+              className={`px-4 py-2 shadow-md transition-all duration-300 ${
+                activeCategory === category
+                  ? 'bg-indigo-800 text-white'
+                  : 'bg-gray-200 text-gray-800 hover:bg-indigo-600 hover:text-white'
+              }`}
+              onClick={() => handleCategoryClick(category)}
+            >
+              {category}
+            </button>
+            {groupByCategory(products)[category] && (
+              <ul className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-lg z-20">
+                {Object.keys(groupByCategory(products)[category]).map(
+                  (subcategory) =>
+                    subcategory && (
+                      <li
+                        key={subcategory}
+                        className="relative group/subcategory"
+                      >
+                        <button
+                          className={`block px-4 py-2 text-left w-full ${
+                            activeSubcategory === subcategory
+                              ? 'bg-indigo-600 text-white'
+                              : 'bg-gray-100 text-gray-800 hover:bg-indigo-400 hover:text-white'
+                          }`}
+                          onClick={() =>
+                            handleSubcategoryClick(category, subcategory)
+                          }
+                        >
+                          {subcategory}
+                        </button>
+                        {groupByCategory(products)[category][subcategory] && (
+                          <ul className="absolute left-full top-0 hidden group-hover/subcategory:block bg-white shadow-lg rounded-lg z-30">
+                            {Object.keys(
+                              groupByCategory(products)[category][subcategory]
+                            ).map(
+                              (subSubcategory) =>
+                                subSubcategory && (
+                                  <li key={subSubcategory}>
+                                    <button
+                                      className={`block px-4 py-2 text-left w-full ${
+                                        activeSubSubcategory === subSubcategory
+                                          ? 'bg-indigo-600 text-white'
+                                          : 'bg-gray-100 text-gray-800 hover:bg-indigo-400 hover:text-white'
+                                      }`}
+                                      onClick={() =>
+                                        handleSubSubcategoryClick(
+                                          category,
+                                          subcategory,
+                                          subSubcategory
+                                        )
+                                      }
+                                    >
+                                      {subSubcategory}
+                                    </button>
+                                  </li>
+                                )
+                            )}
+                          </ul>
+                        )}
+                      </li>
+                    )
+                )}
+              </ul>
+            )}
+          </li>
         ))}
-      </div>
+      </ul>
 
       <div>
         <div className="flex flex-wrap justify-center gap-6">
-          {categorizedProducts[activeCategory]?.map((product, index) => {
+          {filteredProducts.map((product, index) => {
             const shortDescription =
               product.Description.length > MAX_DESCRIPTION_LENGTH
                 ? `${product.Description.substring(
@@ -96,11 +169,11 @@ const Products: React.FC = () => {
                 key={index}
                 className="relative w-72 h-80 bg-white shadow-lg rounded-lg overflow-hidden group transition-transform transform hover:scale-105"
               >
-                <div className="relative w-full h-full">
+                <div className="relative w-full h-full p-4">
                   <Image
                     src={product.Image}
                     alt={product.Title}
-                    className="object-cover w-full h-full"
+                    className="object-contain w-full h-full"
                     width={288}
                     height={320}
                   />

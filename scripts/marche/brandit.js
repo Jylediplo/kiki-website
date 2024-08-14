@@ -40,7 +40,6 @@ async function getItem(url, image) {
     const html = await response.text();
     const $ = cheerio.load(html);
 
-    // Sélectionner les éléments de la description
     const descriptionItems = $('.product.attribute.description .value li');
     const descriptions = [];
 
@@ -48,13 +47,9 @@ async function getItem(url, image) {
       descriptions.push($(element).text().trim());
     });
 
-    // Joindre les descriptions en un seul string
-    const descriptionString = descriptions.join(' ');
-
-    // Récupérer le titre
+    const descriptionString = descriptions.join(' ').replace(/\n/g, ' ');
     const title = $('meta[name="title"]').attr('content');
 
-    // Retourner le titre, l'image et la description
     return {
       title,
       image,
@@ -62,7 +57,7 @@ async function getItem(url, image) {
     };
   } catch (error) {
     console.error('Failed to fetch item:', error);
-    return null; // Retourner null en cas d'erreur
+    return null;
   }
 }
 
