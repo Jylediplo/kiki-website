@@ -1,6 +1,7 @@
-import Map from './components/Map';
-import StoreHours from './components/StoreHours';
-import StoreStatus from './components/StoreStatus';
+import Map from './components/Accueil/Map';
+import NewArrivals from './components/Accueil/NewArrivals';
+import StoreHours from './components/Accueil/StoreHours';
+import StoreStatus from './components/Accueil/StoreStatus';
 
 export default function HomePage() {
   return (
@@ -15,6 +16,9 @@ export default function HomePage() {
       </div>
       <div className="w-full max-w-5xl mt-8">
         <StoreHours />
+      </div>
+      <div className="w-full max-w-5xl mt-8">
+        <NewArrivals />
       </div>
     </header>
   );

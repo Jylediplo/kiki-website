@@ -22,7 +22,7 @@ const StoreHours = () => {
   const currentDay = daysOfWeek[currentDayIndex];
 
   return (
-    <div className="p-4 bg-gray-900 shadow-xl rounded-lg">
+    <div className="p-4">
       <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 gap-4">
         {Object.entries(hours).map(([day, times]) => (
           <div

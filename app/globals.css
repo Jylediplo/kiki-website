@@ -32,16 +32,6 @@ body {
   }
 }
 
-/* Dans votre fichier CSS ou Tailwind config */
-
-.image-threesco {
-  padding: 50px; /* Ajustez le padding selon vos besoins */
-  max-width: 140px; /* Réduisez la largeur pour THREESCO */
-  max-height: 270px; /* Réduisez la hauteur pour THREESCO */
-}
-
-.image-default {
-  padding: 0;
-  max-width: 288px; /* Largeur par défaut */
-  max-height: 320px; /* Hauteur par défaut */
+.group/subcategory:hover > ul {
+  display: block;
 }

@@ -13,15 +13,27 @@ async function fetchProductWoolPower(reference) {
       }
     );
     const response = await rawResponse.json();
+
+    if (
+      !response.products ||
+      response.products[0].type === 'no_results_found'
+    ) {
+      return null;
+    }
+
     const item = response.products[0];
     const title = item.pname;
-    const link = item.link;
+
+    let link = item.link;
+    if (!link.startsWith('http')) {
+      link = `https://www.equipements-militaire.com${link}`;
+    }
 
     const productDetails = await fetchProductDetails(link);
     return { title, ...productDetails };
   } catch (error) {
     console.error('Failed to fetch product:', error);
-    return null; // Return null if there is an error
+    return null;
   }
 }
 
@@ -45,7 +57,7 @@ async function fetchProductDetails(url) {
     return { image, description };
   } catch (error) {
     console.error('Failed to fetch product details:', error);
-    return null; // Return null if there is an error
+    return null;
   }
 }
 
