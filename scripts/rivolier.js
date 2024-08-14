@@ -1,14 +1,23 @@
-const fetch = require('cross-fetch')
+const cheerio = require('cheerio')
 
 async function run()
 {
-    const rawRespnse = await fetch('https://www.rivolier-sd.com/amasty_xsearch/autocomplete/index/?q=TT7783&uenc=aHR0cHM6Ly93d3cucml2b2xpZXItc2QuY29tLw~~&form_key=9XbG7ia275a6BOBX&_=1722788944253', {
+    const rawResponse = await fetch('https://www.rivolier-sd.com/catalogsearch/result/?q=TT7783', {
         method: 'GET',
-        headers: {
-            'accept': '*/*'
+        headers:{
+            'accept' : 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
         }
     })
-    const response = await rawRespnse.json()
-    console.log(response);
+    const response = await rawResponse.text()
+    const $ = cheerio.load(response);
+    //product-item-link
+    //product-item-details
+    const $data = $.extract({
+       data: ['.product-item-link']
+    })
+    console.log($data);
+    
+    
 }
+
 run()
