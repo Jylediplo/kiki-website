@@ -25,18 +25,16 @@ const NewArrivals = () => {
         }
         const data: Product[] = await response.json();
 
-        // Sort products by DATE_CREATION in descending order
         const sortedProducts = data.sort((a, b) => {
           const dateA = new Date(
             a.DATE_CREATION.split('/').reverse().join('-')
-          ); // Convert to YYYY-MM-DD
+          );
           const dateB = new Date(
             b.DATE_CREATION.split('/').reverse().join('-')
           );
-          return dateB.getTime() - dateA.getTime(); // Sort descending
+          return dateB.getTime() - dateA.getTime();
         });
 
-        // Limit to the most recent 50 products
         setProducts(sortedProducts.slice(0, 50));
       } catch (error) {
         console.error('Error fetching new arrivals:', error);
@@ -48,7 +46,7 @@ const NewArrivals = () => {
 
   return (
     <div className="p-4">
-      <h2 className="text-2xl font-bold mb-6 text-center">New Arrivals</h2>
+      <h2 className="text-2xl font-bold mb-6 text-center">Nouveautés</h2>
       <ScrollMenu>
         {products.map((product, index) => (
           <ProductCard key={product.Code} product={product} />
@@ -61,7 +59,7 @@ const NewArrivals = () => {
 const ProductCard = ({ product }: { product: Product }) => {
   const shortDescription =
     product.Description.length > 100
-      ? product.Description.substring(0, 100) + '...'
+      ? product.Description.substring(0, 200) + '...'
       : product.Description;
 
   return (
@@ -81,7 +79,9 @@ const ProductCard = ({ product }: { product: Product }) => {
         </div>
       </div>
       <div className="absolute bottom-0 left-0 right-0 bg-white bg-opacity-50 p-4 text-center border-t border-gray-200">
-        <h2 className="text-lg font-semibold text-gray-800">{product.Title}</h2>
+        <h2 className="text-lg font-semibold text-gray-800 whitespace-nowrap overflow-hidden text-ellipsis">
+          {product.Title}
+        </h2>
       </div>
     </div>
   );

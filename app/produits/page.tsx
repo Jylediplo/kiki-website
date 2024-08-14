@@ -16,6 +16,7 @@ const Products: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string>('');
   const [activeSubcategory, setActiveSubcategory] = useState<string>('');
   const [activeSubSubcategory, setActiveSubSubcategory] = useState<string>('');
+  const [searchQuery, setSearchQuery] = useState<string>('');
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -52,10 +53,18 @@ const Products: React.FC = () => {
         (activeSubcategory === '' ||
           product.Subcategory === activeSubcategory) &&
         (activeSubSubcategory === '' ||
-          product.SubSubcategory === activeSubSubcategory)
+          product.SubSubcategory === activeSubSubcategory) &&
+        (searchQuery === '' ||
+          product.Title.toLowerCase().includes(searchQuery.toLowerCase()))
     );
     setFilteredProducts(filtered);
-  }, [activeCategory, activeSubcategory, activeSubSubcategory, products]);
+  }, [
+    activeCategory,
+    activeSubcategory,
+    activeSubSubcategory,
+    searchQuery,
+    products,
+  ]);
 
   const handleCategoryClick = (category: string) => {
     setActiveCategory(category);
@@ -79,8 +88,19 @@ const Products: React.FC = () => {
     setActiveSubSubcategory(subSubcategory);
   };
 
+  const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchQuery(event.target.value);
+  };
+
   return (
     <div className="flex flex-col gap-8 p-6">
+      <input
+        type="text"
+        placeholder="Rechercher un produit..."
+        value={searchQuery}
+        onChange={handleSearchChange}
+        className="w-1/3 p-2 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 text-black mx-auto" // Centered and styled
+      />
       <ul className="flex justify-center mb-6 relative z-10">
         {Object.keys(groupByCategory(products)).map((category) => (
           <li key={category} className="relative group">

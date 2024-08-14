@@ -28,7 +28,7 @@ const StoreHours = () => {
           <div
             key={day}
             className={`flex flex-col items-center p-4 rounded-lg transition-transform transform hover:scale-105 ${
-              day === currentDay ? 'bg-gray-700' : 'bg-gray-800'
+              day === currentDay ? 'bg-gray-600' : 'bg-gray-800'
             }`}
           >
             <h3 className="text-lg font-semibold text-white mb-2">{day}</h3>
