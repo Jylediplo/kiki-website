@@ -64,7 +64,7 @@ async function processArticles() {
   // If the file doesn't exist, write the header manually
   if (!fileExists) {
     const header =
-      '"ID","FOURNISSEUR_NOM","FOURNISSEUR_REFERENCE","DATE_CREATION","Title","Image","Description","SizesColors"\n';
+      '"ID","FOURNISSEUR_NOM","FOURNISSEUR_REFERENCE","SizesColors","DATE_CREATION","Title","Image","Description"\n';
     fs.writeFileSync(outputPath, header);
   }
 
@@ -74,11 +74,11 @@ async function processArticles() {
       { id: 'id', title: 'ID' },
       { id: 'supplierName', title: 'FOURNISSEUR_NOM' },
       { id: 'supplierReference', title: 'FOURNISSEUR_REFERENCE' },
+      { id: 'sizesColors', title: 'SizesColors' }, // Moved here
       { id: 'dateCreation', title: 'DATE_CREATION' },
       { id: 'title', title: 'Title' },
       { id: 'image', title: 'Image' },
       { id: 'description', title: 'Description' },
-      { id: 'sizesColors', title: 'SizesColors' },
     ],
     append: true,
   });
@@ -104,9 +104,13 @@ async function processArticles() {
     }
 
     // Extract size and color from Libellé
-    const sizeColorMatch = Libellé.match(/(\d+\/[A-Z]+)/);
+    const sizeColorMatch = Libellé.match(
+      /(?:([XSMLXL2XL3XL4XL]+|\d{2})\/([A-Z]+))/
+    );
     if (sizeColorMatch) {
-      groupedData[FOURNISSEUR_REFERENCE].sizesColors.add(sizeColorMatch[0]);
+      const size = sizeColorMatch[1];
+      const color = sizeColorMatch[2];
+      groupedData[FOURNISSEUR_REFERENCE].sizesColors.add(`${size}/${color}`);
     }
   }
 
@@ -142,14 +146,13 @@ async function processArticles() {
           id: uuidv4(),
           supplierName: data.supplierName,
           supplierReference: data.supplierReference,
+          sizesColors: sizesColors, // Moved here
           dateCreation: data.dateCreation,
           title: productDetails.title,
           image: productDetails.image,
           description: productDetails.description,
-          sizesColors: sizesColors,
         };
 
-        console.log(`Preparing to write record: ${JSON.stringify(record)}`);
         await csvWriter.writeRecords([record]);
         console.log(
           `Record written successfully for reference: ${data.supplierReference}`
