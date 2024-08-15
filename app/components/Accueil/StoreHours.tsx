@@ -23,18 +23,21 @@ const StoreHours = () => {
 
   return (
     <div className="p-4">
+      <div className="flex text-primary">Horaires</div>
       <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 gap-4">
         {Object.entries(hours).map(([day, times]) => (
           <div
             key={day}
             className={`flex flex-col items-center p-4 rounded-lg transition-transform transform hover:scale-105 ${
-              day === currentDay ? 'bg-gray-600' : 'bg-gray-800'
+              day === currentDay ? 'bg-accent-red' : 'bg-primary'
             }`}
           >
-            <h3 className="text-lg font-semibold text-white mb-2">{day}</h3>
-            <p className="text-white text-sm">{times.morning}</p>
+            <h3 className="text-lg font-semibold text-text-light mb-2">
+              {day}
+            </h3>
+            <p className="text-text-light text-sm">{times.morning}</p>
             {times.afternoon && (
-              <p className="text-white text-sm">{times.afternoon}</p>
+              <p className="text-text-light text-sm">{times.afternoon}</p>
             )}
           </div>
         ))}

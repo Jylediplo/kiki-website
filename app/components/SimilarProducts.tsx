@@ -1,3 +1,5 @@
+// components/SimilarProducts.tsx
+
 'use client';
 
 import Image from 'next/image';
@@ -9,53 +11,66 @@ import 'react-horizontal-scrolling-menu/dist/styles.css';
 interface Product {
   ID: string;
   Title: string;
-  DATE_CREATION: string;
-  Description: string;
   Image: string;
+  Description: string;
+  Category: string;
+  Subcategory: string;
+  SubSubcategory: string;
 }
 
-const NewArrivals = () => {
+interface SimilarProductsProps {
+  category: string;
+  subcategory: string;
+  subsubcategory: string;
+}
+
+const SimilarProducts: React.FC<SimilarProductsProps> = ({
+  category,
+  subcategory,
+  subsubcategory,
+}) => {
   const [products, setProducts] = useState<Product[]>([]);
 
   useEffect(() => {
-    const fetchNewArrivals = async () => {
+    const fetchSimilarProducts = async () => {
       try {
         const response = await fetch('/api/products');
         if (!response.ok) {
-          throw new Error('Failed to fetch new arrivals');
+          throw new Error('Failed to fetch similar products');
         }
         const data: Product[] = await response.json();
 
-        const sortedProducts = data.sort((a, b) => {
-          const dateA = new Date(
-            a.DATE_CREATION.split('/').reverse().join('-')
+        // Filter products based on category, subcategory, and subsubcategory
+        const filteredProducts = data
+          .filter(
+            (product) =>
+              product.Category === category &&
+              (subcategory === '' || product.Subcategory === subcategory) &&
+              (subsubcategory === '' ||
+                product.SubSubcategory === subsubcategory)
+          )
+          .filter(
+            (product, index, self) =>
+              index === self.findIndex((p) => p.Title === product.Title)
           );
-          const dateB = new Date(
-            b.DATE_CREATION.split('/').reverse().join('-')
-          );
-          return dateB.getTime() - dateA.getTime();
-        });
 
-        setProducts(sortedProducts.slice(0, 50));
+        setProducts(filteredProducts);
       } catch (error) {
-        console.error('Error fetching new arrivals:', error);
+        console.error('Error fetching similar products:', error);
       }
     };
 
-    fetchNewArrivals();
-  }, []);
+    fetchSimilarProducts();
+  }, [category, subcategory, subsubcategory]);
 
   return (
     <div className="p-4">
-      <h2 className="text-2xl font-bold mb-6 text-center">Nouveautés</h2>
+      <h2 className="text-2xl font-bold mb-6 text-center">
+        Produits Similaires
+      </h2>
       <ScrollMenu>
         {products.map((product) => (
-          <Link
-            href={`/produits/${encodeURIComponent(product.ID)}`}
-            key={product.ID}
-          >
-            <ProductCard product={product} />
-          </Link>
+          <ProductCard key={product.ID} product={product} />
         ))}
       </ScrollMenu>
     </div>
@@ -69,7 +84,10 @@ const ProductCard = ({ product }: { product: Product }) => {
       : product.Description;
 
   return (
-    <div className="relative w-72 h-80 bg-white shadow-lg rounded-lg overflow-hidden group transition-transform transform hover:scale-105 m-4 cursor-pointer">
+    <Link
+      href={`/produits/${encodeURIComponent(product.ID)}`}
+      className="relative w-72 h-80 bg-white shadow-lg rounded-lg overflow-hidden group transition-transform transform hover:scale-105 m-4"
+    >
       <div className="relative w-full h-full">
         <Image
           src={product.Image}
@@ -89,8 +107,8 @@ const ProductCard = ({ product }: { product: Product }) => {
           {product.Title}
         </h2>
       </div>
-    </div>
+    </Link>
   );
 };
 
-export default NewArrivals;
+export default SimilarProducts;

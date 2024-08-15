@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import {
   Product,
@@ -47,15 +48,14 @@ const Products: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    const filtered = products.filter(
-      (product) =>
-        (activeCategory === '' || product.Category === activeCategory) &&
-        (activeSubcategory === '' ||
-          product.Subcategory === activeSubcategory) &&
-        (activeSubSubcategory === '' ||
-          product.SubSubcategory === activeSubSubcategory) &&
-        (searchQuery === '' ||
-          product.Title.toLowerCase().includes(searchQuery.toLowerCase()))
+    const filtered = products.filter((product) =>
+      searchQuery
+        ? product.Title.toLowerCase().includes(searchQuery.toLowerCase())
+        : (activeCategory === '' || product.Category === activeCategory) &&
+          (activeSubcategory === '' ||
+            product.Subcategory === activeSubcategory) &&
+          (activeSubSubcategory === '' ||
+            product.SubSubcategory === activeSubSubcategory)
     );
     setFilteredProducts(filtered);
   }, [
@@ -92,31 +92,45 @@ const Products: React.FC = () => {
     setSearchQuery(event.target.value);
   };
 
+  // Function to sort categories
+  const sortCategories = (categories: string[]) => {
+    return categories.sort((a, b) => {
+      if (a === 'Vêtements') return -1;
+      if (b === 'Vêtements') return 1;
+      if (a === 'Autres') return 1;
+      if (b === 'Autres') return -1;
+      return a.localeCompare(b);
+    });
+  };
+
+  const groupedCategories = groupByCategory(products);
+  const sortedCategories = sortCategories(Object.keys(groupedCategories));
+
   return (
-    <div className="flex flex-col gap-8 p-6">
+    <div className="flex flex-col gap-8 p-6 bg-primary-olive">
       <input
         type="text"
         placeholder="Rechercher un produit..."
         value={searchQuery}
         onChange={handleSearchChange}
-        className="w-1/3 p-2 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 text-black mx-auto" // Centered and styled
+        className="w-1/3 p-2 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent-orange text-black mx-auto"
       />
       <ul className="flex justify-center mb-6 relative z-10">
-        {Object.keys(groupByCategory(products)).map((category) => (
+        {sortedCategories.map((category) => (
           <li key={category} className="relative group">
             <button
               className={`px-4 py-2 shadow-md transition-all duration-300 ${
                 activeCategory === category
-                  ? 'bg-indigo-800 text-white'
-                  : 'bg-gray-200 text-gray-800 hover:bg-indigo-600 hover:text-white'
+                  ? 'bg-primary-olive text-text-light'
+                  : 'bg-neutral-light text-neutral-dark hover:bg-accent-orange hover:text-text-light'
               }`}
               onClick={() => handleCategoryClick(category)}
             >
               {category}
             </button>
-            {groupByCategory(products)[category] && (
+            {groupedCategories[category] && (
               <ul className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-lg z-20">
-                {Object.keys(groupByCategory(products)[category]).map(
+                {Object.keys(groupedCategories[category]).map(
                   (subcategory) =>
                     subcategory && (
                       <li
@@ -126,8 +140,8 @@ const Products: React.FC = () => {
                         <button
                           className={`block px-4 py-2 text-left w-full ${
                             activeSubcategory === subcategory
-                              ? 'bg-indigo-600 text-white'
-                              : 'bg-gray-100 text-gray-800 hover:bg-indigo-400 hover:text-white'
+                              ? 'bg-primary-olive text-text-light'
+                              : 'bg-neutral-light text-neutral-dark hover:bg-accent-orange hover:text-text-light'
                           }`}
                           onClick={() =>
                             handleSubcategoryClick(category, subcategory)
@@ -135,10 +149,10 @@ const Products: React.FC = () => {
                         >
                           {subcategory}
                         </button>
-                        {groupByCategory(products)[category][subcategory] && (
+                        {groupedCategories[category][subcategory] && (
                           <ul className="absolute left-full top-0 hidden group-hover/subcategory:block bg-white shadow-lg rounded-lg z-30">
                             {Object.keys(
-                              groupByCategory(products)[category][subcategory]
+                              groupedCategories[category][subcategory]
                             ).map(
                               (subSubcategory) =>
                                 subSubcategory && (
@@ -146,8 +160,8 @@ const Products: React.FC = () => {
                                     <button
                                       className={`block px-4 py-2 text-left w-full ${
                                         activeSubSubcategory === subSubcategory
-                                          ? 'bg-indigo-600 text-white'
-                                          : 'bg-gray-100 text-gray-800 hover:bg-indigo-400 hover:text-white'
+                                          ? 'bg-primary-olive text-text-light'
+                                          : 'bg-neutral-light text-neutral-dark hover:bg-accent-orange hover:text-text-light'
                                       }`}
                                       onClick={() =>
                                         handleSubSubcategoryClick(
@@ -175,7 +189,7 @@ const Products: React.FC = () => {
 
       <div>
         <div className="flex flex-wrap justify-center gap-6">
-          {filteredProducts.map((product, index) => {
+          {filteredProducts.map((product) => {
             const shortDescription =
               product.Description.length > MAX_DESCRIPTION_LENGTH
                 ? `${product.Description.substring(
@@ -186,30 +200,32 @@ const Products: React.FC = () => {
 
             return (
               <div
-                key={index}
-                className="relative w-72 h-80 bg-white shadow-lg rounded-lg overflow-hidden group transition-transform transform hover:scale-105"
+                key={product.ID}
+                className="relative w-72 h-80 bg-neutral-light shadow-lg rounded-lg overflow-hidden group transition-transform transform hover:scale-105"
               >
-                <div className="relative w-full h-full p-4">
-                  <Image
-                    src={product.Image}
-                    alt={product.Title}
-                    className="object-contain w-full h-full"
-                    width={288}
-                    height={320}
-                  />
-                  <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-4">
-                    <div className="flex flex-col justify-start">
-                      <p className="text-white text-base font-medium text-center">
-                        {shortDescription}
-                      </p>
+                <Link href={`/produits/${encodeURIComponent(product.ID)}`}>
+                  <div className="relative w-full h-full p-4">
+                    <Image
+                      src={product.Image}
+                      alt={product.Title}
+                      className="object-contain w-full h-full"
+                      width={288}
+                      height={320}
+                    />
+                    <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-4">
+                      <div className="flex flex-col justify-start">
+                        <p className="text-text-light text-base font-medium text-center">
+                          {shortDescription}
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 bg-white bg-opacity-50 p-4 text-center border-t border-gray-200">
-                  <h2 className="text-lg font-semibold text-gray-800">
-                    {product.Title}
-                  </h2>
-                </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-primary-olive bg-opacity-50 p-4 text-center border-t border-gray-200">
+                    <h2 className="text-lg font-semibold text-text-dark whitespace-nowrap overflow-hidden overflow-ellipsis">
+                      {product.Title}
+                    </h2>
+                  </div>
+                </Link>
               </div>
             );
           })}

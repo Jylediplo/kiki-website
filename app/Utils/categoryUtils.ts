@@ -1,4 +1,5 @@
 export type Product = {
+  ID: string;
   Title: string;
   Image: string;
   Description: string;
@@ -6,6 +7,7 @@ export type Product = {
   Category: string;
   Subcategory: string;
   SubSubcategory: string;
+  SizesColors: string;
 };
 
 export const categorizeProduct = (

@@ -12,24 +12,23 @@ export default function Navbar() {
   const linkStyle = (path: any) =>
     `text-sm cursor-pointer flex justify-center pt-2 border-b-2 ${
       currentPath === path
-        ? currentPath === '/contact'
-          ? 'text-white border-white'
-          : 'text-blue-900 border-blue-900'
-        : 'border-transparent hover:border-white'
+        ? 'text-primary-olive border-primary-olive'
+        : 'border-transparent hover:border-accent-orange'
     }`;
 
-  const contactStyle = `p-2 px-4 border-2 bg-blue-900 text-black rounded-full hover:bg-blue-900 hover:text-white hover:border-transparent`;
+  const contactStyle = `p-2 px-4 border-2 bg-primary-olive text-text-light rounded-full hover:bg-accent-red hover:text-text-dark hover:border-transparent`;
 
   const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
 
   return (
-    <header className="flex flex-col items-center justify-between p-8">
+    <header className="flex flex-col items-center justify-between p-4 bg-primary shadow-md">
       <div className="z-10 w-full max-w-5xl flex items-center justify-between font-bold text-sm">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center gap-2">
-            <h1 className="font-bold text-4xl">Surplus</h1>
+            <h1 className="font-bold text-4xl text-text-light">Surplus</h1>
           </Link>
         </div>
+        {/* mettre la navbar ici */}
         <nav className="hidden md:flex flex-row space-x-8 w-full justify-end">
           <Link href="/" className={linkStyle('/')}>
             Magasin
@@ -48,7 +47,7 @@ export default function Navbar() {
           </Link>
         </nav>
         <button
-          className="md:hidden"
+          className="md:hidden text-text-light"
           onClick={toggleSidebar}
           aria-label="Toggle Sidebar"
         >
@@ -58,12 +57,12 @@ export default function Navbar() {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-black z-50 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 h-full w-64 bg-primary-olive z-50 transform transition-transform duration-300 ease-in-out ${
           isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
         <button
-          className="absolute top-4 right-4"
+          className="absolute top-4 right-4 text-text-light"
           onClick={toggleSidebar}
           aria-label="Close Sidebar"
         >
