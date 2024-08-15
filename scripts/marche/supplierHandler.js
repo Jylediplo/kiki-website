@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const csvParser = require('csv-parser');
 const { createObjectCsvWriter } = require('csv-writer');
+const { v4: uuidv4 } = require('uuid');
 
 // Log file setup
 const logFile = fs.createWriteStream('script.log', { flags: 'a' });
@@ -23,7 +24,7 @@ async function loadProcessedReferences() {
   if (fs.existsSync('output.csv')) {
     const readStream = fs.createReadStream('output.csv').pipe(csvParser());
     for await (const row of readStream) {
-      references.add(row.FOURNISSEUR_CODE);
+      references.add(row.FOURNISSEUR_REFERENCE);
     }
     console.log('Processed references:', Array.from(references));
   } else {
@@ -63,21 +64,23 @@ async function processArticles() {
   // If the file doesn't exist, write the header manually
   if (!fileExists) {
     const header =
-      '"FOURNISSEUR_NOM","FOURNISSEUR_CODE","DATE_CREATION","Title","Image","Description"\n';
+      '"ID","FOURNISSEUR_NOM","FOURNISSEUR_REFERENCE","SizesColors","DATE_CREATION","Title","Image","Description"\n';
     fs.writeFileSync(outputPath, header);
   }
 
   const csvWriter = createObjectCsvWriter({
     path: outputPath,
     header: [
+      { id: 'id', title: 'ID' },
       { id: 'supplierName', title: 'FOURNISSEUR_NOM' },
-      { id: 'supplierCode', title: 'FOURNISSEUR_CODE' },
+      { id: 'supplierReference', title: 'FOURNISSEUR_REFERENCE' },
+      { id: 'sizesColors', title: 'SizesColors' }, // Moved here
       { id: 'dateCreation', title: 'DATE_CREATION' },
       { id: 'title', title: 'Title' },
       { id: 'image', title: 'Image' },
       { id: 'description', title: 'Description' },
     ],
-    append: true, // Continue appending to the file
+    append: true,
   });
 
   const processedReferences = await loadProcessedReferences();
@@ -85,66 +88,90 @@ async function processArticles() {
   const loggedReferences = new Set(); // To track logged references
   const readStream = fs.createReadStream('ARTICLES.csv').pipe(csvParser());
 
-  for await (const row of readStream) {
-    const { FOURNISSEUR_NOM, FOURNISSEUR_REFERENCE, DATE_CREATION } = row;
+  const groupedData = {};
 
-    if (processedReferenceSet.has(FOURNISSEUR_REFERENCE)) {
-      console.log(
-        `Reference ${FOURNISSEUR_REFERENCE} already processed, skipping.`
-      );
-      continue;
+  for await (const row of readStream) {
+    const { FOURNISSEUR_NOM, FOURNISSEUR_REFERENCE, DATE_CREATION, Libellé } =
+      row;
+
+    if (!groupedData[FOURNISSEUR_REFERENCE]) {
+      groupedData[FOURNISSEUR_REFERENCE] = {
+        supplierName: FOURNISSEUR_NOM,
+        supplierReference: FOURNISSEUR_REFERENCE,
+        dateCreation: DATE_CREATION,
+        sizesColors: new Set(),
+      };
     }
 
+    // Extract size and color from Libellé
+    const sizeColorMatch = Libellé.match(
+      /(?:([XSMLXL2XL3XL4XL]+|\d{2})\/([A-Z]+))/
+    );
+    if (sizeColorMatch) {
+      const size = sizeColorMatch[1];
+      const color = sizeColorMatch[2];
+      groupedData[FOURNISSEUR_REFERENCE].sizesColors.add(`${size}/${color}`);
+    }
+  }
+
+  for (const ref in groupedData) {
+    const data = groupedData[ref];
+    const sizesColors = Array.from(data.sizesColors).join(', ');
+
     if (
-      FOURNISSEUR_NOM === 'MP-SEC' ||
-      FOURNISSEUR_NOM === 'GILBERT' ||
-      FOURNISSEUR_NOM === 'TREESCO' ||
-      FOURNISSEUR_NOM === 'GK' ||
-      FOURNISSEUR_NOM === 'PROMODIS' ||
-      FOURNISSEUR_NOM === 'WOOLPOWER' ||
-      FOURNISSEUR_NOM === 'Brandit' ||
-      FOURNISSEUR_NOM === 'BILLY EIGHT' ||
-      FOURNISSEUR_NOM === 'HIGHLANDER' ||
-      FOURNISSEUR_NOM === 'HELIKON-TEX' ||
-      FOURNISSEUR_NOM === 'VANOS' ||
-      FOURNISSEUR_NOM === 'A10' ||
-      FOURNISSEUR_NOM === 'SUMMIT'
+      data.supplierName === 'MP-SEC' ||
+      data.supplierName === 'GILBERT' ||
+      data.supplierName === 'TREESCO' ||
+      data.supplierName === 'GK' ||
+      data.supplierName === 'PROMODIS' ||
+      data.supplierName === 'WOOLPOWER' ||
+      data.supplierName === 'Brandit' ||
+      data.supplierName === 'BILLY EIGHT' ||
+      data.supplierName === 'HIGHLANDER' ||
+      data.supplierName === 'HELIKON-TEX' ||
+      data.supplierName === 'VANOS' ||
+      data.supplierName === 'A10' ||
+      data.supplierName === 'SUMMIT'
     ) {
       console.log(
-        `Processing supplier: ${FOURNISSEUR_NOM} with reference ${FOURNISSEUR_REFERENCE}`
+        `Processing supplier: ${data.supplierName} with reference ${data.supplierReference}`
       );
       const productDetails = await executeSupplierScript(
-        FOURNISSEUR_NOM,
-        FOURNISSEUR_REFERENCE
+        data.supplierName,
+        data.supplierReference
       );
+
       if (productDetails && productDetails.title) {
         const record = {
-          supplierName: FOURNISSEUR_NOM, // Supplier name in first column
-          supplierCode: FOURNISSEUR_REFERENCE,
-          dateCreation: DATE_CREATION,
+          id: uuidv4(),
+          supplierName: data.supplierName,
+          supplierReference: data.supplierReference,
+          sizesColors: sizesColors, // Moved here
+          dateCreation: data.dateCreation,
           title: productDetails.title,
           image: productDetails.image,
           description: productDetails.description,
         };
 
-        // Write each record immediately
         await csvWriter.writeRecords([record]);
-
-        processedReferenceSet.add(FOURNISSEUR_REFERENCE);
         console.log(
-          `Successfully fetched details for ${FOURNISSEUR_NOM} with reference ${FOURNISSEUR_REFERENCE}`
+          `Record written successfully for reference: ${data.supplierReference}`
+        );
+
+        processedReferenceSet.add(data.supplierReference);
+        console.log(
+          `Successfully fetched details for ${data.supplierName} with reference ${data.supplierReference}`
         );
       } else {
-        // Log only if the reference wasn't processed and it's not already logged
-        if (!loggedReferences.has(FOURNISSEUR_REFERENCE)) {
+        if (!loggedReferences.has(data.supplierReference)) {
           console.log(
-            `Unregistered reference: ${FOURNISSEUR_NOM} - ${FOURNISSEUR_REFERENCE}`
+            `Unregistered reference: ${data.supplierName} - ${data.supplierReference}`
           );
-          loggedReferences.add(FOURNISSEUR_REFERENCE);
+          loggedReferences.add(data.supplierReference);
         }
       }
     } else {
-      console.log(`Supplier ${FOURNISSEUR_NOM} not recognized.`);
+      console.log(`Supplier ${data.supplierName} not recognized.`);
     }
   }
 
