@@ -4,6 +4,9 @@ const csvParser = require('csv-parser');
 const { createObjectCsvWriter } = require('csv-writer');
 const { v4: uuidv4 } = require('uuid');
 
+// Import the categorizeProduct function
+const { categorizeProduct } = require('./CategorizeProduct');
+
 // Log file setup
 const logFile = fs.createWriteStream('script.log', { flags: 'a' });
 const originalConsoleLog = console.log;
@@ -64,7 +67,7 @@ async function processArticles() {
   // If the file doesn't exist, write the header manually
   if (!fileExists) {
     const header =
-      '"ID","FOURNISSEUR_NOM","FOURNISSEUR_REFERENCE","SizesColors","DATE_CREATION","Title","Image","Description"\n';
+      '"ID","FOURNISSEUR_NOM","FOURNISSEUR_REFERENCE","SizesColors","DATE_CREATION","Title","Image","Description","Category","Subcategory","SubSubcategory"\n';
     fs.writeFileSync(outputPath, header);
   }
 
@@ -74,11 +77,14 @@ async function processArticles() {
       { id: 'id', title: 'ID' },
       { id: 'supplierName', title: 'FOURNISSEUR_NOM' },
       { id: 'supplierReference', title: 'FOURNISSEUR_REFERENCE' },
-      { id: 'sizesColors', title: 'SizesColors' }, // Moved here
+      { id: 'sizesColors', title: 'SizesColors' },
       { id: 'dateCreation', title: 'DATE_CREATION' },
       { id: 'title', title: 'Title' },
       { id: 'image', title: 'Image' },
       { id: 'description', title: 'Description' },
+      { id: 'category', title: 'Category' },
+      { id: 'subcategory', title: 'Subcategory' },
+      { id: 'subSubcategory', title: 'SubSubcategory' },
     ],
     append: true,
   });
@@ -142,15 +148,23 @@ async function processArticles() {
       );
 
       if (productDetails && productDetails.title) {
+        // Categorize the product
+        const { Category, Subcategory, SubSubcategory } = categorizeProduct(
+          productDetails.title
+        );
+
         const record = {
           id: uuidv4(),
           supplierName: data.supplierName,
           supplierReference: data.supplierReference,
-          sizesColors: sizesColors, // Moved here
+          sizesColors: sizesColors,
           dateCreation: data.dateCreation,
           title: productDetails.title,
           image: productDetails.image,
           description: productDetails.description,
+          category: Category,
+          subcategory: Subcategory,
+          subSubcategory: SubSubcategory,
         };
 
         await csvWriter.writeRecords([record]);

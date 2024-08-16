@@ -34,7 +34,7 @@ async function fetchProductHighlander(reference) {
     return { title, image, description };
   } catch (error) {
     console.error('Failed to fetch product:', error);
-    return null; // Return null if there is an error
+    return null;
   }
 }
 
