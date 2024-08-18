@@ -1,12 +1,16 @@
 // Fonction pour catégoriser un produit en fonction de son titre
 function categorizeProduct(title) {
-  if (title.match(/Blouson|Parka|Veste|Jacket/i)) {
+  if (
+    title.match(
+      /Blouson|Parka|Veste|Jacket|Coupe-vent|Poncho|manteau|Coupe vent|Coat/i
+    )
+  ) {
     return {
       Category: 'Vêtements',
       Subcategory: 'Hauts',
       SubSubcategory: 'Blousons',
     };
-  } else if (title.match(/Chemise/i)) {
+  } else if (title.match(/Chemise|Polo|Shirt/i)) {
     return {
       Category: 'Vêtements',
       Subcategory: 'Hauts',
@@ -42,13 +46,13 @@ function categorizeProduct(title) {
       Subcategory: 'Hauts',
       SubSubcategory: '',
     };
-  } else if (title.match(/Pantalon|Pant|Jean|Fuseau|patrol/i)) {
+  } else if (title.match(/Pantalon|Pant|Jean|Fuseau|Patrol-autumn lato/i)) {
     return {
       Category: 'Vêtements',
       Subcategory: 'Bas',
       SubSubcategory: 'Pantalons',
     };
-  } else if (title.match(/Short/i)) {
+  } else if (title.match(/Short|Spodenki/i)) {
     return {
       Category: 'Vêtements',
       Subcategory: 'Bas',
@@ -59,12 +63,6 @@ function categorizeProduct(title) {
       Category: 'Vêtements',
       Subcategory: 'Bas',
       SubSubcategory: 'Caleçons',
-    };
-  } else if (title.match(/Combinaison/i)) {
-    return {
-      Category: 'Vêtements',
-      Subcategory: 'Combinaisons',
-      SubSubcategory: '',
     };
   } else if (title.match(/Casquette|Bonnet|Chapeau/i)) {
     return {
@@ -78,22 +76,30 @@ function categorizeProduct(title) {
       Subcategory: 'Ceintures',
       SubSubcategory: '',
     };
-  } else if (title.match(/Gant/i)) {
+  } else if (title.match(/Gant|Gloves|Mitaines/i)) {
     return {
       Category: 'Accessoires',
       Subcategory: 'Gants',
       SubSubcategory: '',
     };
-  } else if (title.match(/Masque|Cagoule/i)) {
+  } else if (title.match(/Masque|Cagoule|Tour de cou|Tour du cou/i)) {
     return {
       Category: 'Accessoires',
       Subcategory: 'Masques',
       SubSubcategory: '',
     };
-  } else if (title.match(/Sac|Pochette|Bag|Kitbag|Musette/i)) {
+  } else if (
+    title.match(/Sac|Pochette|Bag|Kitbag|Musette|Rush|Backpack|BFM/i)
+  ) {
     return {
       Category: 'Accessoires',
       Subcategory: 'Sacs',
+      SubSubcategory: '',
+    };
+  } else if (title.match(/Porte|Lampe|Poche/i)) {
+    return {
+      Category: 'Accessoires',
+      Subcategory: '',
       SubSubcategory: '',
     };
   } else if (title.match(/Chaussure|MAGNUM|Zephyr|Sabot/i)) {

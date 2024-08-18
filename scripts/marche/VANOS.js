@@ -32,8 +32,10 @@ async function fetchProductVanos(reference) {
       const productHtml = await productResponse.text();
       const $ = cheerio.load(productHtml);
       const imageUrl = $('#bigpic').attr('src');
+      const description = $('#short_description_content').text().trim();
+      console.log(description);
 
-      return { title, image: imageUrl, description: '' };
+      return { title, image: imageUrl, description };
     } else {
       console.log('No product link found.');
       return null;
