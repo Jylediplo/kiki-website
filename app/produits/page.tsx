@@ -9,7 +9,7 @@ import {
   groupByCategory,
 } from '../Utils/categoryUtils';
 
-const MAX_DESCRIPTION_LENGTH = 300;
+const MAX_DESCRIPTION_LENGTH = 230;
 
 const Products: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
@@ -36,7 +36,7 @@ const Products: React.FC = () => {
         setProducts(categorizedProducts);
 
         if (categorizedProducts.length > 0) {
-          const defaultCategory = categorizedProducts[0].Category;
+          const defaultCategory = 'Vêtements'; // Remplacer par 'Vêtements'
           setActiveCategory(defaultCategory);
         }
       } catch (error) {
@@ -57,7 +57,13 @@ const Products: React.FC = () => {
           (activeSubSubcategory === '' ||
             product.SubSubcategory === activeSubSubcategory)
     );
-    setFilteredProducts(filtered);
+
+    // Remove duplicates based on title
+    const uniqueProducts = Array.from(
+      new Map(filtered.map((item) => [item.Title, item])).values()
+    );
+
+    setFilteredProducts(uniqueProducts);
   }, [
     activeCategory,
     activeSubcategory,
@@ -107,15 +113,15 @@ const Products: React.FC = () => {
   const sortedCategories = sortCategories(Object.keys(groupedCategories));
 
   return (
-    <div className="flex flex-col gap-8 p-6 bg-primary-olive">
+    <div className="flex flex-col gap-8 p-4 sm:p-6 bg-primary-olive">
       <input
         type="text"
         placeholder="Rechercher un produit..."
         value={searchQuery}
         onChange={handleSearchChange}
-        className="w-1/3 p-2 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent-orange text-black mx-auto"
+        className="z-10 w-full sm:w-2/5 p-2 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent-orange text-black mx-auto"
       />
-      <ul className="flex justify-center mb-6 relative z-10">
+      <ul className="flex flex-wrap justify-center mb-6 relative z-10 gap-4">
         {sortedCategories.map((category) => (
           <li key={category} className="relative group">
             <button
@@ -188,7 +194,7 @@ const Products: React.FC = () => {
       </ul>
 
       <div>
-        <div className="flex flex-wrap justify-center gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {filteredProducts.map((product) => {
             const shortDescription =
               product.Description.length > MAX_DESCRIPTION_LENGTH
@@ -201,16 +207,16 @@ const Products: React.FC = () => {
             return (
               <div
                 key={product.ID}
-                className="relative w-72 h-80 bg-neutral-light shadow-lg rounded-lg overflow-hidden group transition-transform transform hover:scale-105"
+                className="relative w-full bg-white shadow-lg rounded-lg overflow-hidden group transition-transform transform hover:scale-105 border-2 border-primary"
               >
                 <Link href={`/produits/${encodeURIComponent(product.ID)}`}>
-                  <div className="relative w-full h-full p-4">
+                  <div className="relative w-full h-64 p-4">
                     <Image
                       src={product.Image}
                       alt={product.Title}
                       className="object-contain w-full h-full"
                       width={288}
-                      height={320}
+                      height={256}
                     />
                     <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-4">
                       <div className="flex flex-col justify-start">
@@ -220,7 +226,7 @@ const Products: React.FC = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="absolute bottom-0 left-0 right-0 bg-primary-olive bg-opacity-50 p-4 text-center border-t border-gray-200">
+                  <div className="absolute bottom-0 left-0 right-0 bg-primary-olive bg-opacity-50 p-4 text-center border-t border-primary">
                     <h2 className="text-lg font-semibold text-text-dark whitespace-nowrap overflow-hidden overflow-ellipsis">
                       {product.Title}
                     </h2>

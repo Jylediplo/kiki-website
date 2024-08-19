@@ -1,12 +1,13 @@
 'use client';
 
+import colorMap from '@/app/Utils/colorMap';
 import Image from 'next/image';
 import { useParams } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 import SimilarProducts from '../../components/SimilarProducts';
 import { categorizeProduct, Product } from '../../Utils/categoryUtils';
+import ProductDetailSkeleton from '../../Utils/ProductDetailSkeleton';
 
-// Fonction pour tronquer la description
 const truncateDescription = (description: string, maxWords: number) => {
   const sentences = description.split('. ');
 
@@ -41,6 +42,7 @@ const ProductDetail: React.FC = () => {
   const [category, setCategory] = useState<string>('');
   const [subcategory, setSubcategory] = useState<string>('');
   const [subsubcategory, setSubsubcategory] = useState<string>('');
+  // const [mainProductId, setMainProductId] = useState<string>('');
 
   useEffect(() => {
     if (!productId) return;
@@ -54,7 +56,6 @@ const ProductDetail: React.FC = () => {
         const data: Product = await response.json();
         setProduct(data);
 
-        // Initialiser la couleur sélectionnée avec la première couleur disponible
         const sizesColorsArray = data.SizesColors
           ? data.SizesColors.split(', ')
           : [];
@@ -64,7 +65,6 @@ const ProductDetail: React.FC = () => {
             : null;
         setSelectedColor(firstColor);
 
-        // Déterminer la catégorie pour les produits similaires
         const { Category, Subcategory, SubSubcategory } = categorizeProduct(
           data.Title
         );
@@ -83,7 +83,7 @@ const ProductDetail: React.FC = () => {
   }, [productId]);
 
   if (loading) {
-    return <div className="text-center">Loading...</div>;
+    return <ProductDetailSkeleton />;
   }
 
   if (error) {
@@ -109,31 +109,9 @@ const ProductDetail: React.FC = () => {
         .sort((a, b) => sizeOrder.indexOf(a) - sizeOrder.indexOf(b)) // Trier les tailles
     : [];
 
-  const colorMap: { [key: string]: string } = {
-    BLEU: '#000080', // Bleu marine
-    KAKI: '#808000',
-    ROUGE: '#FF0000',
-    VERT: '#008000',
-    JAUNE: '#FFFF00',
-    NOIR: '#000000',
-    BLANC: '#FFFFFF',
-    GRIS: '#808080',
-    ORANGE: '#FFA500',
-    VIOLET: '#800080',
-    ROSE: '#FFC0CB',
-    MARRON: '#A52A2A',
-    CYAN: '#00FFFF',
-    MAGENTA: '#FF00FF',
-    ARGENT: '#C0C0C0',
-    OR: '#FFD700',
-    CAMEL: '#C19A6B', // Camel
-    CAMO: '/green-camo.png', // Chemin de l'image pour CAMO
-    SABLE: '#F4A460', // Sable
-  };
-
   return (
     <div className="p-6 bg-primary-olive min-h-screen">
-      <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+      <div className="max-w-7xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
         <div className="flex flex-col md:flex-row">
           <div className="relative w-full md:w-1/2 h-64 md:h-auto">
             <Image
@@ -196,7 +174,7 @@ const ProductDetail: React.FC = () => {
               {selectedColor && filteredSizes.length > 0 && (
                 <div className="mb-4">
                   <h2 className="text-lg font-semibold text-text-dark">
-                    Tailles disponibles pour {selectedColor}
+                    Tailles disponibles en {selectedColor}
                   </h2>
                   <div className="flex flex-wrap gap-2 mt-2">
                     {filteredSizes.map((size) => (
@@ -215,9 +193,10 @@ const ProductDetail: React.FC = () => {
         </div>
       </div>
       <SimilarProducts
-        category={category}
+        mainProductId={product.ID} // Pass the main product ID
+        subSubcategory={subsubcategory}
         subcategory={subcategory}
-        subsubcategory={subsubcategory}
+        category={category}
       />
     </div>
   );

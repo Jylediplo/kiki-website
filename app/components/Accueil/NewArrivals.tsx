@@ -2,9 +2,9 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
-import { ScrollMenu } from 'react-horizontal-scrolling-menu';
-import 'react-horizontal-scrolling-menu/dist/styles.css';
+import { useEffect, useRef, useState } from 'react';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { animated, useSpring } from 'react-spring';
 
 interface Product {
   ID: string;
@@ -12,17 +12,21 @@ interface Product {
   DATE_CREATION: string;
   Description: string;
   Image: string;
+  SubSubcategory: string;
+  Subcategory: string;
+  Category: string;
 }
 
 const NewArrivals = () => {
-  const [products, setProducts] = useState<Product[]>([]);
+  const [newArrivals, setNewArrivals] = useState<Product[]>([]);
+  const [allProducts, setAllProducts] = useState<Product[]>([]);
 
   useEffect(() => {
-    const fetchNewArrivals = async () => {
+    const fetchProducts = async () => {
       try {
         const response = await fetch('/api/products');
         if (!response.ok) {
-          throw new Error('Failed to fetch new arrivals');
+          throw new Error('Failed to fetch products');
         }
         const data: Product[] = await response.json();
 
@@ -36,60 +40,216 @@ const NewArrivals = () => {
           return dateB.getTime() - dateA.getTime();
         });
 
-        setProducts(sortedProducts.slice(0, 50));
+        setNewArrivals(sortedProducts.slice(0, 50));
+        setAllProducts(data);
       } catch (error) {
-        console.error('Error fetching new arrivals:', error);
+        console.error('Error fetching products:', error);
       }
     };
 
-    fetchNewArrivals();
+    fetchProducts();
   }, []);
 
+  const filterBySubSubcategory = (subSubcategory: string) =>
+    allProducts.filter((product) => product.SubSubcategory === subSubcategory);
+
+  const filterBySubcategory = (Subcategory: string) =>
+    allProducts.filter((product) => product.Subcategory === Subcategory);
+
+  const filterByCategory = (Category: string) =>
+    allProducts.filter((product) => product.Category === Category);
+
   return (
-    <div className="p-4">
-      <h2 className="text-2xl font-bold mb-6 text-center">Nouveautés</h2>
-      <ScrollMenu>
-        {products.map((product) => (
-          <Link
-            href={`/produits/${encodeURIComponent(product.ID)}`}
-            key={product.ID}
-          >
-            <ProductCard product={product} />
-          </Link>
-        ))}
-      </ScrollMenu>
+    <div className="px-4 sm:px-6 lg:px-8">
+      <ProductSection
+        title="Nouveautés"
+        description="Plongez dans notre sélection exclusive des dernières tendances. Découvrez des pièces innovantes et incontournables qui redéfinissent le style moderne."
+        image="/avion.jpg"
+        products={newArrivals}
+      />
+
+      <ProductSection
+        title="Pantalons"
+        description="Explorez notre collection variée de pantalons militaires, conçus pour la chasse, la randonnée, la sécurité privée, ou simplement pour le plaisir. Alliant robustesse et confort, chaque modèle est prêt à relever tous les défis."
+        image="/pantalons.JPG"
+        products={filterBySubSubcategory('Pantalons')}
+      />
+
+      <ProductSection
+        title="Sacs"
+        description="Découvrez notre gamme de sacs à dos et de transport, parfaits pour toutes vos aventures. Alliant fonctionnalité et style, ces sacs sont conçus pour répondre à tous vos besoins de déplacement."
+        image="/sacs.JPG"
+        products={filterBySubcategory('Sacs')}
+      />
+
+      <ProductSection
+        title="Blousons"
+        description="Parcourez notre sélection de vestes et blousons, où style et protection se rencontrent. Que ce soit pour un usage quotidien ou pour des conditions extrêmes, trouvez le modèle qui vous convient."
+        image="/vestes.JPG"
+        products={filterBySubSubcategory('Blousons')}
+      />
+
+      <ProductSection
+        title="Chaussures"
+        description="Découvrez notre collection de chaussures, comprenant des rangers authentiques, des chaussures de chasse robustes et des chaussures d'intervention performantes. Conçues pour offrir confort et durabilité, elles sont prêtes à vous accompagner partout."
+        image="/chaussures.JPG"
+        products={filterByCategory('Chaussures')}
+      />
     </div>
   );
 };
 
-const ProductCard = ({ product }: { product: Product }) => {
-  const shortDescription =
-    product.Description.length > 100
-      ? product.Description.substring(0, 100) + '...'
-      : product.Description;
+const ProductSection = ({
+  title,
+  description,
+  image,
+  products,
+}: {
+  title: string;
+  description: string;
+  image: string;
+  products: Product[];
+}) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect(); // Stop observing after the first time
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  const fadeIn = useSpring({
+    opacity: isVisible ? 1 : 0,
+    transform: isVisible ? 'translateY(0)' : 'translateY(50px)',
+  });
+
+  const nextProduct = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % products.length);
+  };
+
+  const prevProduct = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? products.length - 1 : prevIndex - 1
+    );
+  };
+
+  const productsToDisplay = (startIndex: number) => {
+    const count = window.innerWidth < 768 ? 1 : 2; // Adjust number of products based on screen size
+    const endIndex = startIndex + count;
+    if (endIndex <= products.length) {
+      return products.slice(startIndex, endIndex);
+    } else {
+      return [
+        ...products.slice(startIndex, products.length),
+        ...products.slice(0, endIndex % products.length),
+      ];
+    }
+  };
 
   return (
-    <div className="relative w-72 h-80 bg-white shadow-lg rounded-lg overflow-hidden group transition-transform transform hover:scale-105 m-4 cursor-pointer">
-      <div className="relative w-full h-full">
-        <Image
-          src={product.Image}
-          alt={product.Title}
-          className="object-contain w-full h-full"
-          width={150}
-          height={150}
-        />
-        <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center p-4">
-          <p className="text-white text-base font-medium text-center">
-            {shortDescription}
-          </p>
+    <animated.div ref={sectionRef} style={fadeIn} className="mb-12">
+      <div className="bg-primary mb-4 p-2 rounded-lg shadow-lg">
+        <h2 className="text-center text-primary-sand text-2xl p-2">{title}</h2>
+        <p className="text-white text-center">{description}</p>
+      </div>
+      <div className="flex flex-col md:flex-row items-center bg-primary-olive rounded-lg shadow-lg overflow-hidden">
+        <div className="w-full md:w-1/3 lg:1/3 p-6 bg-primary text-white">
+          <Image
+            src={image}
+            alt={title}
+            className="rounded-lg object-cover w-full h-64 md:h-80 lg:h-96"
+            width={600}
+            height={400}
+          />
+          <div className="flex justify-center mt-4 space-x-4">
+            <button
+              onClick={prevProduct}
+              className="text-primary-sand hover:text-primary-olive p-2 rounded-full bg-primary shadow-md"
+            >
+              <FaChevronLeft size={25} />
+            </button>
+            <button
+              onClick={nextProduct}
+              className="text-primary-sand hover:text-primary-olive p-2 rounded-full bg-primary shadow-md"
+            >
+              <FaChevronRight size={25} />
+            </button>
+          </div>
+        </div>
+
+        <div className="w-full md:w-2/3 flex flex-wrap justify-center items-center p-4 ">
+          {productsToDisplay(currentIndex).map((product, index) => (
+            <ProductCard key={product.ID} product={product} index={index} />
+          ))}
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 right-0 bg-white bg-opacity-50 p-4 text-center border-t border-gray-200">
-        <h2 className="text-lg font-semibold text-gray-800 whitespace-nowrap overflow-hidden text-ellipsis">
-          {product.Title}
-        </h2>
-      </div>
-    </div>
+    </animated.div>
+  );
+};
+
+const ProductCard = ({
+  product,
+  index,
+}: {
+  product: Product;
+  index: number;
+}) => {
+  const shortDescription =
+    product.Description.length > 200
+      ? product.Description.substring(0, 200) + '...'
+      : product.Description;
+
+  const fadeIn = useSpring({
+    opacity: 1 - index * 0.1,
+    transform: `scale(${1 - index * 0.1}) translateY(${index * 10}px)`,
+  });
+
+  return (
+    <animated.div
+      style={fadeIn}
+      className={`relative w-full sm:w-96 md:w-60 lg:w-72 h-96 bg-white rounded-lg overflow-hidden m-2 md:m-4 cursor-pointer border-2 border-primary shadow-lg ${
+        index === 0 ? 'first-product' : 'blurred-product'
+      }`}
+    >
+      <Link
+        key={product.ID}
+        href={`/produits/${encodeURIComponent(product.ID)}`}
+      >
+        <div className="relative w-full h-full">
+          <Image
+            src={product.Image}
+            alt={product.Title}
+            className="object-contain w-full h-3/4"
+            width={150}
+            height={150}
+          />
+          <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-60 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center p-4">
+            <p className="text-white text-base font-medium text-center">
+              {shortDescription}
+            </p>
+          </div>
+        </div>
+        <div className="absolute bottom-0 left-0 right-0 bg-primary bg-opacity-50 p-4 text-center border-t border-primary">
+          <h2 className="text-lg font-semibold text-white whitespace-nowrap overflow-hidden text-ellipsis">
+            {product.Title}
+          </h2>
+        </div>
+      </Link>
+    </animated.div>
   );
 };
 

@@ -1,5 +1,6 @@
 import Navbar from './components/navbar';
 import './globals.css';
+import SandParticles from './Utils/SandParticles';
 
 export const metadata = {
   title: 'Next.js',
@@ -13,9 +14,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body>
-        <Navbar />
-        {children}
+      <link
+        href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
+        rel="stylesheet"
+      />
+      <body className="font-blackOps">
+        <div className="relative z-20">
+          <Navbar />
+        </div>
+        <div className="relative z-10">
+          <SandParticles />
+          {children}
+        </div>
       </body>
     </html>
   );

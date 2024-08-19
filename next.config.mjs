@@ -54,6 +54,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'summit-outdoor.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'brandit-wear.com',
+      },
     ],
   },
 };

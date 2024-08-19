@@ -22,26 +22,21 @@ const StoreHours = () => {
   const currentDay = daysOfWeek[currentDayIndex];
 
   return (
-    <div className="p-4">
-      <div className="flex text-primary">Horaires</div>
-      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 gap-4">
-        {Object.entries(hours).map(([day, times]) => (
-          <div
-            key={day}
-            className={`flex flex-col items-center p-4 rounded-lg transition-transform transform hover:scale-105 ${
-              day === currentDay ? 'bg-accent-red' : 'bg-primary'
-            }`}
-          >
-            <h3 className="text-lg font-semibold text-text-light mb-2">
-              {day}
-            </h3>
-            <p className="text-text-light text-sm">{times.morning}</p>
-            {times.afternoon && (
-              <p className="text-text-light text-sm">{times.afternoon}</p>
-            )}
-          </div>
-        ))}
-      </div>
+    <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 gap-4">
+      {Object.entries(hours).map(([day, times]) => (
+        <div
+          key={day}
+          className={`flex flex-col items-center p-4 rounded-lg shadow-md transition-transform transform hover:scale-105 ${
+            day === currentDay ? 'bg-primary-sand' : 'bg-primary'
+          }`}
+        >
+          <h3 className="text-lg font-semibold text-text-light mb-2">{day}</h3>
+          <p className="text-text-light text-sm">{times.morning}</p>
+          {times.afternoon && (
+            <p className="text-text-light text-sm">{times.afternoon}</p>
+          )}
+        </div>
+      ))}
     </div>
   );
 };

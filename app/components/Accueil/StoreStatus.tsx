@@ -1,3 +1,8 @@
+'use client';
+
+import React from 'react';
+import { FaPhoneAlt, FaRegClock } from 'react-icons/fa';
+
 const StoreStatus: React.FC = () => {
   const currentDay = new Date().getDay();
   const currentTime = new Date().getHours() + new Date().getMinutes() / 60; // Current time in hours
@@ -56,14 +61,17 @@ const StoreStatus: React.FC = () => {
     : `Fermé - Ouvre ${getNextOpeningTime()}`;
 
   return (
-    <div className="p-6 bg-primary shadow-lg rounded-md flex flex-col items-center">
-      <h2 className="text-2xl font-bold mb-4 text-center text-text-light flex items-center justify-center">
-        <span className={isOpen ? 'text-green-700' : 'text-accent-red'}>
+    <div className="p-6 bg-primary shadow-lg rounded-lg flex flex-col items-center">
+      <h2 className="text-xl font-heading mb-4 text-center text-text-light flex items-center justify-center">
+        <span className={isOpen ? 'text-green-400' : 'text-accent-red'}>
           {statusMessage}
         </span>
       </h2>
-      <div className="text-md mb-4 text-center">
-        <p>Aujourd&apos;hui : </p>
+      <div className="text-md mb-4 text-center text-text-light flex flex-col">
+        <div>
+          <FaRegClock className="inline mr-2" />
+          <span>Aujourd&apos;hui : </span>
+        </div>
         <span className="font-semibold">
           {hours[currentDay] === 'Fermé'
             ? 'Fermé'
@@ -71,6 +79,7 @@ const StoreStatus: React.FC = () => {
         </span>
       </div>
       <p className="text-md text-text-light text-center">
+        <FaPhoneAlt className="inline mr-2" />
         Tél :{' '}
         <a
           href="tel:0475572010"
