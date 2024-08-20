@@ -210,7 +210,7 @@ const Products: React.FC = () => {
                 className="relative w-full bg-white shadow-lg rounded-lg overflow-hidden group transition-transform transform hover:scale-105 border-2 border-primary"
               >
                 <Link href={`/produits/${encodeURIComponent(product.ID)}`}>
-                  <div className="relative w-full h-64 p-4">
+                  <div className="relative w-full h-96 p-4">
                     <Image
                       src={product.Image}
                       alt={product.Title}

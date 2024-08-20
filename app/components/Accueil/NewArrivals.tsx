@@ -60,7 +60,7 @@ const NewArrivals = () => {
     allProducts.filter((product) => product.Category === Category);
 
   return (
-    <div className="px-4 sm:px-6 lg:px-8">
+    <div className="">
       <ProductSection
         title="Nouveautés"
         description="Plongez dans notre sélection exclusive des dernières tendances. Découvrez des pièces innovantes et incontournables qui redéfinissent le style moderne."
@@ -119,7 +119,7 @@ const ProductSection = ({
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          observer.disconnect(); // Stop observing after the first time
+          observer.disconnect();
         }
       },
       { threshold: 0.3 }
@@ -148,7 +148,8 @@ const ProductSection = ({
   };
 
   const productsToDisplay = (startIndex: number) => {
-    const count = window.innerWidth < 768 ? 1 : 2; // Adjust number of products based on screen size
+    const count =
+      window.innerWidth < 768 ? 1 : window.innerWidth < 1024 ? 2 : 3;
     const endIndex = startIndex + count;
     if (endIndex <= products.length) {
       return products.slice(startIndex, endIndex);
@@ -162,16 +163,16 @@ const ProductSection = ({
 
   return (
     <animated.div ref={sectionRef} style={fadeIn} className="mb-12">
-      <div className="bg-primary mb-4 p-2 rounded-lg shadow-lg">
+      <div className="bg-primary mb-2 p-2 rounded-lg shadow-lg">
         <h2 className="text-center text-primary-sand text-2xl p-2">{title}</h2>
         <p className="text-white text-center">{description}</p>
       </div>
       <div className="flex flex-col md:flex-row items-center bg-primary-olive rounded-lg shadow-lg overflow-hidden">
-        <div className="w-full md:w-1/3 lg:1/3 p-6 bg-primary text-white">
+        <div className="w-full md:w-1/3 p-6 bg-primary text-white">
           <Image
             src={image}
             alt={title}
-            className="rounded-lg object-cover w-full h-64 md:h-80 lg:h-96"
+            className="rounded-lg object-cover w-full h-64 md:h-80"
             width={600}
             height={400}
           />
@@ -218,11 +219,13 @@ const ProductCard = ({
     transform: `scale(${1 - index * 0.1}) translateY(${index * 10}px)`,
   });
 
+  const isNotFirst = index !== 0;
+
   return (
     <animated.div
       style={fadeIn}
-      className={`relative w-full sm:w-96 md:w-60 lg:w-72 h-96 bg-white rounded-lg overflow-hidden m-2 md:m-4 cursor-pointer border-2 border-primary shadow-lg ${
-        index === 0 ? 'first-product' : 'blurred-product'
+      className={`relative w-full sm:w-2/3 md:w-1/2 lg:w-1/3 h-96 bg-white rounded-lg overflow-hidden m-4 cursor-pointer border-2 border-primary shadow-lg ${
+        isNotFirst ? 'blurred-product' : ''
       }`}
     >
       <Link
@@ -234,8 +237,9 @@ const ProductCard = ({
             src={product.Image}
             alt={product.Title}
             className="object-contain w-full h-3/4"
-            width={150}
-            height={150}
+            width={300}
+            height={300}
+            priority
           />
           <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-60 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center p-4">
             <p className="text-white text-base font-medium text-center">

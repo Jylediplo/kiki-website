@@ -85,7 +85,13 @@ button:hover {
 }
 
 .first-product {
-  margin-left: 100px;
+  margin-left: 0px;
+}
+
+@media (max-width: 768px) {
+  .first-product {
+    margin-left: 0;
+  }
 }
 
 .blurred-product {

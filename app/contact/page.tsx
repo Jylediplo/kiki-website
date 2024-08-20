@@ -7,7 +7,7 @@ import { FaEnvelope, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
 const ContactPage = () => {
   const text = {
     title: 'Contactez-nous',
-    subtitle: "N'hésitez pas à nous contacter.",
+    // subtitle: "N'hésitez pas à nous contacter.",
     name: 'Nom',
     surname: 'Prénom',
     email: 'Email',
@@ -54,13 +54,13 @@ const ContactPage = () => {
   };
 
   return (
-    <main className="flex flex-col items-center justify-between p-4 md:p-8 text-text-light">
+    <main className="flex flex-col items-center justify-between p-4 md:p-8 text-text-light h-screen">
       <div className="z-10 w-full max-w-5xl font-body text-sm flex flex-col lg:flex-row gap-8 space-x-8">
         <div className="lg:w-3/5 space-y-6 bg-primary p-6 rounded-lg shadow-military">
           <h1 className="text-3xl font-heading mb-4 text-accent-orange">
             {text.title}
           </h1>
-          <p className="mb-6 text-primary-sand">{text.subtitle}</p>
+          {/* <p className="mb-6 text-primary-sand">{text.subtitle}</p> */}
 
           <form id="contact-form" onSubmit={handleSubmit} className="space-y-4">
             <div className="flex space-x-4">
@@ -116,7 +116,7 @@ const ContactPage = () => {
           </form>
         </div>
 
-        <div className="lg:w-2/5 space-y-8">
+        <div className="lg:w-2/5 space-y-4">
           <div className="flex items-center space-x-4 bg-primary p-4 rounded-lg">
             <FaPhone className="text-3xl text-accent-orange rotate-90" />
             <div>

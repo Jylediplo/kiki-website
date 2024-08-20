@@ -10,11 +10,17 @@ function categorizeProduct(title) {
       Subcategory: 'Hauts',
       SubSubcategory: 'Blousons',
     };
-  } else if (title.match(/Chemise|Polo|Shirt/i)) {
+  } else if (title.match(/Chemise/i)) {
     return {
       Category: 'Vêtements',
       Subcategory: 'Hauts',
       SubSubcategory: 'Chemises',
+    };
+  } else if (title.match(/Polo/i)) {
+    return {
+      Category: 'Vêtements',
+      Subcategory: 'Hauts',
+      SubSubcategory: 'Polos',
     };
   } else if (title.match(/Gilet/i)) {
     return {

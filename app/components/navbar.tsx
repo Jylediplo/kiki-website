@@ -42,7 +42,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-primary shadow-md font-blackOps">
       <div className="max-w-6xl mx-auto ">
-        <div className="flex items-center justify-between h-16">
+        <div className="px-6 sm:px-10 md:px-10 lg:px-0 flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
               <h1 className="font-bold text-3xl text-primary-sand font-blackOps">
@@ -91,7 +91,7 @@ export default function Navbar() {
 
       <div
         id="sidebar"
-        className={`fixed top-0 right-0 h-full w-64 bg-primary-olive z-50 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 h-full w-64 bg-primary z-50 transform transition-transform duration-300 ease-in-out ${
           isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
         onClick={(e) => e.stopPropagation()}

@@ -1,0 +1,2460 @@
+[LOG] Processed references: 
+[LOG] Processing supplier: GK with reference 652
+[LOG] Fetching details for GK with reference 652
+[LOG] Record written successfully for reference: 652
+[LOG] Successfully fetched details for GK with reference 652
+[LOG] Processing supplier: TREESCO with reference 1001
+[LOG] Fetching details for TREESCO with reference 1001
+[LOG] Record written successfully for reference: 1001
+[LOG] Successfully fetched details for TREESCO with reference 1001
+[LOG] Processing supplier: TREESCO with reference 1002
+[LOG] Fetching details for TREESCO with reference 1002
+[LOG] Record written successfully for reference: 1002
+[LOG] Successfully fetched details for TREESCO with reference 1002
+[LOG] Processing supplier: Brandit with reference 1003
+[LOG] Fetching details for Brandit with reference 1003
+[LOG] Record written successfully for reference: 1003
+[LOG] Successfully fetched details for Brandit with reference 1003
+[LOG] Processing supplier: TREESCO with reference 1004
+[LOG] Fetching details for TREESCO with reference 1004
+[LOG] Record written successfully for reference: 1004
+[LOG] Successfully fetched details for TREESCO with reference 1004
+[LOG] Processing supplier: TREESCO with reference 1005
+[LOG] Fetching details for TREESCO with reference 1005
+[LOG] Record written successfully for reference: 1005
+[LOG] Successfully fetched details for TREESCO with reference 1005
+[LOG] Processing supplier: Brandit with reference 1018
+[LOG] Fetching details for Brandit with reference 1018
+[LOG] Record written successfully for reference: 1018
+[LOG] Successfully fetched details for Brandit with reference 1018
+[LOG] Processing supplier: TREESCO with reference 1027
+[LOG] Fetching details for TREESCO with reference 1027
+[LOG] Record written successfully for reference: 1027
+[LOG] Successfully fetched details for TREESCO with reference 1027
+[LOG] Processing supplier: TREESCO with reference 1033
+[LOG] Fetching details for TREESCO with reference 1033
+[LOG] Record written successfully for reference: 1033
+[LOG] Successfully fetched details for TREESCO with reference 1033
+[LOG] Processing supplier: TREESCO with reference 1055
+[LOG] Fetching details for TREESCO with reference 1055
+[LOG] Record written successfully for reference: 1055
+[LOG] Successfully fetched details for TREESCO with reference 1055
+[LOG] Processing supplier: TREESCO with reference 1077
+[LOG] Fetching details for TREESCO with reference 1077
+[LOG] Record written successfully for reference: 1077
+[LOG] Successfully fetched details for TREESCO with reference 1077
+[LOG] Processing supplier: TREESCO with reference 1205
+[LOG] Fetching details for TREESCO with reference 1205
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: TREESCO - 1205
+[LOG] Processing supplier: TREESCO with reference 1215
+[LOG] Fetching details for TREESCO with reference 1215
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: TREESCO - 1215
+[LOG] Processing supplier: TREESCO with reference 1242
+[LOG] Fetching details for TREESCO with reference 1242
+[LOG] Record written successfully for reference: 1242
+[LOG] Successfully fetched details for TREESCO with reference 1242
+[LOG] Processing supplier: TREESCO with reference 1262
+[LOG] Fetching details for TREESCO with reference 1262
+[LOG] Record written successfully for reference: 1262
+[LOG] Successfully fetched details for TREESCO with reference 1262
+[LOG] Processing supplier: TREESCO with reference 1269
+[LOG] Fetching details for TREESCO with reference 1269
+[LOG] Record written successfully for reference: 1269
+[LOG] Successfully fetched details for TREESCO with reference 1269
+[LOG] Processing supplier: TREESCO with reference 1284
+[LOG] Fetching details for TREESCO with reference 1284
+[LOG] Record written successfully for reference: 1284
+[LOG] Successfully fetched details for TREESCO with reference 1284
+[LOG] Processing supplier: TREESCO with reference 1286
+[LOG] Fetching details for TREESCO with reference 1286
+[LOG] Record written successfully for reference: 1286
+[LOG] Successfully fetched details for TREESCO with reference 1286
+[LOG] Processing supplier: TREESCO with reference 1304
+[LOG] Fetching details for TREESCO with reference 1304
+[LOG] Record written successfully for reference: 1304
+[LOG] Successfully fetched details for TREESCO with reference 1304
+[LOG] Processing supplier: TREESCO with reference 1308
+[LOG] Fetching details for TREESCO with reference 1308
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: TREESCO - 1308
+[LOG] Processing supplier: TREESCO with reference 1315
+[LOG] Fetching details for TREESCO with reference 1315
+[LOG] Record written successfully for reference: 1315
+[LOG] Successfully fetched details for TREESCO with reference 1315
+[LOG] Processing supplier: TREESCO with reference 1323
+[LOG] Fetching details for TREESCO with reference 1323
+[LOG] Record written successfully for reference: 1323
+[LOG] Successfully fetched details for TREESCO with reference 1323
+[LOG] Processing supplier: TREESCO with reference 1327
+[LOG] Fetching details for TREESCO with reference 1327
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: TREESCO - 1327
+[LOG] Processing supplier: TREESCO with reference 1339
+[LOG] Fetching details for TREESCO with reference 1339
+[LOG] Record written successfully for reference: 1339
+[LOG] Successfully fetched details for TREESCO with reference 1339
+[LOG] Processing supplier: TREESCO with reference 1340
+[LOG] Fetching details for TREESCO with reference 1340
+[LOG] Record written successfully for reference: 1340
+[LOG] Successfully fetched details for TREESCO with reference 1340
+[LOG] Processing supplier: TREESCO with reference 1342
+[LOG] Fetching details for TREESCO with reference 1342
+[LOG] Record written successfully for reference: 1342
+[LOG] Successfully fetched details for TREESCO with reference 1342
+[LOG] Processing supplier: TREESCO with reference 1343
+[LOG] Fetching details for TREESCO with reference 1343
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: TREESCO - 1343
+[LOG] Processing supplier: TREESCO with reference 1345
+[LOG] Fetching details for TREESCO with reference 1345
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: TREESCO - 1345
+[LOG] Processing supplier: TREESCO with reference 1374
+[LOG] Fetching details for TREESCO with reference 1374
+[LOG] Record written successfully for reference: 1374
+[LOG] Successfully fetched details for TREESCO with reference 1374
+[LOG] Processing supplier: TREESCO with reference 1382
+[LOG] Fetching details for TREESCO with reference 1382
+[LOG] Record written successfully for reference: 1382
+[LOG] Successfully fetched details for TREESCO with reference 1382
+[LOG] Processing supplier: TREESCO with reference 1383
+[LOG] Fetching details for TREESCO with reference 1383
+[LOG] Record written successfully for reference: 1383
+[LOG] Successfully fetched details for TREESCO with reference 1383
+[LOG] Processing supplier: TREESCO with reference 1391
+[LOG] Fetching details for TREESCO with reference 1391
+[LOG] Record written successfully for reference: 1391
+[LOG] Successfully fetched details for TREESCO with reference 1391
+[LOG] Processing supplier: TREESCO with reference 1396
+[LOG] Fetching details for TREESCO with reference 1396
+[LOG] Record written successfully for reference: 1396
+[LOG] Successfully fetched details for TREESCO with reference 1396
+[LOG] Processing supplier: TREESCO with reference 1503
+[LOG] Fetching details for TREESCO with reference 1503
+[LOG] Record written successfully for reference: 1503
+[LOG] Successfully fetched details for TREESCO with reference 1503
+[LOG] Processing supplier: TREESCO with reference 1510
+[LOG] Fetching details for TREESCO with reference 1510
+[LOG] Record written successfully for reference: 1510
+[LOG] Successfully fetched details for TREESCO with reference 1510
+[LOG] Processing supplier: TREESCO with reference 1511
+[LOG] Fetching details for TREESCO with reference 1511
+[LOG] Record written successfully for reference: 1511
+[LOG] Successfully fetched details for TREESCO with reference 1511
+[LOG] Processing supplier: TREESCO with reference 1538
+[LOG] Fetching details for TREESCO with reference 1538
+[LOG] Record written successfully for reference: 1538
+[LOG] Successfully fetched details for TREESCO with reference 1538
+[LOG] Processing supplier: TREESCO with reference 1562
+[LOG] Fetching details for TREESCO with reference 1562
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: TREESCO - 1562
+[LOG] Processing supplier: TREESCO with reference 1566
+[LOG] Fetching details for TREESCO with reference 1566
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: TREESCO - 1566
+[LOG] Processing supplier: TREESCO with reference 1567
+[LOG] Fetching details for TREESCO with reference 1567
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: TREESCO - 1567
+[LOG] Processing supplier: PROMODIS with reference 1990
+[LOG] Fetching details for PROMODIS with reference 1990
+[LOG] Record written successfully for reference: 1990
+[LOG] Successfully fetched details for PROMODIS with reference 1990
+[LOG] Processing supplier: Brandit with reference 2002
+[LOG] Fetching details for Brandit with reference 2002
+[LOG] Record written successfully for reference: 2002
+[LOG] Successfully fetched details for Brandit with reference 2002
+[LOG] Processing supplier: Brandit with reference 2012
+[LOG] Fetching details for Brandit with reference 2012
+[LOG] Record written successfully for reference: 2012
+[LOG] Successfully fetched details for Brandit with reference 2012
+[LOG] Processing supplier: Brandit with reference 2023
+[LOG] Fetching details for Brandit with reference 2023
+[LOG] Record written successfully for reference: 2023
+[LOG] Successfully fetched details for Brandit with reference 2023
+[LOG] Processing supplier: PROMODIS with reference 2686
+[LOG] Fetching details for PROMODIS with reference 2686
+[LOG] Record written successfully for reference: 2686
+[LOG] Successfully fetched details for PROMODIS with reference 2686
+[LOG] Processing supplier: TREESCO with reference 2700
+[LOG] Fetching details for TREESCO with reference 2700
+[LOG] Record written successfully for reference: 2700
+[LOG] Successfully fetched details for TREESCO with reference 2700
+[LOG] Processing supplier: TREESCO with reference 2703
+[LOG] Fetching details for TREESCO with reference 2703
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: TREESCO - 2703
+[LOG] Processing supplier: TREESCO with reference 2711
+[LOG] Fetching details for TREESCO with reference 2711
+[LOG] Record written successfully for reference: 2711
+[LOG] Successfully fetched details for TREESCO with reference 2711
+[LOG] Processing supplier: TREESCO with reference 2719
+[LOG] Fetching details for TREESCO with reference 2719
+[LOG] Record written successfully for reference: 2719
+[LOG] Successfully fetched details for TREESCO with reference 2719
+[LOG] Processing supplier: TREESCO with reference 2721
+[LOG] Fetching details for TREESCO with reference 2721
+[LOG] Record written successfully for reference: 2721
+[LOG] Successfully fetched details for TREESCO with reference 2721
+[LOG] Processing supplier: TREESCO with reference 2732
+[LOG] Fetching details for TREESCO with reference 2732
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: TREESCO - 2732
+[LOG] Processing supplier: TREESCO with reference 2768
+[LOG] Fetching details for TREESCO with reference 2768
+[LOG] Record written successfully for reference: 2768
+[LOG] Successfully fetched details for TREESCO with reference 2768
+[LOG] Processing supplier: TREESCO with reference 2770
+[LOG] Fetching details for TREESCO with reference 2770
+[LOG] Record written successfully for reference: 2770
+[LOG] Successfully fetched details for TREESCO with reference 2770
+[LOG] Processing supplier: TREESCO with reference 2791
+[LOG] Fetching details for TREESCO with reference 2791
+[LOG] Record written successfully for reference: 2791
+[LOG] Successfully fetched details for TREESCO with reference 2791
+[LOG] Processing supplier: TREESCO with reference 2803
+[LOG] Fetching details for TREESCO with reference 2803
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: TREESCO - 2803
+[LOG] Processing supplier: TREESCO with reference 2902
+[LOG] Fetching details for TREESCO with reference 2902
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: TREESCO - 2902
+[LOG] Processing supplier: TREESCO with reference 2904
+[LOG] Fetching details for TREESCO with reference 2904
+[LOG] Record written successfully for reference: 2904
+[LOG] Successfully fetched details for TREESCO with reference 2904
+[LOG] Processing supplier: TREESCO with reference 2907
+[LOG] Fetching details for TREESCO with reference 2907
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: TREESCO - 2907
+[LOG] Processing supplier: TREESCO with reference 2909
+[LOG] Fetching details for TREESCO with reference 2909
+[LOG] Record written successfully for reference: 2909
+[LOG] Successfully fetched details for TREESCO with reference 2909
+[LOG] Processing supplier: TREESCO with reference 2914
+[LOG] Fetching details for TREESCO with reference 2914
+[LOG] Record written successfully for reference: 2914
+[LOG] Successfully fetched details for TREESCO with reference 2914
+[LOG] Processing supplier: TREESCO with reference 2924
+[LOG] Fetching details for TREESCO with reference 2924
+[LOG] Record written successfully for reference: 2924
+[LOG] Successfully fetched details for TREESCO with reference 2924
+[LOG] Processing supplier: TREESCO with reference 2927
+[LOG] Fetching details for TREESCO with reference 2927
+[LOG] Record written successfully for reference: 2927
+[LOG] Successfully fetched details for TREESCO with reference 2927
+[LOG] Processing supplier: TREESCO with reference 2928
+[LOG] Fetching details for TREESCO with reference 2928
+[LOG] Record written successfully for reference: 2928
+[LOG] Successfully fetched details for TREESCO with reference 2928
+[LOG] Processing supplier: TREESCO with reference 2929
+[LOG] Fetching details for TREESCO with reference 2929
+[LOG] Record written successfully for reference: 2929
+[LOG] Successfully fetched details for TREESCO with reference 2929
+[LOG] Processing supplier: Brandit with reference 3101
+[LOG] Fetching details for Brandit with reference 3101
+[LOG] Record written successfully for reference: 3101
+[LOG] Successfully fetched details for Brandit with reference 3101
+[LOG] Processing supplier: Brandit with reference 3107
+[LOG] Fetching details for Brandit with reference 3107
+[LOG] Record written successfully for reference: 3107
+[LOG] Successfully fetched details for Brandit with reference 3107
+[LOG] Processing supplier: Brandit with reference 3109
+[LOG] Fetching details for Brandit with reference 3109
+[LOG] Record written successfully for reference: 3109
+[LOG] Successfully fetched details for Brandit with reference 3109
+[LOG] Processing supplier: Brandit with reference 3111
+[LOG] Fetching details for Brandit with reference 3111
+[LOG] Record written successfully for reference: 3111
+[LOG] Successfully fetched details for Brandit with reference 3111
+[LOG] Processing supplier: Brandit with reference 3116
+[LOG] Fetching details for Brandit with reference 3116
+[LOG] Record written successfully for reference: 3116
+[LOG] Successfully fetched details for Brandit with reference 3116
+[LOG] Processing supplier: Brandit with reference 3170
+[LOG] Fetching details for Brandit with reference 3170
+[LOG] Record written successfully for reference: 3170
+[LOG] Successfully fetched details for Brandit with reference 3170
+[LOG] Processing supplier: Brandit with reference 3172
+[LOG] Fetching details for Brandit with reference 3172
+[LOG] Record written successfully for reference: 3172
+[LOG] Successfully fetched details for Brandit with reference 3172
+[LOG] Processing supplier: TREESCO with reference 3445
+[LOG] Fetching details for TREESCO with reference 3445
+[LOG] Record written successfully for reference: 3445
+[LOG] Successfully fetched details for TREESCO with reference 3445
+[LOG] Processing supplier: TREESCO with reference 3481
+[LOG] Fetching details for TREESCO with reference 3481
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: TREESCO - 3481
+[LOG] Processing supplier: TREESCO with reference 3482
+[LOG] Fetching details for TREESCO with reference 3482
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: TREESCO - 3482
+[LOG] Processing supplier: Brandit with reference 4002
+[LOG] Fetching details for Brandit with reference 4002
+[LOG] Record written successfully for reference: 4002
+[LOG] Successfully fetched details for Brandit with reference 4002
+[LOG] Processing supplier: Brandit with reference 4023
+[LOG] Fetching details for Brandit with reference 4023
+[LOG] Record written successfully for reference: 4023
+[LOG] Successfully fetched details for Brandit with reference 4023
+[LOG] Processing supplier: Brandit with reference 4200
+[LOG] Fetching details for Brandit with reference 4200
+[LOG] Record written successfully for reference: 4200
+[LOG] Successfully fetched details for Brandit with reference 4200
+[LOG] Processing supplier: GK with reference 6552
+[LOG] Fetching details for GK with reference 6552
+[LOG] Record written successfully for reference: 6552
+[LOG] Successfully fetched details for GK with reference 6552
+[LOG] Processing supplier: PROMODIS with reference 6958
+[LOG] Fetching details for PROMODIS with reference 6958
+[LOG] Record written successfully for reference: 6958
+[LOG] Successfully fetched details for PROMODIS with reference 6958
+[LOG] Processing supplier: WOOLPOWER with reference 7222
+[LOG] Fetching details for WOOLPOWER with reference 7222
+[LOG] Record written successfully for reference: 7222
+[LOG] Successfully fetched details for WOOLPOWER with reference 7222
+[LOG] Processing supplier: WOOLPOWER with reference 7224
+[LOG] Fetching details for WOOLPOWER with reference 7224
+[LOG] Unregistered reference: WOOLPOWER - 7224
+[LOG] Processing supplier: WOOLPOWER with reference 7234
+[LOG] Fetching details for WOOLPOWER with reference 7234
+[LOG] Record written successfully for reference: 7234
+[LOG] Successfully fetched details for WOOLPOWER with reference 7234
+[LOG] Processing supplier: WOOLPOWER with reference 7236
+[LOG] Fetching details for WOOLPOWER with reference 7236
+[LOG] Record written successfully for reference: 7236
+[LOG] Successfully fetched details for WOOLPOWER with reference 7236
+[LOG] Processing supplier: WOOLPOWER with reference 7342
+[LOG] Fetching details for WOOLPOWER with reference 7342
+[LOG] Record written successfully for reference: 7342
+[LOG] Successfully fetched details for WOOLPOWER with reference 7342
+[LOG] Processing supplier: Brandit with reference 8007
+[LOG] Fetching details for Brandit with reference 8007
+[LOG] Record written successfully for reference: 8007
+[LOG] Successfully fetched details for Brandit with reference 8007
+[LOG] Processing supplier: Brandit with reference 8008
+[LOG] Fetching details for Brandit with reference 8008
+[LOG] Record written successfully for reference: 8008
+[LOG] Successfully fetched details for Brandit with reference 8008
+[LOG] Processing supplier: Brandit with reference 8059
+[LOG] Fetching details for Brandit with reference 8059
+[LOG] Record written successfully for reference: 8059
+[LOG] Successfully fetched details for Brandit with reference 8059
+[LOG] Processing supplier: Brandit with reference 8084
+[LOG] Fetching details for Brandit with reference 8084
+[LOG] Record written successfully for reference: 8084
+[LOG] Successfully fetched details for Brandit with reference 8084
+[LOG] Processing supplier: Brandit with reference 8085
+[LOG] Fetching details for Brandit with reference 8085
+[LOG] Record written successfully for reference: 8085
+[LOG] Successfully fetched details for Brandit with reference 8085
+[LOG] Processing supplier: SUMMIT with reference 8330
+[LOG] Fetching details for SUMMIT with reference 8330
+[LOG] Record written successfully for reference: 8330
+[LOG] Successfully fetched details for SUMMIT with reference 8330
+[LOG] Processing supplier: WOOLPOWER with reference 8412
+[LOG] Fetching details for WOOLPOWER with reference 8412
+[LOG] Record written successfully for reference: 8412
+[LOG] Successfully fetched details for WOOLPOWER with reference 8412
+[LOG] Processing supplier: WOOLPOWER with reference 8418
+[LOG] Fetching details for WOOLPOWER with reference 8418
+[LOG] Record written successfully for reference: 8418
+[LOG] Successfully fetched details for WOOLPOWER with reference 8418
+[LOG] Processing supplier: WOOLPOWER with reference 8424
+[LOG] Fetching details for WOOLPOWER with reference 8424
+[LOG] Record written successfully for reference: 8424
+[LOG] Successfully fetched details for WOOLPOWER with reference 8424
+[LOG] Processing supplier: WOOLPOWER with reference 8486
+[LOG] Fetching details for WOOLPOWER with reference 8486
+[LOG] Record written successfully for reference: 8486
+[LOG] Successfully fetched details for WOOLPOWER with reference 8486
+[LOG] Processing supplier: SUMMIT with reference 8936
+[LOG] Fetching details for SUMMIT with reference 8936
+[LOG] Record written successfully for reference: 8936
+[LOG] Successfully fetched details for SUMMIT with reference 8936
+[LOG] Processing supplier: PROMODIS with reference 9112
+[LOG] Fetching details for PROMODIS with reference 9112
+[LOG] Record written successfully for reference: 9112
+[LOG] Successfully fetched details for PROMODIS with reference 9112
+[LOG] Processing supplier: Brandit with reference 9373
+[LOG] Fetching details for Brandit with reference 9373
+[LOG] Record written successfully for reference: 9373
+[LOG] Successfully fetched details for Brandit with reference 9373
+[LOG] Processing supplier: Brandit with reference 9390
+[LOG] Fetching details for Brandit with reference 9390
+[LOG] Record written successfully for reference: 9390
+[LOG] Successfully fetched details for Brandit with reference 9390
+[LOG] Processing supplier: GK with reference 9403
+[LOG] Fetching details for GK with reference 9403
+[LOG] Record written successfully for reference: 9403
+[LOG] Successfully fetched details for GK with reference 9403
+[LOG] Processing supplier: GK with reference 9406
+[LOG] Fetching details for GK with reference 9406
+[LOG] Record written successfully for reference: 9406
+[LOG] Successfully fetched details for GK with reference 9406
+[LOG] Processing supplier: GK with reference 9410
+[LOG] Fetching details for GK with reference 9410
+[LOG] Record written successfully for reference: 9410
+[LOG] Successfully fetched details for GK with reference 9410
+[LOG] Processing supplier: GK with reference 9415
+[LOG] Fetching details for GK with reference 9415
+[LOG] Record written successfully for reference: 9415
+[LOG] Successfully fetched details for GK with reference 9415
+[LOG] Processing supplier: Brandit with reference 9470
+[LOG] Fetching details for Brandit with reference 9470
+[LOG] Record written successfully for reference: 9470
+[LOG] Successfully fetched details for Brandit with reference 9470
+[LOG] Processing supplier: Brandit with reference 9480
+[LOG] Fetching details for Brandit with reference 9480
+[LOG] Record written successfully for reference: 9480
+[LOG] Successfully fetched details for Brandit with reference 9480
+[LOG] Processing supplier: PROMODIS with reference 9515
+[LOG] Fetching details for PROMODIS with reference 9515
+[LOG] Record written successfully for reference: 9515
+[LOG] Successfully fetched details for PROMODIS with reference 9515
+[LOG] Processing supplier: PROMODIS with reference 9592
+[LOG] Fetching details for PROMODIS with reference 9592
+[LOG] Record written successfully for reference: 9592
+[LOG] Successfully fetched details for PROMODIS with reference 9592
+[LOG] Processing supplier: GK with reference 9810
+[LOG] Fetching details for GK with reference 9810
+[LOG] Record written successfully for reference: 9810
+[LOG] Successfully fetched details for GK with reference 9810
+[LOG] Processing supplier: GK with reference 9815
+[LOG] Fetching details for GK with reference 9815
+[LOG] Record written successfully for reference: 9815
+[LOG] Successfully fetched details for GK with reference 9815
+[LOG] Processing supplier: TREESCO with reference 10103
+[LOG] Fetching details for TREESCO with reference 10103
+[LOG] Record written successfully for reference: 10103
+[LOG] Successfully fetched details for TREESCO with reference 10103
+[LOG] Processing supplier: TREESCO with reference 10104
+[LOG] Fetching details for TREESCO with reference 10104
+[LOG] Record written successfully for reference: 10104
+[LOG] Successfully fetched details for TREESCO with reference 10104
+[LOG] Processing supplier: TREESCO with reference 10158
+[LOG] Fetching details for TREESCO with reference 10158
+[LOG] Record written successfully for reference: 10158
+[LOG] Successfully fetched details for TREESCO with reference 10158
+[LOG] Processing supplier: TREESCO with reference 10161
+[LOG] Fetching details for TREESCO with reference 10161
+[LOG] Record written successfully for reference: 10161
+[LOG] Successfully fetched details for TREESCO with reference 10161
+[LOG] Processing supplier: PROMODIS with reference 10316
+[LOG] Fetching details for PROMODIS with reference 10316
+[LOG] Record written successfully for reference: 10316
+[LOG] Successfully fetched details for PROMODIS with reference 10316
+[LOG] Processing supplier: PROMODIS with reference 10868
+[LOG] Fetching details for PROMODIS with reference 10868
+[LOG] Record written successfully for reference: 10868
+[LOG] Successfully fetched details for PROMODIS with reference 10868
+[LOG] Processing supplier: PROMODIS with reference 12067
+[LOG] Fetching details for PROMODIS with reference 12067
+[LOG] Record written successfully for reference: 12067
+[LOG] Successfully fetched details for PROMODIS with reference 12067
+[LOG] Processing supplier: TREESCO with reference 13119
+[LOG] Fetching details for TREESCO with reference 13119
+[LOG] Record written successfully for reference: 13119
+[LOG] Successfully fetched details for TREESCO with reference 13119
+[LOG] Processing supplier: TREESCO with reference 13126
+[LOG] Fetching details for TREESCO with reference 13126
+[LOG] Record written successfully for reference: 13126
+[LOG] Successfully fetched details for TREESCO with reference 13126
+[LOG] Processing supplier: TREESCO with reference 15103
+[LOG] Fetching details for TREESCO with reference 15103
+[LOG] Record written successfully for reference: 15103
+[LOG] Successfully fetched details for TREESCO with reference 15103
+[LOG] Processing supplier: TREESCO with reference 15106
+[LOG] Fetching details for TREESCO with reference 15106
+[LOG] Record written successfully for reference: 15106
+[LOG] Successfully fetched details for TREESCO with reference 15106
+[LOG] Processing supplier: TREESCO with reference 15107
+[LOG] Fetching details for TREESCO with reference 15107
+[LOG] Record written successfully for reference: 15107
+[LOG] Successfully fetched details for TREESCO with reference 15107
+[LOG] Processing supplier: TREESCO with reference 15109
+[LOG] Fetching details for TREESCO with reference 15109
+[LOG] Record written successfully for reference: 15109
+[LOG] Successfully fetched details for TREESCO with reference 15109
+[LOG] Processing supplier: TREESCO with reference 15122
+[LOG] Fetching details for TREESCO with reference 15122
+[LOG] Record written successfully for reference: 15122
+[LOG] Successfully fetched details for TREESCO with reference 15122
+[LOG] Processing supplier: TREESCO with reference 15195
+[LOG] Fetching details for TREESCO with reference 15195
+[LOG] Record written successfully for reference: 15195
+[LOG] Successfully fetched details for TREESCO with reference 15195
+[LOG] Processing supplier: TREESCO with reference 27130
+[LOG] Fetching details for TREESCO with reference 27130
+[LOG] Record written successfully for reference: 27130
+[LOG] Successfully fetched details for TREESCO with reference 27130
+[LOG] Processing supplier: TREESCO with reference 27132
+[LOG] Fetching details for TREESCO with reference 27132
+[LOG] Record written successfully for reference: 27132
+[LOG] Successfully fetched details for TREESCO with reference 27132
+[LOG] Processing supplier: TREESCO with reference 27133
+[LOG] Fetching details for TREESCO with reference 27133
+[LOG] Record written successfully for reference: 27133
+[LOG] Successfully fetched details for TREESCO with reference 27133
+[LOG] Processing supplier: MP-SEC with reference 56392
+[LOG] Fetching details for MP-SEC with reference 56392
+[LOG] Record written successfully for reference: 56392
+[LOG] Successfully fetched details for MP-SEC with reference 56392
+[LOG] Processing supplier: MP-SEC with reference 56555
+[LOG] Fetching details for MP-SEC with reference 56555
+[LOG] Record written successfully for reference: 56555
+[LOG] Successfully fetched details for MP-SEC with reference 56555
+[LOG] Processing supplier: MP-SEC with reference 56561
+[LOG] Fetching details for MP-SEC with reference 56561
+[LOG] Record written successfully for reference: 56561
+[LOG] Successfully fetched details for MP-SEC with reference 56561
+[LOG] Processing supplier: MP-SEC with reference 56963
+[LOG] Fetching details for MP-SEC with reference 56963
+[LOG] Record written successfully for reference: 56963
+[LOG] Successfully fetched details for MP-SEC with reference 56963
+[LOG] Processing supplier: MP-SEC with reference 74369
+[LOG] Fetching details for MP-SEC with reference 74369
+[LOG] Record written successfully for reference: 74369
+[LOG] Successfully fetched details for MP-SEC with reference 74369
+[LOG] Processing supplier: MP-SEC with reference 74465
+[LOG] Fetching details for MP-SEC with reference 74465
+[LOG] Record written successfully for reference: 74465
+[LOG] Successfully fetched details for MP-SEC with reference 74465
+[LOG] Processing supplier: MP-SEC with reference 74521
+[LOG] Fetching details for MP-SEC with reference 74521
+[LOG] Record written successfully for reference: 74521
+[LOG] Successfully fetched details for MP-SEC with reference 74521
+[LOG] Supplier Terrang not recognized.
+[LOG] Processing supplier: GK with reference 95410
+[LOG] Fetching details for GK with reference 95410
+[LOG] Record written successfully for reference: 95410
+[LOG] Successfully fetched details for GK with reference 95410
+[LOG] Processing supplier: VANOS with reference 111234
+[LOG] Fetching details for VANOS with reference 111234
+[LOG] Le Pantalon de combat Operator 101 Inc est un pantalon cargo léger grâce à sa composition nylon/coton. Il dispose d'une taille élastiquée, de nombreuses poches et de renforts aux genoux.
+[LOG] Record written successfully for reference: 111234
+[LOG] Successfully fetched details for VANOS with reference 111234
+[LOG] Processing supplier: VANOS with reference 114301
+[LOG] Fetching details for VANOS with reference 114301
+[LOG] La Barboteuse Bébé à Manches 101 Inc. est légère et facile d'entretien grâce à sa composition en coton et élasthanne.
+[LOG] Record written successfully for reference: 114301
+[LOG] Successfully fetched details for VANOS with reference 114301
+[LOG] Processing supplier: VANOS with reference 115262
+[LOG] Fetching details for VANOS with reference 115262
+[LOG] La Combinaison de Pilote Fostex Garments, est une combinaison militaire de vol agréable à porter grâce à une composition 65% polyester / 35% coton. Elle se ferme par glissière zip et s'ajuste à la taille, aux poignets et aux chevilles. Elle est équipée de plusieurs pochjes et emplacements velcro pour patches.
+[LOG] Record written successfully for reference: 115262
+[LOG] Successfully fetched details for VANOS with reference 115262
+[LOG] Processing supplier: VANOS with reference 121425
+[LOG] Fetching details for VANOS with reference 121425
+[LOG] 
+[LOG] Record written successfully for reference: 121425
+[LOG] Successfully fetched details for VANOS with reference 121425
+[LOG] Processing supplier: VANOS with reference 122421
+[LOG] Fetching details for VANOS with reference 122421
+[LOG] La Veste Aviation CWU Enfant Fostex Garments est un blouson Bomber léger pour les enfants. Il arbore plusieurs insignes et patches de différentes unités, pour un style aviateur.
+[LOG] Record written successfully for reference: 122421
+[LOG] Successfully fetched details for VANOS with reference 122421
+[LOG] Supplier STURM not recognized.
+[LOG] Processing supplier: VANOS with reference 128470
+[LOG] Fetching details for VANOS with reference 128470
+[LOG] 
+[LOG] Record written successfully for reference: 128470
+[LOG] Successfully fetched details for VANOS with reference 128470
+[LOG] Processing supplier: VANOS with reference 129535
+[LOG] Fetching details for VANOS with reference 129535
+[LOG] La veste softshell à capuche Lumbershell Fostex a été imaginé pour utilisation quotidienne à l'occasion d'activités outdoor comme la randonné, la pêche et bien d'autres. C'est une veste tempérée à mi-chemin entre une chemise type bûcheron à carreaux et une softshell. Idéal pour une veste mi-saison qui tient chaud et en même temps qui respire.
+[LOG] Record written successfully for reference: 129535
+[LOG] Successfully fetched details for VANOS with reference 129535
+[LOG] Processing supplier: VANOS with reference 129792
+[LOG] Fetching details for VANOS with reference 129792
+[LOG] 
+[LOG] Record written successfully for reference: 129792
+[LOG] Successfully fetched details for VANOS with reference 129792
+[LOG] Processing supplier: VANOS with reference 129841
+[LOG] Fetching details for VANOS with reference 129841
+[LOG] 
+[LOG] Record written successfully for reference: 129841
+[LOG] Successfully fetched details for VANOS with reference 129841
+[LOG] Processing supplier: VANOS with reference 131387
+[LOG] Fetching details for VANOS with reference 131387
+[LOG] No products found.
+[LOG] Unregistered reference: VANOS - 131387
+[LOG] Processing supplier: VANOS with reference 131388
+[LOG] Fetching details for VANOS with reference 131388
+[LOG] No products found.
+[LOG] Unregistered reference: VANOS - 131388
+[LOG] Processing supplier: VANOS with reference 131391
+[LOG] Fetching details for VANOS with reference 131391
+[LOG] 
+[LOG] Record written successfully for reference: 131391
+[LOG] Successfully fetched details for VANOS with reference 131391
+[LOG] Processing supplier: VANOS with reference 131400
+[LOG] Fetching details for VANOS with reference 131400
+[LOG] La Chemise Tactique UBAC 101 Inc. est une chemise de combat légère et respirante, disponible dans de nombreux camouflages.
+[LOG] Record written successfully for reference: 131400
+[LOG] Successfully fetched details for VANOS with reference 131400
+[LOG] Processing supplier: VANOS with reference 133363
+[LOG] Fetching details for VANOS with reference 133363
+[LOG] Le Débardeur KL Fostex Garments est simple et léger. Il est composé en 100% coton.
+[LOG] Record written successfully for reference: 133363
+[LOG] Successfully fetched details for VANOS with reference 133363
+[LOG] Processing supplier: VANOS with reference 133504
+[LOG] Fetching details for VANOS with reference 133504
+[LOG] Le T-shirt WW II Fostex Garments en 100% coton arbore un insigne poitrine de l'US Air Force.
+[LOG] Record written successfully for reference: 133504
+[LOG] Successfully fetched details for VANOS with reference 133504
+[LOG] Processing supplier: VANOS with reference 133622
+[LOG] Fetching details for VANOS with reference 133622
+[LOG] 
+[LOG] Record written successfully for reference: 133622
+[LOG] Successfully fetched details for VANOS with reference 133622
+[LOG] Processing supplier: VANOS with reference 133624
+[LOG] Fetching details for VANOS with reference 133624
+[LOG] 
+[LOG] Record written successfully for reference: 133624
+[LOG] Successfully fetched details for VANOS with reference 133624
+[LOG] Processing supplier: VANOS with reference 133641
+[LOG] Fetching details for VANOS with reference 133641
+[LOG] 
+[LOG] Record written successfully for reference: 133641
+[LOG] Successfully fetched details for VANOS with reference 133641
+[LOG] Processing supplier: VANOS with reference 135301
+[LOG] Fetching details for VANOS with reference 135301
+[LOG] La Chemise Bûcheron en Flanelle à Carreaux Longhorn est chaude grâce à sa double épaisseur en flanelle et protège contre la pluie (fine).
+[LOG] Record written successfully for reference: 135301
+[LOG] Successfully fetched details for VANOS with reference 135301
+[LOG] Processing supplier: VANOS with reference 213143
+[LOG] Fetching details for VANOS with reference 213143
+[LOG] Le Chapeau de Brousse Fostex Garments est léger et résistant, conçu en coton 100% avec armure Ripstop.
+[LOG] Record written successfully for reference: 213143
+[LOG] Successfully fetched details for VANOS with reference 213143
+[LOG] Processing supplier: VANOS with reference 213160
+[LOG] Fetching details for VANOS with reference 213160
+[LOG] No products found.
+[LOG] Unregistered reference: VANOS - 213160
+[LOG] Processing supplier: VANOS with reference 213161
+[LOG] Fetching details for VANOS with reference 213161
+[LOG] Le chapeau de brousse Ranger 101 Incorporated est composé de coton et dispose d'un cordon de serrage, assurant le maintien du chapeau. Il possède, de plus, des trous d'aérations sur les côtés, ainsi que des passants Molle en velcro sur le tour du chapeau. Il est également équipé d'un compartiment intérieur permettant l'emport d'objets importants.
+[LOG] Record written successfully for reference: 213161
+[LOG] Successfully fetched details for VANOS with reference 213161
+[LOG] Processing supplier: VANOS with reference 214140
+[LOG] Fetching details for VANOS with reference 214140
+[LOG] Le Bonnet Thinsulate Fostex Garments, composé d'acrylique à 100%, offre grâce au tissu Thinsulate une protection optimale contre le froid.
+[LOG] Record written successfully for reference: 214140
+[LOG] Successfully fetched details for VANOS with reference 214140
+[LOG] Processing supplier: VANOS with reference 214141
+[LOG] Fetching details for VANOS with reference 214141
+[LOG] 
+[LOG] Record written successfully for reference: 214141
+[LOG] Successfully fetched details for VANOS with reference 214141
+[LOG] Processing supplier: VANOS with reference 214142
+[LOG] Fetching details for VANOS with reference 214142
+[LOG] 
+[LOG] Record written successfully for reference: 214142
+[LOG] Successfully fetched details for VANOS with reference 214142
+[LOG] Processing supplier: VANOS with reference 214143
+[LOG] Fetching details for VANOS with reference 214143
+[LOG] Le bonnet Fostex Garments est en 100% acrylique à mailles fines pour se protéger du froid.
+[LOG] Record written successfully for reference: 214143
+[LOG] Successfully fetched details for VANOS with reference 214143
+[LOG] Processing supplier: VANOS with reference 214288
+[LOG] Fetching details for VANOS with reference 214288
+[LOG] La Cagoule Panoramique Fostex Garments est composée de coton à 100%. Elle est légère, dispose d'un masque en tissu léger au niveau du nez pour une meilleure respiration.
+[LOG] Record written successfully for reference: 214288
+[LOG] Successfully fetched details for VANOS with reference 214288
+[LOG] Processing supplier: VANOS with reference 214300
+[LOG] Fetching details for VANOS with reference 214300
+[LOG] 
+[LOG] Record written successfully for reference: 214300
+[LOG] Successfully fetched details for VANOS with reference 214300
+[LOG] Processing supplier: VANOS with reference 215048
+[LOG] Fetching details for VANOS with reference 215048
+[LOG] No products found.
+[LOG] Unregistered reference: VANOS - 215048
+[LOG] Processing supplier: VANOS with reference 215080
+[LOG] Fetching details for VANOS with reference 215080
+[LOG] No products found.
+[LOG] Unregistered reference: VANOS - 215080
+[LOG] Processing supplier: VANOS with reference 215081
+[LOG] Fetching details for VANOS with reference 215081
+[LOG] 
+[LOG] Record written successfully for reference: 215081
+[LOG] Successfully fetched details for VANOS with reference 215081
+[LOG] Processing supplier: VANOS with reference 215091
+[LOG] Fetching details for VANOS with reference 215091
+[LOG] 
+[LOG] Record written successfully for reference: 215091
+[LOG] Successfully fetched details for VANOS with reference 215091
+[LOG] Processing supplier: VANOS with reference 215094
+[LOG] Fetching details for VANOS with reference 215094
+[LOG] 
+[LOG] Record written successfully for reference: 215094
+[LOG] Successfully fetched details for VANOS with reference 215094
+[LOG] Processing supplier: VANOS with reference 215112
+[LOG] Fetching details for VANOS with reference 215112
+[LOG] 
+[LOG] Record written successfully for reference: 215112
+[LOG] Successfully fetched details for VANOS with reference 215112
+[LOG] Processing supplier: VANOS with reference 215116
+[LOG] Fetching details for VANOS with reference 215116
+[LOG] 
+[LOG] Record written successfully for reference: 215116
+[LOG] Successfully fetched details for VANOS with reference 215116
+[LOG] Processing supplier: VANOS with reference 215124
+[LOG] Fetching details for VANOS with reference 215124
+[LOG] 
+[LOG] Record written successfully for reference: 215124
+[LOG] Successfully fetched details for VANOS with reference 215124
+[LOG] Processing supplier: VANOS with reference 215146
+[LOG] Fetching details for VANOS with reference 215146
+[LOG] 
+[LOG] Record written successfully for reference: 215146
+[LOG] Successfully fetched details for VANOS with reference 215146
+[LOG] Processing supplier: VANOS with reference 215153
+[LOG] Fetching details for VANOS with reference 215153
+[LOG] La Casquette Baseball Fostex Garments est conçue en coton 100%.
+[LOG] Record written successfully for reference: 215153
+[LOG] Successfully fetched details for VANOS with reference 215153
+[LOG] Processing supplier: VANOS with reference 215158
+[LOG] Fetching details for VANOS with reference 215158
+[LOG] 
+[LOG] Record written successfully for reference: 215158
+[LOG] Successfully fetched details for VANOS with reference 215158
+[LOG] Processing supplier: VANOS with reference 215167
+[LOG] Fetching details for VANOS with reference 215167
+[LOG] La Casquette Baseball Contractor Fostex Garments est simple et légère, elle dispose d'un velcro sur le front pour y placer un patch.
+[LOG] Record written successfully for reference: 215167
+[LOG] Successfully fetched details for VANOS with reference 215167
+[LOG] Processing supplier: VANOS with reference 215172
+[LOG] Fetching details for VANOS with reference 215172
+[LOG] 
+[LOG] Record written successfully for reference: 215172
+[LOG] Successfully fetched details for VANOS with reference 215172
+[LOG] Processing supplier: VANOS with reference 215191
+[LOG] Fetching details for VANOS with reference 215191
+[LOG] 
+[LOG] Record written successfully for reference: 215191
+[LOG] Successfully fetched details for VANOS with reference 215191
+[LOG] Processing supplier: VANOS with reference 219277
+[LOG] Fetching details for VANOS with reference 219277
+[LOG] Le Masque de Visage Airsoft en Nylon Grillagé 101 Inc., conçu pour la pratique de l'airsoft, est composé de nylon à 100% et dispose d'une grille au niveau du nez et de la bouche pour les protéger.
+[LOG] Record written successfully for reference: 219277
+[LOG] Successfully fetched details for VANOS with reference 219277
+[LOG] Processing supplier: VANOS with reference 219288
+[LOG] Fetching details for VANOS with reference 219288
+[LOG] Le masque de protection airsoft en métal 101 Incorporated est doté d'un grillage en métal, permettant de protéger la bouche, le nez, ainsi que les oreilles. Il dispose également, de 2 bandes élastiques ajustables pour un maintien optimal du masque.
+[LOG] Record written successfully for reference: 219288
+[LOG] Successfully fetched details for VANOS with reference 219288
+[LOG] Processing supplier: VANOS with reference 219292
+[LOG] Fetching details for VANOS with reference 219292
+[LOG] Le Masque Néoprène Skull 3D 101 Inc. est conçu pour protéger du froid et de la pluie. Il représente une mâchoire de squelette.
+[LOG] Record written successfully for reference: 219292
+[LOG] Successfully fetched details for VANOS with reference 219292
+[LOG] Processing supplier: VANOS with reference 221231
+[LOG] Fetching details for VANOS with reference 221231
+[LOG] 
+[LOG] Record written successfully for reference: 221231
+[LOG] Successfully fetched details for VANOS with reference 221231
+[LOG] Processing supplier: VANOS with reference 241330
+[LOG] Fetching details for VANOS with reference 241330
+[LOG] La ceinture en tissu Navy Seal 101 Incorporated est composée de coton et possède une boucle métallique amovible imprimé du logo des Navy Seals (les forces spéciales de la marine). Cette ceinture est, de plus, robuste et pratique grâce à son système de réglage.
+[LOG] Record written successfully for reference: 241330
+[LOG] Successfully fetched details for VANOS with reference 241330
+[LOG] Processing supplier: VANOS with reference 241331
+[LOG] Fetching details for VANOS with reference 241331
+[LOG] La ceinture en tissu De Oppresso Liber 101 Incorporated possède une sangle en coton et une boucle métallique amovible. Sur celle-ci, on retrouve une tête de mort sur laquelle s'enroule un serpent et la devise des forces spéciales de l'armée américaine (surnommées les "bérets verts") : "De Oppresso Liber" signifiant "libérer de l'oppression".
+[LOG] Record written successfully for reference: 241331
+[LOG] Successfully fetched details for VANOS with reference 241331
+[LOG] Processing supplier: VANOS with reference 241332
+[LOG] Fetching details for VANOS with reference 241332
+[LOG] La ceinture en tissu Airborne 101 Incorporated est une ceinture en coton dotée d'une boucle métallique amovible. On retrouve apposé, sur celle-ci, l'emblème de la 101e division aéroportée (101st airborne division), une division d'infanterie de l'armée américaine formée aux opérations d'assaut aérien.
+[LOG] Record written successfully for reference: 241332
+[LOG] Successfully fetched details for VANOS with reference 241332
+[LOG] Processing supplier: VANOS with reference 241333
+[LOG] Fetching details for VANOS with reference 241333
+[LOG] La ceinture en tissu US Marines 101 Incorporated est une ceinture en coton. Elle dispose d'une boucle en métal amovible pouvant se régler à votre convenance. Cette boucle métallique est, de plus, imprimé de l'emblème du corps des marines des États-Unis.
+[LOG] Record written successfully for reference: 241333
+[LOG] Successfully fetched details for VANOS with reference 241333
+[LOG] Processing supplier: VANOS with reference 241334
+[LOG] Fetching details for VANOS with reference 241334
+[LOG] La ceinture en tissu Skull 101 Incorporated est une ceinture en coton dotée d'une boucle métallique amovible. Une tête de mort sur une étoile est également imprimée sur cette même boucle. La ceinture dispose, de plus, d'un système de serrage rapide et sa conception 100% coton lui confère une grande résistance.
+[LOG] Record written successfully for reference: 241334
+[LOG] Successfully fetched details for VANOS with reference 241334
+[LOG] Processing supplier: VANOS with reference 241335
+[LOG] Fetching details for VANOS with reference 241335
+[LOG] La ceinture en tissu Force Recon 101 Incorporated est faite à partir de coton la rendant très résistante. Elle possède, de plus, un système de serrage rapide grâce à sa boucle métallique amovible. Une tête de mort ailée portant un masque de plongée et l'inscription "Force Recon Swift Deadly Silent" signifiant "Force Recon, Rapide, Mortelle, Silencieuse" sont imprimées sur la boucle.
+[LOG] Record written successfully for reference: 241335
+[LOG] Successfully fetched details for VANOS with reference 241335
+[LOG] Processing supplier: VANOS with reference 241336
+[LOG] Fetching details for VANOS with reference 241336
+[LOG] La ceinture en tissu US 101 Incorporated est une ceinture dotée d'une sangle en coton. Elle dispose également, d'une boucle en métal noire amovible estampillée US.
+[LOG] Record written successfully for reference: 241336
+[LOG] Successfully fetched details for VANOS with reference 241336
+[LOG] Processing supplier: VANOS with reference 241337
+[LOG] Fetching details for VANOS with reference 241337
+[LOG] La ceinture en tissu 101 INC 101 Incorporated est constituée de fibres de coton et possède une boucle métallique amovible gravée d'un logo de la marque 101 Incorporated. Elle dispose, de plus, d'un système de serrage permettant de l'ajuster à votre convenance.
+[LOG] Record written successfully for reference: 241337
+[LOG] Successfully fetched details for VANOS with reference 241337
+[LOG] Processing supplier: VANOS with reference 241338
+[LOG] Fetching details for VANOS with reference 241338
+[LOG] La ceinture en tissu 82nd Airborne Division 101 Inc est composée de fibres 100% coton et dispose d'une boucle métallique amovible gravée du logo de la 82ème division aéroportée des États-Unis. Elle possède également, un système de réglage très fonctionnel, permettant d'ajuster la ceinture à votre convenance.
+[LOG] Record written successfully for reference: 241338
+[LOG] Successfully fetched details for VANOS with reference 241338
+[LOG] Processing supplier: VANOS with reference 241340
+[LOG] Fetching details for VANOS with reference 241340
+[LOG] La ceinture en tissu USAF WWII 101 Inc est constituée de fibres de coton et possède une boucle métallique amovible gravée d'un logo de l'USAF au style très vintage. Son système de réglage est, de plus, très pratique car il permet d'ajuster la ceinture à votre convenance.
+[LOG] Record written successfully for reference: 241340
+[LOG] Successfully fetched details for VANOS with reference 241340
+[LOG] Processing supplier: VANOS with reference 241341
+[LOG] Fetching details for VANOS with reference 241341
+[LOG] La ceinture en tissu US Paratrooper 101 Inc est faite en coton et possède une boucle métallique amovible apposée du logo Us Paratrooper. Elle dispose également, d'un système de réglage, très pratique, permettant d'ajuster la ceinture à votre morphologie.
+[LOG] Record written successfully for reference: 241341
+[LOG] Successfully fetched details for VANOS with reference 241341
+[LOG] Processing supplier: VANOS with reference 241342
+[LOG] Fetching details for VANOS with reference 241342
+[LOG] La ceinture en tissu US Air Force 101 Inc est composée de fibres 100% coton et possède une boucle métallique amovible gravée du logo Us Air Force. Elle est, de plus, très robuste et pratique grâce à son système de réglage.
+[LOG] Record written successfully for reference: 241342
+[LOG] Successfully fetched details for VANOS with reference 241342
+[LOG] Processing supplier: VANOS with reference 241343
+[LOG] Fetching details for VANOS with reference 241343
+[LOG] No products found.
+[LOG] Unregistered reference: VANOS - 241343
+[LOG] Processing supplier: VANOS with reference 249560
+[LOG] Fetching details for VANOS with reference 249560
+[LOG] La sangle fusil 1 point de fixation 101 Inc est composée de nylon assurant résistance et robustesse. Elle dispose d'une sangle avec une partie rigide permettant un maintien optimal. La sangle est, de plus, ajustable et élastique ce qui lui confère aisance lors de son port.
+[LOG] Record written successfully for reference: 249560
+[LOG] Successfully fetched details for VANOS with reference 249560
+[LOG] Processing supplier: VANOS with reference 259292
+[LOG] Fetching details for VANOS with reference 259292
+[LOG] 
+[LOG] Record written successfully for reference: 259292
+[LOG] Successfully fetched details for VANOS with reference 259292
+[LOG] Processing supplier: MP-SEC with reference 310535
+[LOG] Fetching details for MP-SEC with reference 310535
+[LOG] Record written successfully for reference: 310535
+[LOG] Successfully fetched details for MP-SEC with reference 310535
+[LOG] Processing supplier: VANOS with reference 319415
+[LOG] Fetching details for VANOS with reference 319415
+[LOG] Le seau à eau US 101 Incorporated est un seau en toile estampillé US. Ce seau à eau est une reproduction des seaux utilisés par l'armée américaine pendant le Seconde Guerre Mondiale. Ils étaient le plus souvent accrochés aux véhicules lors des missions ou utilisés dans les campements.
+[LOG] Record written successfully for reference: 319415
+[LOG] Successfully fetched details for VANOS with reference 319415
+[LOG] Processing supplier: VANOS with reference 319438
+[LOG] Fetching details for VANOS with reference 319438
+[LOG] 
+[LOG] Record written successfully for reference: 319438
+[LOG] Successfully fetched details for VANOS with reference 319438
+[LOG] Processing supplier: VANOS with reference 353633
+[LOG] Fetching details for VANOS with reference 353633
+[LOG] La Musette Hollandaise Fosco Industries est composée d'une poche simple fermée par sangles. Elle se porte en bandoulière.
+[LOG] Record written successfully for reference: 353633
+[LOG] Successfully fetched details for VANOS with reference 353633
+[LOG] Processing supplier: VANOS with reference 353640
+[LOG] Fetching details for VANOS with reference 353640
+[LOG] Le Sac en Toile US Air Force WWII Series Fostex est un sac à bandoulière léger et en toile à utilisation quotidienne. Il arbore l'insigne de l'armée de l'air américaine.
+[LOG] Record written successfully for reference: 353640
+[LOG] Successfully fetched details for VANOS with reference 353640
+[LOG] Processing supplier: VANOS with reference 353641
+[LOG] Fetching details for VANOS with reference 353641
+[LOG] Le Sac en Toile Royal Air Force WWII Series Fostex est un sac à bandoulière à utilisation quotidienne. En toile, il est bleu marine et arbore l'insigne de l'armée de l'air britannique.
+[LOG] Record written successfully for reference: 353641
+[LOG] Successfully fetched details for VANOS with reference 353641
+[LOG] Processing supplier: VANOS with reference 353642
+[LOG] Fetching details for VANOS with reference 353642
+[LOG] Le Sac en Toile D-Day 82nd Airborne WWII Series Fostex est un sac à bandoulière arborant l'insigne de la 82ème Aéroportée américaine. Le sac est en toile et pour un usage quotidien.
+[LOG] Record written successfully for reference: 353642
+[LOG] Successfully fetched details for VANOS with reference 353642
+[LOG] Processing supplier: VANOS with reference 353643
+[LOG] Fetching details for VANOS with reference 353643
+[LOG] Le Sac en Toile D-Day 101st Airborne WWII Series Fostex est un sac à bandoulière en toile d'usage quotidien arborant l'insigne de la 101ème Aéroportée américaine.
+[LOG] Record written successfully for reference: 353643
+[LOG] Successfully fetched details for VANOS with reference 353643
+[LOG] Processing supplier: VANOS with reference 353644
+[LOG] Fetching details for VANOS with reference 353644
+[LOG] Le Sac en Toile D-Day 1944 WWII Series Fostex est un sac à bandoulière en toile pour le quotidien avec impression Deuxième Guerre Mondiale.
+[LOG] Record written successfully for reference: 353644
+[LOG] Successfully fetched details for VANOS with reference 353644
+[LOG] Processing supplier: VANOS with reference 353645
+[LOG] Fetching details for VANOS with reference 353645
+[LOG] 
+[LOG] Record written successfully for reference: 353645
+[LOG] Successfully fetched details for VANOS with reference 353645
+[LOG] Processing supplier: VANOS with reference 353646
+[LOG] Fetching details for VANOS with reference 353646
+[LOG] No products found.
+[LOG] Unregistered reference: VANOS - 353646
+[LOG] Processing supplier: VANOS with reference 353647
+[LOG] Fetching details for VANOS with reference 353647
+[LOG] No products found.
+[LOG] Unregistered reference: VANOS - 353647
+[LOG] Processing supplier: VANOS with reference 353704
+[LOG] Fetching details for VANOS with reference 353704
+[LOG] No products found.
+[LOG] Unregistered reference: VANOS - 353704
+[LOG] Processing supplier: VANOS with reference 353706
+[LOG] Fetching details for VANOS with reference 353706
+[LOG] No products found.
+[LOG] Unregistered reference: VANOS - 353706
+[LOG] Processing supplier: VANOS with reference 359332
+[LOG] Fetching details for VANOS with reference 359332
+[LOG] Le Sac Parachutiste Armée Française 101 Inc est un sac de transport simple et résistant : un grand compartiment fermé par glissière, avec sangles et poignées de transport en Cordura®. Marquage "Armée Française".
+[LOG] Record written successfully for reference: 359332
+[LOG] Successfully fetched details for VANOS with reference 359332
+[LOG] Processing supplier: VANOS with reference 359333
+[LOG] Fetching details for VANOS with reference 359333
+[LOG] Le Sac Parachutiste Armée Française 101 Inc est un sac de transport simple et résistant : un grand compartiment fermé par glissière, avec sangles et poignées de transport en Cordura®. Marquage "Armée Française".
+[LOG] Record written successfully for reference: 359333
+[LOG] Successfully fetched details for VANOS with reference 359333
+[LOG] Processing supplier: VANOS with reference 359384
+[LOG] Fetching details for VANOS with reference 359384
+[LOG] Le Sac Banane à Bandoulière EDC TF2215 est une banane bandoulière qui permet d'emporter les documents essentiels dans un sac résistant en Cordura 500D.
+[LOG] Record written successfully for reference: 359384
+[LOG] Successfully fetched details for VANOS with reference 359384
+[LOG] Processing supplier: VANOS with reference 359412
+[LOG] Fetching details for VANOS with reference 359412
+[LOG] No products found.
+[LOG] Unregistered reference: VANOS - 359412
+[LOG] Processing supplier: VANOS with reference 359413
+[LOG] Fetching details for VANOS with reference 359413
+[LOG] 
+[LOG] Record written successfully for reference: 359413
+[LOG] Successfully fetched details for VANOS with reference 359413
+[LOG] Processing supplier: VANOS with reference 359432
+[LOG] Fetching details for VANOS with reference 359432
+[LOG] 
+[LOG] Record written successfully for reference: 359432
+[LOG] Successfully fetched details for VANOS with reference 359432
+[LOG] Processing supplier: VANOS with reference 359502
+[LOG] Fetching details for VANOS with reference 359502
+[LOG] Le Sac Para 2 Fostex Garments est un sac pilote imitant le style des parachutes militaires à ouverture automatique avec 1 grand compartiment principal et deux anses de portage.
+[LOG] Record written successfully for reference: 359502
+[LOG] Successfully fetched details for VANOS with reference 359502
+[LOG] Processing supplier: VANOS with reference 359503
+[LOG] Fetching details for VANOS with reference 359503
+[LOG] Le Sac Para 3 Fostex Garments est un sac cartable imitant le style des parachutes militaires à ouverture automatique. Il se porte en bandoulière.
+[LOG] Record written successfully for reference: 359503
+[LOG] Successfully fetched details for VANOS with reference 359503
+[LOG] Processing supplier: VANOS with reference 359504
+[LOG] Fetching details for VANOS with reference 359504
+[LOG] Le Sac Para 4 Fostex Garments est un sac cartable en hauteur se portant en bandoulière ou à la main par les anses. Il imite le style des parachutes militaires à ouverture automatique.
+[LOG] Record written successfully for reference: 359504
+[LOG] Successfully fetched details for VANOS with reference 359504
+[LOG] Processing supplier: VANOS with reference 359505
+[LOG] Fetching details for VANOS with reference 359505
+[LOG] Le Sac Para 5 Fostex Garments est un sac à dos imitant le style des parachutes militaires à ouverture automatique.
+[LOG] Record written successfully for reference: 359505
+[LOG] Successfully fetched details for VANOS with reference 359505
+[LOG] Processing supplier: VANOS with reference 359506
+[LOG] Fetching details for VANOS with reference 359506
+[LOG] Le Sac Para 6 Fostex Garments est un sac à dos, légèrement plus petit que le Sac Para 5, imitant le style des parachutes militaires à ouverture automatique. C'est l'un des sacs parachute les plus répandus.
+[LOG] Record written successfully for reference: 359506
+[LOG] Successfully fetched details for VANOS with reference 359506
+[LOG] Processing supplier: VANOS with reference 359548
+[LOG] Fetching details for VANOS with reference 359548
+[LOG] 
+[LOG] Record written successfully for reference: 359548
+[LOG] Successfully fetched details for VANOS with reference 359548
+[LOG] Processing supplier: VANOS with reference 359555
+[LOG] Fetching details for VANOS with reference 359555
+[LOG] 
+[LOG] Record written successfully for reference: 359555
+[LOG] Successfully fetched details for VANOS with reference 359555
+[LOG] Processing supplier: VANOS with reference 359561
+[LOG] Fetching details for VANOS with reference 359561
+[LOG] Le Sac à Bandoulière EDC TF2215 est idéal pour une utilisation au jour le jour. Ses deux compartiments permettent d'emporter l'essentiel (téléphone, portefeuille, billets, etc.), dans un sac résistant en Cordura 500D.
+[LOG] Record written successfully for reference: 359561
+[LOG] Successfully fetched details for VANOS with reference 359561
+[LOG] Processing supplier: VANOS with reference 359630
+[LOG] Fetching details for VANOS with reference 359630
+[LOG] 
+[LOG] Record written successfully for reference: 359630
+[LOG] Successfully fetched details for VANOS with reference 359630
+[LOG] Processing supplier: VANOS with reference 359800
+[LOG] Fetching details for VANOS with reference 359800
+[LOG] La poche pour recharge billes Airsoft 101 Incorporated est une poche en nylon permettant l'emport de votre recharge de billes. Cette poche peut se fixer sur votre ceinture, votre gilet ou encore votre sac à dos, grâce à des sangles à l'arrière de celle-ci. Elle possède également une fermeture par zip et un cordon de serrage pour un maintien optimal de votre équipement.
+[LOG] Record written successfully for reference: 359800
+[LOG] Successfully fetched details for VANOS with reference 359800
+[LOG] Processing supplier: VANOS with reference 359806
+[LOG] Fetching details for VANOS with reference 359806
+[LOG] 
+[LOG] Record written successfully for reference: 359806
+[LOG] Successfully fetched details for VANOS with reference 359806
+[LOG] Processing supplier: VANOS with reference 359808
+[LOG] Fetching details for VANOS with reference 359808
+[LOG] Le double porte-chargeur 101 Inc possède deux compartiments composés de nylon, matière réputée pour sa résistance et sa capacité de séchage rapide. Il dispose également d'une ouverture simple et d'un élastique assurant le maintien de votre équipement. Vous pourrez le placer à n'importe quel endroit pourvu de passants MOLLE.
+[LOG] Record written successfully for reference: 359808
+[LOG] Successfully fetched details for VANOS with reference 359808
+[LOG] Processing supplier: VANOS with reference 359813
+[LOG] Fetching details for VANOS with reference 359813
+[LOG] 
+[LOG] Record written successfully for reference: 359813
+[LOG] Successfully fetched details for VANOS with reference 359813
+[LOG] Processing supplier: VANOS with reference 359815
+[LOG] Fetching details for VANOS with reference 359815
+[LOG] No products found.
+[LOG] Unregistered reference: VANOS - 359815
+[LOG] Processing supplier: VANOS with reference 359820
+[LOG] Fetching details for VANOS with reference 359820
+[LOG] No products found.
+[LOG] Unregistered reference: VANOS - 359820
+[LOG] Processing supplier: VANOS with reference 359821
+[LOG] Fetching details for VANOS with reference 359821
+[LOG] No products found.
+[LOG] Unregistered reference: VANOS - 359821
+[LOG] Processing supplier: VANOS with reference 359824
+[LOG] Fetching details for VANOS with reference 359824
+[LOG] La poche système molle 101 Incorporated a été conçue pour l'emport de matériel. Elle est fait en nylon et dispose d'une fermeture rapide par zip. Cette poche est également dotée de passants molle permettant une fixation facile à votre équipement.
+[LOG] Record written successfully for reference: 359824
+[LOG] Successfully fetched details for VANOS with reference 359824
+[LOG] Processing supplier: VANOS with reference 359825
+[LOG] Fetching details for VANOS with reference 359825
+[LOG] La poche médicale IFAK (sans croix rouge) 101 Incorporated a été conçue pour l'emport de matériel médical. Elle dispose d'une fermeture zip, de passants molle à l'arrière et d'un compartiment en mesh sur le devant.
+[LOG] Record written successfully for reference: 359825
+[LOG] Successfully fetched details for VANOS with reference 359825
+[LOG] Processing supplier: VANOS with reference 359855
+[LOG] Fetching details for VANOS with reference 359855
+[LOG] 
+[LOG] Record written successfully for reference: 359855
+[LOG] Successfully fetched details for VANOS with reference 359855
+[LOG] Processing supplier: VANOS with reference 359857
+[LOG] Fetching details for VANOS with reference 359857
+[LOG] 
+[LOG] Record written successfully for reference: 359857
+[LOG] Successfully fetched details for VANOS with reference 359857
+[LOG] Processing supplier: VANOS with reference 359858
+[LOG] Fetching details for VANOS with reference 359858
+[LOG] 
+[LOG] Record written successfully for reference: 359858
+[LOG] Successfully fetched details for VANOS with reference 359858
+[LOG] Processing supplier: VANOS with reference 359890
+[LOG] Fetching details for VANOS with reference 359890
+[LOG] No products found.
+[LOG] Unregistered reference: VANOS - 359890
+[LOG] Processing supplier: VANOS with reference 359942
+[LOG] Fetching details for VANOS with reference 359942
+[LOG] 
+[LOG] Record written successfully for reference: 359942
+[LOG] Successfully fetched details for VANOS with reference 359942
+[LOG] Processing supplier: VANOS with reference 359960
+[LOG] Fetching details for VANOS with reference 359960
+[LOG] 
+[LOG] Record written successfully for reference: 359960
+[LOG] Successfully fetched details for VANOS with reference 359960
+[LOG] Processing supplier: VANOS with reference 359970
+[LOG] Fetching details for VANOS with reference 359970
+[LOG] 
+[LOG] Record written successfully for reference: 359970
+[LOG] Successfully fetched details for VANOS with reference 359970
+[LOG] Processing supplier: VANOS with reference 415140
+[LOG] Fetching details for VANOS with reference 415140
+[LOG] No products found.
+[LOG] Unregistered reference: VANOS - 415140
+[LOG] Processing supplier: VANOS with reference 439205
+[LOG] Fetching details for VANOS with reference 439205
+[LOG] 
+[LOG] Record written successfully for reference: 439205
+[LOG] Successfully fetched details for VANOS with reference 439205
+[LOG] Processing supplier: VANOS with reference 447302
+[LOG] Fetching details for VANOS with reference 447302
+[LOG] No products found.
+[LOG] Unregistered reference: VANOS - 447302
+[LOG] Processing supplier: VANOS with reference 469351
+[LOG] Fetching details for VANOS with reference 469351
+[LOG] Les Bandes Camouflage Extensibles en Rouleau Fosco Industries permettent de camoufler armement et divers objets. Elles sont disponibles en plusieurs camouflages.
+[LOG] Record written successfully for reference: 469351
+[LOG] Successfully fetched details for VANOS with reference 469351
+[LOG] Processing supplier: VANOS with reference 469402
+[LOG] Fetching details for VANOS with reference 469402
+[LOG] 
+[LOG] Record written successfully for reference: 469402
+[LOG] Successfully fetched details for VANOS with reference 469402
+[LOG] Processing supplier: VANOS with reference 469480
+[LOG] Fetching details for VANOS with reference 469480
+[LOG] 
+[LOG] Record written successfully for reference: 469480
+[LOG] Successfully fetched details for VANOS with reference 469480
+[LOG] Processing supplier: VANOS with reference 1214011
+[LOG] Fetching details for VANOS with reference 1214011
+[LOG] La Veste Aviation Bomber MA1 Fostex Garments est une veste bomber légère composé de nylon à 100%. Elle est réversible, l'intérieur est orange (techniquement pour les situations d'urgence afin d'être visible au loin).
+[LOG] Record written successfully for reference: 1214011
+[LOG] Successfully fetched details for VANOS with reference 1214011
+[LOG] Processing supplier: VANOS with reference 1214031
+[LOG] Fetching details for VANOS with reference 1214031
+[LOG] La Veste Aviation Bomber MA-I Camouflage Fostex Garments est une veste Bomber traditionnelle, composée de polycoton (65% polyester / 35% coton) et dispose d'un intérieur réversible orange.
+[LOG] Record written successfully for reference: 1214031
+[LOG] Successfully fetched details for VANOS with reference 1214031
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier LE SURPLUS not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier STURM not recognized.
+[LOG] Processing supplier: WOOLPOWER with reference 71110410
+[LOG] Fetching details for WOOLPOWER with reference 71110410
+[LOG] Unregistered reference: WOOLPOWER - 71110410
+[LOG] Supplier STURM not recognized.
+[LOG] Supplier DCA not recognized.
+[LOG] Supplier DCA not recognized.
+[LOG] Processing supplier: A10 with reference 01.202711
+[LOG] Fetching details for A10 with reference 01.202711
+[LOG] Record written successfully for reference: 01.202711
+[LOG] Successfully fetched details for A10 with reference 01.202711
+[LOG] Processing supplier: A10 with reference 99.800121
+[LOG] Fetching details for A10 with reference 99.800121
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: A10 - 99.800121
+[LOG] Processing supplier: A10 with reference 14.099320
+[LOG] Fetching details for A10 with reference 14.099320
+[LOG] Record written successfully for reference: 14.099320
+[LOG] Successfully fetched details for A10 with reference 14.099320
+[LOG] Processing supplier: A10 with reference 14.099285
+[LOG] Fetching details for A10 with reference 14.099285
+[LOG] Record written successfully for reference: 14.099285
+[LOG] Successfully fetched details for A10 with reference 14.099285
+[LOG] Processing supplier: A10 with reference 30.027345
+[LOG] Fetching details for A10 with reference 30.027345
+[LOG] Record written successfully for reference: 30.027345
+[LOG] Successfully fetched details for A10 with reference 30.027345
+[LOG] Processing supplier: A10 with reference 14.099378
+[LOG] Fetching details for A10 with reference 14.099378
+[LOG] Record written successfully for reference: 14.099378
+[LOG] Successfully fetched details for A10 with reference 14.099378
+[LOG] Processing supplier: HIGHLANDER with reference BIV004
+[LOG] Fetching details for HIGHLANDER with reference BIV004
+[LOG] Record written successfully for reference: BIV004
+[LOG] Successfully fetched details for HIGHLANDER with reference BIV004
+[LOG] Processing supplier: A10 with reference 01.203060
+[LOG] Fetching details for A10 with reference 01.203060
+[LOG] Record written successfully for reference: 01.203060
+[LOG] Successfully fetched details for A10 with reference 01.203060
+[LOG] Supplier ? not recognized.
+[LOG] Processing supplier: TREESCO with reference PHPO011
+[LOG] Fetching details for TREESCO with reference PHPO011
+[LOG] Record written successfully for reference: PHPO011
+[LOG] Successfully fetched details for TREESCO with reference PHPO011
+[LOG] Processing supplier: A10 with reference 01.097202
+[LOG] Fetching details for A10 with reference 01.097202
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: A10 - 01.097202
+[LOG] Processing supplier: TREESCO with reference PHPO006
+[LOG] Fetching details for TREESCO with reference PHPO006
+[LOG] Record written successfully for reference: PHPO006
+[LOG] Successfully fetched details for TREESCO with reference PHPO006
+[LOG] Processing supplier: VANOS with reference 214300-2309
+[LOG] Fetching details for VANOS with reference 214300-2309
+[LOG] 
+[LOG] Record written successfully for reference: 214300-2309
+[LOG] Successfully fetched details for VANOS with reference 214300-2309
+[LOG] Processing supplier: A10 with reference 01.097261
+[LOG] Fetching details for A10 with reference 01.097261
+[LOG] Record written successfully for reference: 01.097261
+[LOG] Successfully fetched details for A10 with reference 01.097261
+[LOG] Processing supplier: VANOS with reference 214300-2310
+[LOG] Fetching details for VANOS with reference 214300-2310
+[LOG] 
+[LOG] Record written successfully for reference: 214300-2310
+[LOG] Successfully fetched details for VANOS with reference 214300-2310
+[LOG] Supplier DCA not recognized.
+[LOG] Processing supplier: A10 with reference 34.082905
+[LOG] Fetching details for A10 with reference 34.082905
+[LOG] Record written successfully for reference: 34.082905
+[LOG] Successfully fetched details for A10 with reference 34.082905
+[LOG] Processing supplier: A10 with reference 34.082897
+[LOG] Fetching details for A10 with reference 34.082897
+[LOG] Record written successfully for reference: 34.082897
+[LOG] Successfully fetched details for A10 with reference 34.082897
+[LOG] Processing supplier: A10 with reference 34.082898
+[LOG] Fetching details for A10 with reference 34.082898
+[LOG] Record written successfully for reference: 34.082898
+[LOG] Successfully fetched details for A10 with reference 34.082898
+[LOG] Processing supplier: A10 with reference 27.082911
+[LOG] Fetching details for A10 with reference 27.082911
+[LOG] Record written successfully for reference: 27.082911
+[LOG] Successfully fetched details for A10 with reference 27.082911
+[LOG] Processing supplier: TREESCO with reference 2721P
+[LOG] Fetching details for TREESCO with reference 2721P
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: TREESCO - 2721P
+[LOG] Processing supplier: A10 with reference 01.097275
+[LOG] Fetching details for A10 with reference 01.097275
+[LOG] Record written successfully for reference: 01.097275
+[LOG] Successfully fetched details for A10 with reference 01.097275
+[LOG] Processing supplier: A10 with reference 01.097273
+[LOG] Fetching details for A10 with reference 01.097273
+[LOG] Record written successfully for reference: 01.097273
+[LOG] Successfully fetched details for A10 with reference 01.097273
+[LOG] Processing supplier: GILBERT with reference CL182
+[LOG] Fetching details for GILBERT with reference CL182
+[LOG] Record written successfully for reference: CL182
+[LOG] Successfully fetched details for GILBERT with reference CL182
+[LOG] Processing supplier: VANOS with reference 215164-275
+[LOG] Fetching details for VANOS with reference 215164-275
+[LOG] 
+[LOG] Record written successfully for reference: 215164-275
+[LOG] Successfully fetched details for VANOS with reference 215164-275
+[LOG] Processing supplier: VANOS with reference 215151-223
+[LOG] Fetching details for VANOS with reference 215151-223
+[LOG] La Casquette Baseball 101st Airborne Fostex Garments est en coloris uni et arbore l'insigne de la 101ème division aéroportée américaine.
+[LOG] Record written successfully for reference: 215151-223
+[LOG] Successfully fetched details for VANOS with reference 215151-223
+[LOG] Processing supplier: VANOS with reference 215151-224
+[LOG] Fetching details for VANOS with reference 215151-224
+[LOG] 
+[LOG] Record written successfully for reference: 215151-224
+[LOG] Successfully fetched details for VANOS with reference 215151-224
+[LOG] Processing supplier: VANOS with reference 215120-281
+[LOG] Fetching details for VANOS with reference 215120-281
+[LOG] 
+[LOG] Record written successfully for reference: 215120-281
+[LOG] Successfully fetched details for VANOS with reference 215120-281
+[LOG] Processing supplier: VANOS with reference 215151-216
+[LOG] Fetching details for VANOS with reference 215151-216
+[LOG] 
+[LOG] Record written successfully for reference: 215151-216
+[LOG] Successfully fetched details for VANOS with reference 215151-216
+[LOG] Processing supplier: VANOS with reference 215150-218
+[LOG] Fetching details for VANOS with reference 215150-218
+[LOG] 
+[LOG] Record written successfully for reference: 215150-218
+[LOG] Successfully fetched details for VANOS with reference 215150-218
+[LOG] Processing supplier: VANOS with reference 215150-203
+[LOG] Fetching details for VANOS with reference 215150-203
+[LOG] 
+[LOG] Record written successfully for reference: 215150-203
+[LOG] Successfully fetched details for VANOS with reference 215150-203
+[LOG] Processing supplier: VANOS with reference 215150-228
+[LOG] Fetching details for VANOS with reference 215150-228
+[LOG] 
+[LOG] Record written successfully for reference: 215150-228
+[LOG] Successfully fetched details for VANOS with reference 215150-228
+[LOG] Processing supplier: VANOS with reference 215151-253
+[LOG] Fetching details for VANOS with reference 215151-253
+[LOG] 
+[LOG] Record written successfully for reference: 215151-253
+[LOG] Successfully fetched details for VANOS with reference 215151-253
+[LOG] Processing supplier: VANOS with reference 215157-246
+[LOG] Fetching details for VANOS with reference 215157-246
+[LOG] 
+[LOG] Record written successfully for reference: 215157-246
+[LOG] Successfully fetched details for VANOS with reference 215157-246
+[LOG] Processing supplier: VANOS with reference 215157-247
+[LOG] Fetching details for VANOS with reference 215157-247
+[LOG] 
+[LOG] Record written successfully for reference: 215157-247
+[LOG] Successfully fetched details for VANOS with reference 215157-247
+[LOG] Processing supplier: VANOS with reference 215150-205
+[LOG] Fetching details for VANOS with reference 215150-205
+[LOG] La Casquette Baseball Navy Seals Fostex Garments en 100% coton à taille unique arbore sur le front l'insigne des Navy Seals.
+[LOG] Record written successfully for reference: 215150-205
+[LOG] Successfully fetched details for VANOS with reference 215150-205
+[LOG] Processing supplier: VANOS with reference 215151-254
+[LOG] Fetching details for VANOS with reference 215151-254
+[LOG] No products found.
+[LOG] Unregistered reference: VANOS - 215151-254
+[LOG] Processing supplier: VANOS with reference 215150-220
+[LOG] Fetching details for VANOS with reference 215150-220
+[LOG] 
+[LOG] Record written successfully for reference: 215150-220
+[LOG] Successfully fetched details for VANOS with reference 215150-220
+[LOG] Processing supplier: VANOS with reference 215151-280
+[LOG] Fetching details for VANOS with reference 215151-280
+[LOG] 
+[LOG] Record written successfully for reference: 215151-280
+[LOG] Successfully fetched details for VANOS with reference 215151-280
+[LOG] Processing supplier: TREESCO with reference PHTE001
+[LOG] Fetching details for TREESCO with reference PHTE001
+[LOG] Record written successfully for reference: PHTE001
+[LOG] Successfully fetched details for TREESCO with reference PHTE001
+[LOG] Processing supplier: HELIKON-TEX with reference PS-CC8-NL
+[LOG] Fetching details for HELIKON-TEX with reference PS-CC8-NL
+[LOG] Record written successfully for reference: PS-CC8-NL
+[LOG] Successfully fetched details for HELIKON-TEX with reference PS-CC8-NL
+[LOG] Supplier DCA not recognized.
+[LOG] Supplier RIVOLIER SD not recognized.
+[LOG] Supplier RIVOLIER SD not recognized.
+[LOG] Supplier RIVOLIER SD not recognized.
+[LOG] Supplier RIVOLIER SD not recognized.
+[LOG] Supplier RIVOLIER SD not recognized.
+[LOG] Supplier RIVOLIER SD not recognized.
+[LOG] Supplier DCA not recognized.
+[LOG] Processing supplier: A10 with reference 01.208011
+[LOG] Fetching details for A10 with reference 01.208011
+[LOG] Record written successfully for reference: 01.208011
+[LOG] Successfully fetched details for A10 with reference 01.208011
+[LOG] Supplier DCA not recognized.
+[LOG] Processing supplier: A10 with reference 14.099348
+[LOG] Fetching details for A10 with reference 14.099348
+[LOG] Record written successfully for reference: 14.099348
+[LOG] Successfully fetched details for A10 with reference 14.099348
+[LOG] Processing supplier: A10 with reference 37.099353
+[LOG] Fetching details for A10 with reference 37.099353
+[LOG] Record written successfully for reference: 37.099353
+[LOG] Successfully fetched details for A10 with reference 37.099353
+[LOG] Processing supplier: A10 with reference 37.099351
+[LOG] Fetching details for A10 with reference 37.099351
+[LOG] Record written successfully for reference: 37.099351
+[LOG] Successfully fetched details for A10 with reference 37.099351
+[LOG] Processing supplier: TREESCO with reference PHPI008
+[LOG] Fetching details for TREESCO with reference PHPI008
+[LOG] Record written successfully for reference: PHPI008
+[LOG] Successfully fetched details for TREESCO with reference PHPI008
+[LOG] Processing supplier: TREESCO with reference LVPI103
+[LOG] Fetching details for TREESCO with reference LVPI103
+[LOG] Record written successfully for reference: LVPI103
+[LOG] Successfully fetched details for TREESCO with reference LVPI103
+[LOG] Processing supplier: TREESCO with reference PHPI002
+[LOG] Fetching details for TREESCO with reference PHPI002
+[LOG] Record written successfully for reference: PHPI002
+[LOG] Successfully fetched details for TREESCO with reference PHPI002
+[LOG] Processing supplier: GK with reference MAG-18
+[LOG] Fetching details for GK with reference MAG-18
+[LOG] Record written successfully for reference: MAG-18
+[LOG] Successfully fetched details for GK with reference MAG-18
+[LOG] Supplier DCA not recognized.
+[LOG] Processing supplier: GK with reference MAG-138
+[LOG] Fetching details for GK with reference MAG-138
+[LOG] Record written successfully for reference: MAG-138
+[LOG] Successfully fetched details for GK with reference MAG-138
+[LOG] Processing supplier: GK with reference MAG-1387
+[LOG] Fetching details for GK with reference MAG-1387
+[LOG] Record written successfully for reference: MAG-1387
+[LOG] Successfully fetched details for GK with reference MAG-1387
+[LOG] Processing supplier: A10 with reference 01.057700
+[LOG] Fetching details for A10 with reference 01.057700
+[LOG] Record written successfully for reference: 01.057700
+[LOG] Successfully fetched details for A10 with reference 01.057700
+[LOG] Processing supplier: A10 with reference 01.057701
+[LOG] Fetching details for A10 with reference 01.057701
+[LOG] Record written successfully for reference: 01.057701
+[LOG] Successfully fetched details for A10 with reference 01.057701
+[LOG] Processing supplier: GILBERT with reference CH177
+[LOG] Fetching details for GILBERT with reference CH177
+[LOG] Record written successfully for reference: CH177
+[LOG] Successfully fetched details for GILBERT with reference CH177
+[LOG] Processing supplier: GILBERT with reference CH129
+[LOG] Fetching details for GILBERT with reference CH129
+[LOG] Record written successfully for reference: CH129
+[LOG] Successfully fetched details for GILBERT with reference CH129
+[LOG] Processing supplier: A10 with reference 01.202383
+[LOG] Fetching details for A10 with reference 01.202383
+[LOG] Record written successfully for reference: 01.202383
+[LOG] Successfully fetched details for A10 with reference 01.202383
+[LOG] Processing supplier: A10 with reference 01.202479
+[LOG] Fetching details for A10 with reference 01.202479
+[LOG] Record written successfully for reference: 01.202479
+[LOG] Successfully fetched details for A10 with reference 01.202479
+[LOG] Processing supplier: A10 with reference 01.202470
+[LOG] Fetching details for A10 with reference 01.202470
+[LOG] Record written successfully for reference: 01.202470
+[LOG] Successfully fetched details for A10 with reference 01.202470
+[LOG] Supplier DCA not recognized.
+[LOG] Supplier RIVOLIER SD not recognized.
+[LOG] Supplier DCA not recognized.
+[LOG] Processing supplier: SUMMIT with reference SU9930
+[LOG] Fetching details for SUMMIT with reference SU9930
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: SUMMIT - SU9930
+[LOG] Processing supplier: GILBERT with reference CD137
+[LOG] Fetching details for GILBERT with reference CD137
+[LOG] Record written successfully for reference: CD137
+[LOG] Successfully fetched details for GILBERT with reference CD137
+[LOG] Processing supplier: A10 with reference 37.201473
+[LOG] Fetching details for A10 with reference 37.201473
+[LOG] Record written successfully for reference: 37.201473
+[LOG] Successfully fetched details for A10 with reference 37.201473
+[LOG] Processing supplier: A10 with reference 01.201867
+[LOG] Fetching details for A10 with reference 01.201867
+[LOG] Record written successfully for reference: 01.201867
+[LOG] Successfully fetched details for A10 with reference 01.201867
+[LOG] Processing supplier: HIGHLANDER with reference ACC027
+[LOG] Fetching details for HIGHLANDER with reference ACC027
+[LOG] Record written successfully for reference: ACC027
+[LOG] Successfully fetched details for HIGHLANDER with reference ACC027
+[LOG] Processing supplier: HIGHLANDER with reference ACC028
+[LOG] Fetching details for HIGHLANDER with reference ACC028
+[LOG] Record written successfully for reference: ACC028
+[LOG] Successfully fetched details for HIGHLANDER with reference ACC028
+[LOG] Supplier RIVOLIER SD not recognized.
+[LOG] Processing supplier: A10 with reference 37.200319
+[LOG] Fetching details for A10 with reference 37.200319
+[LOG] Record written successfully for reference: 37.200319
+[LOG] Successfully fetched details for A10 with reference 37.200319
+[LOG] Processing supplier: A10 with reference 37.200321
+[LOG] Fetching details for A10 with reference 37.200321
+[LOG] Record written successfully for reference: 37.200321
+[LOG] Successfully fetched details for A10 with reference 37.200321
+[LOG] Supplier DCA not recognized.
+[LOG] Processing supplier: TREESCO with reference LVAC055
+[LOG] Fetching details for TREESCO with reference LVAC055
+[LOG] Record written successfully for reference: LVAC055
+[LOG] Successfully fetched details for TREESCO with reference LVAC055
+[LOG] Processing supplier: TREESCO with reference LVAC056
+[LOG] Fetching details for TREESCO with reference LVAC056
+[LOG] Record written successfully for reference: LVAC056
+[LOG] Successfully fetched details for TREESCO with reference LVAC056
+[LOG] Processing supplier: TREESCO with reference LVAC177
+[LOG] Fetching details for TREESCO with reference LVAC177
+[LOG] Record written successfully for reference: LVAC177
+[LOG] Successfully fetched details for TREESCO with reference LVAC177
+[LOG] Processing supplier: A10 with reference 22.052697
+[LOG] Fetching details for A10 with reference 22.052697
+[LOG] Record written successfully for reference: 22.052697
+[LOG] Successfully fetched details for A10 with reference 22.052697
+[LOG] Processing supplier: A10 with reference 22.052713
+[LOG] Fetching details for A10 with reference 22.052713
+[LOG] Record written successfully for reference: 22.052713
+[LOG] Successfully fetched details for A10 with reference 22.052713
+[LOG] Processing supplier: A10 with reference 22.052602
+[LOG] Fetching details for A10 with reference 22.052602
+[LOG] Record written successfully for reference: 22.052602
+[LOG] Successfully fetched details for A10 with reference 22.052602
+[LOG] Processing supplier: A10 with reference 22.052709
+[LOG] Fetching details for A10 with reference 22.052709
+[LOG] Record written successfully for reference: 22.052709
+[LOG] Successfully fetched details for A10 with reference 22.052709
+[LOG] Processing supplier: A10 with reference 22.052610
+[LOG] Fetching details for A10 with reference 22.052610
+[LOG] Record written successfully for reference: 22.052610
+[LOG] Successfully fetched details for A10 with reference 22.052610
+[LOG] Processing supplier: A10 with reference 22.052605
+[LOG] Fetching details for A10 with reference 22.052605
+[LOG] Record written successfully for reference: 22.052605
+[LOG] Successfully fetched details for A10 with reference 22.052605
+[LOG] Processing supplier: A10 with reference 22.052630
+[LOG] Fetching details for A10 with reference 22.052630
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: A10 - 22.052630
+[LOG] Processing supplier: A10 with reference 01.097253
+[LOG] Fetching details for A10 with reference 01.097253
+[LOG] Record written successfully for reference: 01.097253
+[LOG] Successfully fetched details for A10 with reference 01.097253
+[LOG] Processing supplier: A10 with reference 01.097252
+[LOG] Fetching details for A10 with reference 01.097252
+[LOG] Record written successfully for reference: 01.097252
+[LOG] Successfully fetched details for A10 with reference 01.097252
+[LOG] Processing supplier: A10 with reference 01.097251
+[LOG] Fetching details for A10 with reference 01.097251
+[LOG] Record written successfully for reference: 01.097251
+[LOG] Successfully fetched details for A10 with reference 01.097251
+[LOG] Processing supplier: HELIKON-TEX with reference RK-TKO-RP
+[LOG] Fetching details for HELIKON-TEX with reference RK-TKO-RP
+[LOG] Record written successfully for reference: RK-TKO-RP
+[LOG] Successfully fetched details for HELIKON-TEX with reference RK-TKO-RP
+[LOG] Supplier DCA not recognized.
+[LOG] Processing supplier: A10 with reference 22.052613
+[LOG] Fetching details for A10 with reference 22.052613
+[LOG] Record written successfully for reference: 22.052613
+[LOG] Successfully fetched details for A10 with reference 22.052613
+[LOG] Supplier DCA not recognized.
+[LOG] Processing supplier: TREESCO with reference PHMA002
+[LOG] Fetching details for TREESCO with reference PHMA002
+[LOG] Record written successfully for reference: PHMA002
+[LOG] Successfully fetched details for TREESCO with reference PHMA002
+[LOG] Processing supplier: TREESCO with reference PHMA005
+[LOG] Fetching details for TREESCO with reference PHMA005
+[LOG] Record written successfully for reference: PHMA005
+[LOG] Successfully fetched details for TREESCO with reference PHMA005
+[LOG] Supplier DCA not recognized.
+[LOG] Processing supplier: TREESCO with reference PHGI006
+[LOG] Fetching details for TREESCO with reference PHGI006
+[LOG] Record written successfully for reference: PHGI006
+[LOG] Successfully fetched details for TREESCO with reference PHGI006
+[LOG] Processing supplier: TREESCO with reference 1220N
+[LOG] Fetching details for TREESCO with reference 1220N
+[LOG] Record written successfully for reference: 1220N
+[LOG] Successfully fetched details for TREESCO with reference 1220N
+[LOG] Supplier DCA not recognized.
+[LOG] Processing supplier: TREESCO with reference PHPI001
+[LOG] Fetching details for TREESCO with reference PHPI001
+[LOG] Record written successfully for reference: PHPI001
+[LOG] Successfully fetched details for TREESCO with reference PHPI001
+[LOG] Processing supplier: HIGHLANDER with reference TA153
+[LOG] Fetching details for HIGHLANDER with reference TA153
+[LOG] Record written successfully for reference: TA153
+[LOG] Successfully fetched details for HIGHLANDER with reference TA153
+[LOG] Processing supplier: MP-SEC with reference SNU-HAMJUN
+[LOG] Fetching details for MP-SEC with reference SNU-HAMJUN
+[LOG] Record written successfully for reference: SNU-HAMJUN
+[LOG] Successfully fetched details for MP-SEC with reference SNU-HAMJUN
+[LOG] Processing supplier: A10 with reference 41.201221
+[LOG] Fetching details for A10 with reference 41.201221
+[LOG] Record written successfully for reference: 41.201221
+[LOG] Successfully fetched details for A10 with reference 41.201221
+[LOG] Processing supplier: A10 with reference 14.099260
+[LOG] Fetching details for A10 with reference 14.099260
+[LOG] Record written successfully for reference: 14.099260
+[LOG] Successfully fetched details for A10 with reference 14.099260
+[LOG] Processing supplier: A10 with reference 14.099263
+[LOG] Fetching details for A10 with reference 14.099263
+[LOG] Record written successfully for reference: 14.099263
+[LOG] Successfully fetched details for A10 with reference 14.099263
+[LOG] Processing supplier: A10 with reference 30.027151
+[LOG] Fetching details for A10 with reference 30.027151
+[LOG] Record written successfully for reference: 30.027151
+[LOG] Successfully fetched details for A10 with reference 30.027151
+[LOG] Processing supplier: A10 with reference 14.099258
+[LOG] Fetching details for A10 with reference 14.099258
+[LOG] Record written successfully for reference: 14.099258
+[LOG] Successfully fetched details for A10 with reference 14.099258
+[LOG] Processing supplier: A10 with reference 14.099275
+[LOG] Fetching details for A10 with reference 14.099275
+[LOG] Record written successfully for reference: 14.099275
+[LOG] Successfully fetched details for A10 with reference 14.099275
+[LOG] Processing supplier: A10 with reference 14.099256
+[LOG] Fetching details for A10 with reference 14.099256
+[LOG] Record written successfully for reference: 14.099256
+[LOG] Successfully fetched details for A10 with reference 14.099256
+[LOG] Processing supplier: A10 with reference 14.099276
+[LOG] Fetching details for A10 with reference 14.099276
+[LOG] Record written successfully for reference: 14.099276
+[LOG] Successfully fetched details for A10 with reference 14.099276
+[LOG] Processing supplier: A10 with reference 14.099289
+[LOG] Fetching details for A10 with reference 14.099289
+[LOG] Record written successfully for reference: 14.099289
+[LOG] Successfully fetched details for A10 with reference 14.099289
+[LOG] Processing supplier: A10 with reference 14.099342
+[LOG] Fetching details for A10 with reference 14.099342
+[LOG] Record written successfully for reference: 14.099342
+[LOG] Successfully fetched details for A10 with reference 14.099342
+[LOG] Processing supplier: A10 with reference 14.099246
+[LOG] Fetching details for A10 with reference 14.099246
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: A10 - 14.099246
+[LOG] Processing supplier: A10 with reference 14.099304
+[LOG] Fetching details for A10 with reference 14.099304
+[LOG] Record written successfully for reference: 14.099304
+[LOG] Successfully fetched details for A10 with reference 14.099304
+[LOG] Processing supplier: A10 with reference 14.099252
+[LOG] Fetching details for A10 with reference 14.099252
+[LOG] Record written successfully for reference: 14.099252
+[LOG] Successfully fetched details for A10 with reference 14.099252
+[LOG] Processing supplier: VANOS with reference B0853
+[LOG] Fetching details for VANOS with reference B0853
+[LOG] 
+[LOG] Record written successfully for reference: B0853
+[LOG] Successfully fetched details for VANOS with reference B0853
+[LOG] Processing supplier: VANOS with reference B0301
+[LOG] Fetching details for VANOS with reference B0301
+[LOG] No products found.
+[LOG] Unregistered reference: VANOS - B0301
+[LOG] Processing supplier: VANOS with reference B0302
+[LOG] Fetching details for VANOS with reference B0302
+[LOG] Le Camion Militaire à Canon Lourd M38-B0302 Sluban est un jeu de construction qui représente un véhicule militaire lourd armé d'un canon pour les frappes à distance, avec soldats.
+[LOG] Record written successfully for reference: B0302
+[LOG] Successfully fetched details for VANOS with reference B0302
+[LOG] Processing supplier: VANOS with reference B0891
+[LOG] Fetching details for VANOS with reference B0891
+[LOG] 
+[LOG] Record written successfully for reference: B0891
+[LOG] Successfully fetched details for VANOS with reference B0891
+[LOG] Processing supplier: VANOS with reference B0695
+[LOG] Fetching details for VANOS with reference B0695
+[LOG] Le Camion Militaire Half-track Allemand Désert M38-B0695 Sluban est un jeu de construction qui représente un camion half-track allemand de la deuxième guerre mondiale, utilisé dans les zones désertiques.
+[LOG] Record written successfully for reference: B0695
+[LOG] Successfully fetched details for VANOS with reference B0695
+[LOG] Processing supplier: VANOS with reference B0837
+[LOG] Fetching details for VANOS with reference B0837
+[LOG] 
+[LOG] Record written successfully for reference: B0837
+[LOG] Successfully fetched details for VANOS with reference B0837
+[LOG] Processing supplier: VANOS with reference B0311
+[LOG] Fetching details for VANOS with reference B0311
+[LOG] No products found.
+[LOG] Unregistered reference: VANOS - B0311
+[LOG] Processing supplier: VANOS with reference B6000
+[LOG] Fetching details for VANOS with reference B6000
+[LOG] No products found.
+[LOG] Unregistered reference: VANOS - B6000
+[LOG] Processing supplier: VANOS with reference B6300
+[LOG] Fetching details for VANOS with reference B6300
+[LOG] No products found.
+[LOG] Unregistered reference: VANOS - B6300
+[LOG] Processing supplier: A10 with reference 24.600000
+[LOG] Fetching details for A10 with reference 24.600000
+[LOG] Record written successfully for reference: 24.600000
+[LOG] Successfully fetched details for A10 with reference 24.600000
+[LOG] Processing supplier: A10 with reference 22.052600
+[LOG] Fetching details for A10 with reference 22.052600
+[LOG] Record written successfully for reference: 22.052600
+[LOG] Successfully fetched details for A10 with reference 22.052600
+[LOG] Processing supplier: A10 with reference 05.060519
+[LOG] Fetching details for A10 with reference 05.060519
+[LOG] Record written successfully for reference: 05.060519
+[LOG] Successfully fetched details for A10 with reference 05.060519
+[LOG] Processing supplier: A10 with reference 30.027349
+[LOG] Fetching details for A10 with reference 30.027349
+[LOG] Record written successfully for reference: 30.027349
+[LOG] Successfully fetched details for A10 with reference 30.027349
+[LOG] Processing supplier: A10 with reference 30.027348
+[LOG] Fetching details for A10 with reference 30.027348
+[LOG] Record written successfully for reference: 30.027348
+[LOG] Successfully fetched details for A10 with reference 30.027348
+[LOG] Processing supplier: HIGHLANDER with reference HS004
+[LOG] Fetching details for HIGHLANDER with reference HS004
+[LOG] Record written successfully for reference: HS004
+[LOG] Successfully fetched details for HIGHLANDER with reference HS004
+[LOG] Processing supplier: A10 with reference 31.202168
+[LOG] Fetching details for A10 with reference 31.202168
+[LOG] Record written successfully for reference: 31.202168
+[LOG] Successfully fetched details for A10 with reference 31.202168
+[LOG] Processing supplier: MP-SEC with reference C111
+[LOG] Fetching details for MP-SEC with reference C111
+[LOG] Record written successfully for reference: C111
+[LOG] Successfully fetched details for MP-SEC with reference C111
+[LOG] Processing supplier: MP-SEC with reference C160
+[LOG] Fetching details for MP-SEC with reference C160
+[LOG] Record written successfully for reference: C160
+[LOG] Successfully fetched details for MP-SEC with reference C160
+[LOG] Processing supplier: GILBERT with reference P125
+[LOG] Fetching details for GILBERT with reference P125
+[LOG] Record written successfully for reference: P125
+[LOG] Successfully fetched details for GILBERT with reference P125
+[LOG] Processing supplier: GILBERT with reference P769
+[LOG] Fetching details for GILBERT with reference P769
+[LOG] Record written successfully for reference: P769
+[LOG] Successfully fetched details for GILBERT with reference P769
+[LOG] Processing supplier: A10 with reference 37.201877
+[LOG] Fetching details for A10 with reference 37.201877
+[LOG] Record written successfully for reference: 37.201877
+[LOG] Successfully fetched details for A10 with reference 37.201877
+[LOG] Supplier DCA not recognized.
+[LOG] Processing supplier: GILBERT with reference P772
+[LOG] Fetching details for GILBERT with reference P772
+[LOG] Record written successfully for reference: P772
+[LOG] Successfully fetched details for GILBERT with reference P772
+[LOG] Processing supplier: GILBERT with reference P772C
+[LOG] Fetching details for GILBERT with reference P772C
+[LOG] Record written successfully for reference: P772C
+[LOG] Successfully fetched details for GILBERT with reference P772C
+[LOG] Processing supplier: GILBERT with reference P722
+[LOG] Fetching details for GILBERT with reference P722
+[LOG] Record written successfully for reference: P722
+[LOG] Successfully fetched details for GILBERT with reference P722
+[LOG] Processing supplier: HELIKON-TEX with reference SP-MBD-NR-0C
+[LOG] Fetching details for HELIKON-TEX with reference SP-MBD-NR-0C
+[ERROR] Failed to fetch or parse response: TypeError: Cannot read properties of undefined (reading 'replace')
+[LOG] Unregistered reference: HELIKON-TEX - SP-MBD-NR-0C
+[LOG] Processing supplier: HELIKON-TEX with reference SP-MBD-NR-34
+[LOG] Fetching details for HELIKON-TEX with reference SP-MBD-NR-34
+[LOG] Record written successfully for reference: SP-MBD-NR-34
+[LOG] Successfully fetched details for HELIKON-TEX with reference SP-MBD-NR-34
+[LOG] Processing supplier: HELIKON-TEX with reference SP-MBD-NR-45
+[LOG] Fetching details for HELIKON-TEX with reference SP-MBD-NR-45
+[LOG] Record written successfully for reference: SP-MBD-NR-45
+[LOG] Successfully fetched details for HELIKON-TEX with reference SP-MBD-NR-45
+[LOG] Processing supplier: HELIKON-TEX with reference SP-MCD-SP-0L02A
+[LOG] Fetching details for HELIKON-TEX with reference SP-MCD-SP-0L02A
+[LOG] Record written successfully for reference: SP-MCD-SP-0L02A
+[LOG] Successfully fetched details for HELIKON-TEX with reference SP-MCD-SP-0L02A
+[LOG] Processing supplier: TREESCO with reference PHPN004
+[LOG] Fetching details for TREESCO with reference PHPN004
+[LOG] Record written successfully for reference: PHPN004
+[LOG] Successfully fetched details for TREESCO with reference PHPN004
+[LOG] Processing supplier: A10 with reference 01.203000
+[LOG] Fetching details for A10 with reference 01.203000
+[LOG] Record written successfully for reference: 01.203000
+[LOG] Successfully fetched details for A10 with reference 01.203000
+[LOG] Processing supplier: A10 with reference 01.203012
+[LOG] Fetching details for A10 with reference 01.203012
+[LOG] Record written successfully for reference: 01.203012
+[LOG] Successfully fetched details for A10 with reference 01.203012
+[LOG] Processing supplier: HELIKON-TEX with reference SP-UTL-PR-01
+[LOG] Fetching details for HELIKON-TEX with reference SP-UTL-PR-01
+[LOG] Record written successfully for reference: SP-UTL-PR-01
+[LOG] Successfully fetched details for HELIKON-TEX with reference SP-UTL-PR-01
+[LOG] Processing supplier: HELIKON-TEX with reference SP-UTL-PR-11
+[LOG] Fetching details for HELIKON-TEX with reference SP-UTL-PR-11
+[ERROR] Failed to fetch or parse response: TypeError: Cannot read properties of undefined (reading 'replace')
+[LOG] Unregistered reference: HELIKON-TEX - SP-UTL-PR-11
+[LOG] Processing supplier: HELIKON-TEX with reference SP-UTL-PR-27
+[LOG] Fetching details for HELIKON-TEX with reference SP-UTL-PR-27
+[LOG] Record written successfully for reference: SP-UTL-PR-27
+[LOG] Successfully fetched details for HELIKON-TEX with reference SP-UTL-PR-27
+[LOG] Processing supplier: HELIKON-TEX with reference SP-UTL-PR-13
+[LOG] Fetching details for HELIKON-TEX with reference SP-UTL-PR-13
+[ERROR] Failed to fetch or parse response: TypeError: Cannot read properties of undefined (reading 'replace')
+[LOG] Unregistered reference: HELIKON-TEX - SP-UTL-PR-13
+[LOG] Processing supplier: HELIKON-TEX with reference SP-UTL-PR-09
+[LOG] Fetching details for HELIKON-TEX with reference SP-UTL-PR-09
+[ERROR] Failed to fetch or parse response: TypeError: Cannot read properties of undefined (reading 'replace')
+[LOG] Unregistered reference: HELIKON-TEX - SP-UTL-PR-09
+[LOG] Processing supplier: A10 with reference 01.203004
+[LOG] Fetching details for A10 with reference 01.203004
+[LOG] Record written successfully for reference: 01.203004
+[LOG] Successfully fetched details for A10 with reference 01.203004
+[LOG] Processing supplier: A10 with reference 01.202386
+[LOG] Fetching details for A10 with reference 01.202386
+[LOG] Record written successfully for reference: 01.202386
+[LOG] Successfully fetched details for A10 with reference 01.202386
+[LOG] Processing supplier: A10 with reference 01.202482
+[LOG] Fetching details for A10 with reference 01.202482
+[LOG] Record written successfully for reference: 01.202482
+[LOG] Successfully fetched details for A10 with reference 01.202482
+[LOG] Processing supplier: A10 with reference 01.202473
+[LOG] Fetching details for A10 with reference 01.202473
+[LOG] Record written successfully for reference: 01.202473
+[LOG] Successfully fetched details for A10 with reference 01.202473
+[LOG] Processing supplier: A10 with reference 01.202388
+[LOG] Fetching details for A10 with reference 01.202388
+[LOG] Record written successfully for reference: 01.202388
+[LOG] Successfully fetched details for A10 with reference 01.202388
+[LOG] Processing supplier: A10 with reference 01.202484
+[LOG] Fetching details for A10 with reference 01.202484
+[LOG] Record written successfully for reference: 01.202484
+[LOG] Successfully fetched details for A10 with reference 01.202484
+[LOG] Processing supplier: A10 with reference 01.202475
+[LOG] Fetching details for A10 with reference 01.202475
+[LOG] Record written successfully for reference: 01.202475
+[LOG] Successfully fetched details for A10 with reference 01.202475
+[LOG] Processing supplier: A10 with reference 01.097400
+[LOG] Fetching details for A10 with reference 01.097400
+[LOG] Record written successfully for reference: 01.097400
+[LOG] Successfully fetched details for A10 with reference 01.097400
+[LOG] Processing supplier: A10 with reference 01.097403
+[LOG] Fetching details for A10 with reference 01.097403
+[LOG] Record written successfully for reference: 01.097403
+[LOG] Successfully fetched details for A10 with reference 01.097403
+[LOG] Processing supplier: A10 with reference 01.097406
+[LOG] Fetching details for A10 with reference 01.097406
+[ERROR] There was a problem with the initial fetch operation: FetchError: request to https://www.vsmdiffusion.fr/recherche failed, reason: socket hang up
+[LOG] Unregistered reference: A10 - 01.097406
+[LOG] Processing supplier: A10 with reference 01.097409
+[LOG] Fetching details for A10 with reference 01.097409
+[LOG] Record written successfully for reference: 01.097409
+[LOG] Successfully fetched details for A10 with reference 01.097409
+[LOG] Processing supplier: A10 with reference 01.203050
+[LOG] Fetching details for A10 with reference 01.203050
+[LOG] Record written successfully for reference: 01.203050
+[LOG] Successfully fetched details for A10 with reference 01.203050
+[LOG] Processing supplier: A10 with reference 01.203051
+[LOG] Fetching details for A10 with reference 01.203051
+[LOG] Record written successfully for reference: 01.203051
+[LOG] Successfully fetched details for A10 with reference 01.203051
+[LOG] Processing supplier: A10 with reference 01.202395
+[LOG] Fetching details for A10 with reference 01.202395
+[LOG] Record written successfully for reference: 01.202395
+[LOG] Successfully fetched details for A10 with reference 01.202395
+[LOG] Processing supplier: A10 with reference 01.202410
+[LOG] Fetching details for A10 with reference 01.202410
+[LOG] Record written successfully for reference: 01.202410
+[LOG] Successfully fetched details for A10 with reference 01.202410
+[LOG] Processing supplier: A10 with reference 01.202400
+[LOG] Fetching details for A10 with reference 01.202400
+[LOG] Record written successfully for reference: 01.202400
+[LOG] Successfully fetched details for A10 with reference 01.202400
+[LOG] Processing supplier: TREESCO with reference 1353N
+[LOG] Fetching details for TREESCO with reference 1353N
+[LOG] Record written successfully for reference: 1353N
+[LOG] Successfully fetched details for TREESCO with reference 1353N
+[LOG] Processing supplier: A10 with reference 36.078040
+[LOG] Fetching details for A10 with reference 36.078040
+[LOG] Record written successfully for reference: 36.078040
+[LOG] Successfully fetched details for A10 with reference 36.078040
+[LOG] Processing supplier: A10 with reference 37.201910
+[LOG] Fetching details for A10 with reference 37.201910
+[LOG] Record written successfully for reference: 37.201910
+[LOG] Successfully fetched details for A10 with reference 37.201910
+[LOG] Processing supplier: HIGHLANDER with reference CS109
+[LOG] Fetching details for HIGHLANDER with reference CS109
+[LOG] Record written successfully for reference: CS109
+[LOG] Successfully fetched details for HIGHLANDER with reference CS109
+[LOG] Processing supplier: A10 with reference 15.220006
+[LOG] Fetching details for A10 with reference 15.220006
+[LOG] Record written successfully for reference: 15.220006
+[LOG] Successfully fetched details for A10 with reference 15.220006
+[LOG] Processing supplier: HELIKON-TEX with reference BL-PJ2-FH
+[LOG] Fetching details for HELIKON-TEX with reference BL-PJ2-FH
+[LOG] Record written successfully for reference: BL-PJ2-FH
+[LOG] Successfully fetched details for HELIKON-TEX with reference BL-PJ2-FH
+[LOG] Processing supplier: TREESCO with reference PHPO002
+[LOG] Fetching details for TREESCO with reference PHPO002
+[LOG] Record written successfully for reference: PHPO002
+[LOG] Successfully fetched details for TREESCO with reference PHPO002
+[LOG] Processing supplier: A10 with reference 01.052351
+[LOG] Fetching details for A10 with reference 01.052351
+[LOG] Record written successfully for reference: 01.052351
+[LOG] Successfully fetched details for A10 with reference 01.052351
+[LOG] Processing supplier: A10 with reference 01.052301
+[LOG] Fetching details for A10 with reference 01.052301
+[LOG] Record written successfully for reference: 01.052301
+[LOG] Successfully fetched details for A10 with reference 01.052301
+[LOG] Supplier DEFCON 5 not recognized.
+[LOG] Processing supplier: A10 with reference 01.200958
+[LOG] Fetching details for A10 with reference 01.200958
+[LOG] Record written successfully for reference: 01.200958
+[LOG] Successfully fetched details for A10 with reference 01.200958
+[LOG] Processing supplier: A10 with reference 01.052466
+[LOG] Fetching details for A10 with reference 01.052466
+[LOG] Record written successfully for reference: 01.052466
+[LOG] Successfully fetched details for A10 with reference 01.052466
+[LOG] Supplier DCA not recognized.
+[LOG] Supplier DCA not recognized.
+[LOG] Supplier DCA not recognized.
+[LOG] Supplier DCA not recognized.
+[LOG] Supplier DCA not recognized.
+[LOG] Processing supplier: GK with reference 9860P
+[LOG] Fetching details for GK with reference 9860P
+[LOG] Record written successfully for reference: 9860P
+[LOG] Successfully fetched details for GK with reference 9860P
+[LOG] Processing supplier: GK with reference 9860PSM-PM
+[LOG] Fetching details for GK with reference 9860PSM-PM
+[LOG] Record written successfully for reference: 9860PSM-PM
+[LOG] Successfully fetched details for GK with reference 9860PSM-PM
+[LOG] Supplier RIVOLIER SD not recognized.
+[LOG] Supplier RIVOLIER SD not recognized.
+[LOG] Supplier RIVOLIER SD not recognized.
+[LOG] Supplier RIVOLIER SD not recognized.
+[LOG] Processing supplier: HELIKON-TEX with reference MO-P03-CD-11
+[LOG] Fetching details for HELIKON-TEX with reference MO-P03-CD-11
+[LOG] Record written successfully for reference: MO-P03-CD-11
+[LOG] Successfully fetched details for HELIKON-TEX with reference MO-P03-CD-11
+[LOG] Processing supplier: GK with reference 9403.2
+[LOG] Fetching details for GK with reference 9403.2
+[LOG] Record written successfully for reference: 9403.2
+[LOG] Successfully fetched details for GK with reference 9403.2
+[LOG] Supplier RIVOLIER SD not recognized.
+[LOG] Supplier RIVOLIER SD not recognized.
+[LOG] Processing supplier: A10 with reference 01.208023
+[LOG] Fetching details for A10 with reference 01.208023
+[LOG] Record written successfully for reference: 01.208023
+[LOG] Successfully fetched details for A10 with reference 01.208023
+[LOG] Processing supplier: A10 with reference 01.208020
+[LOG] Fetching details for A10 with reference 01.208020
+[LOG] Record written successfully for reference: 01.208020
+[LOG] Successfully fetched details for A10 with reference 01.208020
+[LOG] Processing supplier: A10 with reference 37.200309
+[LOG] Fetching details for A10 with reference 37.200309
+[LOG] Record written successfully for reference: 37.200309
+[LOG] Successfully fetched details for A10 with reference 37.200309
+[LOG] Processing supplier: A10 with reference 01.208021
+[LOG] Fetching details for A10 with reference 01.208021
+[LOG] Record written successfully for reference: 01.208021
+[LOG] Successfully fetched details for A10 with reference 01.208021
+[LOG] Processing supplier: A10 with reference 37.200307
+[LOG] Fetching details for A10 with reference 37.200307
+[LOG] Record written successfully for reference: 37.200307
+[LOG] Successfully fetched details for A10 with reference 37.200307
+[LOG] Processing supplier: A10 with reference 01.072266
+[LOG] Fetching details for A10 with reference 01.072266
+[LOG] Record written successfully for reference: 01.072266
+[LOG] Successfully fetched details for A10 with reference 01.072266
+[LOG] Processing supplier: A10 with reference 37.086411
+[LOG] Fetching details for A10 with reference 37.086411
+[LOG] Record written successfully for reference: 37.086411
+[LOG] Successfully fetched details for A10 with reference 37.086411
+[LOG] Processing supplier: A10 with reference 37.200317
+[LOG] Fetching details for A10 with reference 37.200317
+[LOG] Record written successfully for reference: 37.200317
+[LOG] Successfully fetched details for A10 with reference 37.200317
+[LOG] Processing supplier: A10 with reference 37.200315
+[LOG] Fetching details for A10 with reference 37.200315
+[LOG] Record written successfully for reference: 37.200315
+[LOG] Successfully fetched details for A10 with reference 37.200315
+[LOG] Processing supplier: A10 with reference 37.086395
+[LOG] Fetching details for A10 with reference 37.086395
+[LOG] Record written successfully for reference: 37.086395
+[LOG] Successfully fetched details for A10 with reference 37.086395
+[LOG] Processing supplier: A10 with reference 01.072253
+[LOG] Fetching details for A10 with reference 01.072253
+[LOG] Record written successfully for reference: 01.072253
+[LOG] Successfully fetched details for A10 with reference 01.072253
+[LOG] Processing supplier: A10 with reference 37.200323
+[LOG] Fetching details for A10 with reference 37.200323
+[LOG] Record written successfully for reference: 37.200323
+[LOG] Successfully fetched details for A10 with reference 37.200323
+[LOG] Processing supplier: A10 with reference 01.072259
+[LOG] Fetching details for A10 with reference 01.072259
+[LOG] Record written successfully for reference: 01.072259
+[LOG] Successfully fetched details for A10 with reference 01.072259
+[LOG] Processing supplier: TREESCO with reference PHPU001
+[LOG] Fetching details for TREESCO with reference PHPU001
+[LOG] Record written successfully for reference: PHPU001
+[LOG] Successfully fetched details for TREESCO with reference PHPU001
+[LOG] Processing supplier: TREESCO with reference LVPU121
+[LOG] Fetching details for TREESCO with reference LVPU121
+[LOG] Record written successfully for reference: LVPU121
+[LOG] Successfully fetched details for TREESCO with reference LVPU121
+[LOG] Processing supplier: TREESCO with reference LVPU125
+[LOG] Fetching details for TREESCO with reference LVPU125
+[LOG] Record written successfully for reference: LVPU125
+[LOG] Successfully fetched details for TREESCO with reference LVPU125
+[LOG] Processing supplier: A10 with reference 01.202146
+[LOG] Fetching details for A10 with reference 01.202146
+[LOG] Record written successfully for reference: 01.202146
+[LOG] Successfully fetched details for A10 with reference 01.202146
+[LOG] Processing supplier: HIGHLANDER with reference BP001
+[LOG] Fetching details for HIGHLANDER with reference BP001
+[LOG] Record written successfully for reference: BP001
+[LOG] Successfully fetched details for HIGHLANDER with reference BP001
+[LOG] Processing supplier: HELIKON-TEX with reference BL-RHF-PO-010CA
+[LOG] Fetching details for HELIKON-TEX with reference BL-RHF-PO-010CA
+[LOG] Record written successfully for reference: BL-RHF-PO-010CA
+[LOG] Successfully fetched details for HELIKON-TEX with reference BL-RHF-PO-010CA
+[LOG] Processing supplier: HIGHLANDER with reference ACC034
+[LOG] Fetching details for HIGHLANDER with reference ACC034
+[LOG] Record written successfully for reference: ACC034
+[LOG] Successfully fetched details for HIGHLANDER with reference ACC034
+[LOG] Processing supplier: HIGHLANDER with reference ACC035
+[LOG] Fetching details for HIGHLANDER with reference ACC035
+[LOG] Record written successfully for reference: ACC035
+[LOG] Successfully fetched details for HIGHLANDER with reference ACC035
+[LOG] Processing supplier: MP-SEC with reference SNU-SCSE3
+[LOG] Fetching details for MP-SEC with reference SNU-SCSE3
+[LOG] Record written successfully for reference: SNU-SCSE3
+[LOG] Successfully fetched details for MP-SEC with reference SNU-SCSE3
+[LOG] Processing supplier: MP-SEC with reference SNU-SCSE4
+[LOG] Fetching details for MP-SEC with reference SNU-SCSE4
+[LOG] Record written successfully for reference: SNU-SCSE4
+[LOG] Successfully fetched details for MP-SEC with reference SNU-SCSE4
+[LOG] Processing supplier: MP-SEC with reference SNU-SCSE5
+[LOG] Fetching details for MP-SEC with reference SNU-SCSE5
+[LOG] Record written successfully for reference: SNU-SCSE5
+[LOG] Successfully fetched details for MP-SEC with reference SNU-SCSE5
+[LOG] Processing supplier: HIGHLANDER with reference SB252
+[LOG] Fetching details for HIGHLANDER with reference SB252
+[LOG] Unregistered reference: HIGHLANDER - SB252
+[LOG] Processing supplier: MP-SEC with reference SNU-SCJB
+[LOG] Fetching details for MP-SEC with reference SNU-SCJB
+[LOG] Record written successfully for reference: SNU-SCJB
+[LOG] Successfully fetched details for MP-SEC with reference SNU-SCJB
+[LOG] Processing supplier: A10 with reference 01.072247
+[LOG] Fetching details for A10 with reference 01.072247
+[LOG] Record written successfully for reference: 01.072247
+[LOG] Successfully fetched details for A10 with reference 01.072247
+[LOG] Processing supplier: A10 with reference 01.072244
+[LOG] Fetching details for A10 with reference 01.072244
+[LOG] Record written successfully for reference: 01.072244
+[LOG] Successfully fetched details for A10 with reference 01.072244
+[LOG] Processing supplier: HIGHLANDER with reference RUC256
+[LOG] Fetching details for HIGHLANDER with reference RUC256
+[LOG] Record written successfully for reference: RUC256
+[LOG] Successfully fetched details for HIGHLANDER with reference RUC256
+[LOG] Processing supplier: HIGHLANDER with reference DB123
+[LOG] Fetching details for HIGHLANDER with reference DB123
+[LOG] Record written successfully for reference: DB123
+[LOG] Successfully fetched details for HIGHLANDER with reference DB123
+[LOG] Processing supplier: HIGHLANDER with reference DB124
+[LOG] Fetching details for HIGHLANDER with reference DB124
+[LOG] Record written successfully for reference: DB124
+[LOG] Successfully fetched details for HIGHLANDER with reference DB124
+[LOG] Processing supplier: HIGHLANDER with reference DB121
+[LOG] Fetching details for HIGHLANDER with reference DB121
+[LOG] Record written successfully for reference: DB121
+[LOG] Successfully fetched details for HIGHLANDER with reference DB121
+[LOG] Processing supplier: A10 with reference 01.072207
+[LOG] Fetching details for A10 with reference 01.072207
+[LOG] Record written successfully for reference: 01.072207
+[LOG] Successfully fetched details for A10 with reference 01.072207
+[LOG] Processing supplier: HIGHLANDER with reference NRT066
+[LOG] Fetching details for HIGHLANDER with reference NRT066
+[LOG] Unregistered reference: HIGHLANDER - NRT066
+[LOG] Processing supplier: HIGHLANDER with reference NRT088
+[LOG] Fetching details for HIGHLANDER with reference NRT088
+[LOG] Unregistered reference: HIGHLANDER - NRT088
+[LOG] Processing supplier: MP-SEC with reference CAM-62623
+[LOG] Fetching details for MP-SEC with reference CAM-62623
+[LOG] Record written successfully for reference: CAM-62623
+[LOG] Successfully fetched details for MP-SEC with reference CAM-62623
+[LOG] Processing supplier: HIGHLANDER with reference TT193
+[LOG] Fetching details for HIGHLANDER with reference TT193
+[LOG] Unregistered reference: HIGHLANDER - TT193
+[LOG] Processing supplier: HIGHLANDER with reference TT194
+[LOG] Fetching details for HIGHLANDER with reference TT194
+[LOG] Unregistered reference: HIGHLANDER - TT194
+[LOG] Processing supplier: HIGHLANDER with reference DB111
+[LOG] Fetching details for HIGHLANDER with reference DB111
+[LOG] Record written successfully for reference: DB111
+[LOG] Successfully fetched details for HIGHLANDER with reference DB111
+[LOG] Processing supplier: HIGHLANDER with reference DB126
+[LOG] Fetching details for HIGHLANDER with reference DB126
+[LOG] Record written successfully for reference: DB126
+[LOG] Successfully fetched details for HIGHLANDER with reference DB126
+[LOG] Processing supplier: HIGHLANDER with reference DB112
+[LOG] Fetching details for HIGHLANDER with reference DB112
+[LOG] Record written successfully for reference: DB112
+[LOG] Successfully fetched details for HIGHLANDER with reference DB112
+[LOG] Processing supplier: HIGHLANDER with reference DB113
+[LOG] Fetching details for HIGHLANDER with reference DB113
+[LOG] Record written successfully for reference: DB113
+[LOG] Successfully fetched details for HIGHLANDER with reference DB113
+[LOG] Processing supplier: HIGHLANDER with reference DB110
+[LOG] Fetching details for HIGHLANDER with reference DB110
+[LOG] Record written successfully for reference: DB110
+[LOG] Successfully fetched details for HIGHLANDER with reference DB110
+[LOG] Processing supplier: HELIKON-TEX with reference TB-BDC-CD-11
+[LOG] Fetching details for HELIKON-TEX with reference TB-BDC-CD-11
+[LOG] Record written successfully for reference: TB-BDC-CD-11
+[LOG] Successfully fetched details for HELIKON-TEX with reference TB-BDC-CD-11
+[LOG] Processing supplier: HELIKON-TEX with reference TB-BDC-CD-23
+[LOG] Fetching details for HELIKON-TEX with reference TB-BDC-CD-23
+[LOG] Record written successfully for reference: TB-BDC-CD-23
+[LOG] Successfully fetched details for HELIKON-TEX with reference TB-BDC-CD-23
+[LOG] Processing supplier: HELIKON-TEX with reference TB-BDC-CD-12
+[LOG] Fetching details for HELIKON-TEX with reference TB-BDC-CD-12
+[LOG] Record written successfully for reference: TB-BDC-CD-12
+[LOG] Successfully fetched details for HELIKON-TEX with reference TB-BDC-CD-12
+[LOG] Processing supplier: HELIKON-TEX with reference TB-BDC-CD-0C
+[LOG] Fetching details for HELIKON-TEX with reference TB-BDC-CD-0C
+[LOG] Record written successfully for reference: TB-BDC-CD-0C
+[LOG] Successfully fetched details for HELIKON-TEX with reference TB-BDC-CD-0C
+[LOG] Processing supplier: HELIKON-TEX with reference TB-BDC-CD-34
+[LOG] Fetching details for HELIKON-TEX with reference TB-BDC-CD-34
+[LOG] Record written successfully for reference: TB-BDC-CD-34
+[LOG] Successfully fetched details for HELIKON-TEX with reference TB-BDC-CD-34
+[LOG] Processing supplier: HELIKON-TEX with reference TB-BDC-CD-01
+[LOG] Fetching details for HELIKON-TEX with reference TB-BDC-CD-01
+[LOG] Record written successfully for reference: TB-BDC-CD-01
+[LOG] Successfully fetched details for HELIKON-TEX with reference TB-BDC-CD-01
+[LOG] Processing supplier: A10 with reference 01.072250
+[LOG] Fetching details for A10 with reference 01.072250
+[LOG] Record written successfully for reference: 01.072250
+[LOG] Successfully fetched details for A10 with reference 01.072250
+[LOG] Supplier RIVOLIER SD not recognized.
+[LOG] Supplier RIVOLIER SD not recognized.
+[LOG] Supplier DCA not recognized.
+[LOG] Processing supplier: HELIKON-TEX with reference SP-UTS-PR-01
+[LOG] Fetching details for HELIKON-TEX with reference SP-UTS-PR-01
+[LOG] Record written successfully for reference: SP-UTS-PR-01
+[LOG] Successfully fetched details for HELIKON-TEX with reference SP-UTS-PR-01
+[LOG] Processing supplier: HELIKON-TEX with reference SP-UFS-NR-34
+[LOG] Fetching details for HELIKON-TEX with reference SP-UFS-NR-34
+[LOG] Record written successfully for reference: SP-UFS-NR-34
+[LOG] Successfully fetched details for HELIKON-TEX with reference SP-UFS-NR-34
+[LOG] Processing supplier: TREESCO with reference PHPO004
+[LOG] Fetching details for TREESCO with reference PHPO004
+[LOG] Record written successfully for reference: PHPO004
+[LOG] Successfully fetched details for TREESCO with reference PHPO004
+[LOG] Processing supplier: TREESCO with reference PHPO007
+[LOG] Fetching details for TREESCO with reference PHPO007
+[LOG] Record written successfully for reference: PHPO007
+[LOG] Successfully fetched details for TREESCO with reference PHPO007
+[LOG] Supplier LE SURPLUS not recognized.
+[LOG] Processing supplier: BILLY EIGHT with reference BLACK BARON
+[LOG] Fetching details for BILLY EIGHT with reference BLACK BARON
+[LOG] Record written successfully for reference: BLACK BARON
+[LOG] Successfully fetched details for BILLY EIGHT with reference BLACK BARON
+[LOG] Supplier LE SURPLUS not recognized.
+[LOG] Processing supplier: BILLY EIGHT with reference OLD RACER
+[LOG] Fetching details for BILLY EIGHT with reference OLD RACER
+[LOG] Record written successfully for reference: OLD RACER
+[LOG] Successfully fetched details for BILLY EIGHT with reference OLD RACER
+[LOG] Processing supplier: BILLY EIGHT with reference OLD SKOOL
+[LOG] Fetching details for BILLY EIGHT with reference OLD SKOOL
+[LOG] Record written successfully for reference: OLD SKOOL
+[LOG] Successfully fetched details for BILLY EIGHT with reference OLD SKOOL
+[LOG] Processing supplier: SUMMIT with reference SUSW003
+[LOG] Fetching details for SUMMIT with reference SUSW003
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: SUMMIT - SUSW003
+[LOG] Processing supplier: BILLY EIGHT with reference REBORN
+[LOG] Fetching details for BILLY EIGHT with reference REBORN
+[LOG] Record written successfully for reference: REBORN
+[LOG] Successfully fetched details for BILLY EIGHT with reference REBORN
+[LOG] Processing supplier: A10 with reference 01.200959
+[LOG] Fetching details for A10 with reference 01.200959
+[LOG] Record written successfully for reference: 01.200959
+[LOG] Successfully fetched details for A10 with reference 01.200959
+[LOG] Processing supplier: A10 with reference 01.052480
+[LOG] Fetching details for A10 with reference 01.052480
+[LOG] Record written successfully for reference: 01.052480
+[LOG] Successfully fetched details for A10 with reference 01.052480
+[LOG] Supplier LE SURPLUS not recognized.
+[LOG] Processing supplier: BILLY EIGHT with reference UNTIL DA DEATH
+[LOG] Fetching details for BILLY EIGHT with reference UNTIL DA DEATH
+[LOG] Record written successfully for reference: UNTIL DA DEATH
+[LOG] Successfully fetched details for BILLY EIGHT with reference UNTIL DA DEATH
+[LOG] Processing supplier: A10 with reference 01.052352
+[LOG] Fetching details for A10 with reference 01.052352
+[LOG] Record written successfully for reference: 01.052352
+[LOG] Successfully fetched details for A10 with reference 01.052352
+[LOG] Supplier LE SURPLUS not recognized.
+[LOG] Processing supplier: BILLY EIGHT with reference LA ROUE
+[LOG] Fetching details for BILLY EIGHT with reference LA ROUE
+[LOG] Record written successfully for reference: LA ROUE
+[LOG] Successfully fetched details for BILLY EIGHT with reference LA ROUE
+[LOG] Processing supplier: SUMMIT with reference LDRT002
+[LOG] Fetching details for SUMMIT with reference LDRT002
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: SUMMIT - LDRT002
+[LOG] Processing supplier: SUMMIT with reference SUT018
+[LOG] Fetching details for SUMMIT with reference SUT018
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: SUMMIT - SUT018
+[LOG] Processing supplier: BILLY EIGHT with reference OLD GARDIAN
+[LOG] Fetching details for BILLY EIGHT with reference OLD GARDIAN
+[LOG] Unregistered reference: BILLY EIGHT - OLD GARDIAN
+[LOG] Processing supplier: GILBERT with reference TS181
+[LOG] Fetching details for GILBERT with reference TS181
+[LOG] Record written successfully for reference: TS181
+[LOG] Successfully fetched details for GILBERT with reference TS181
+[LOG] Processing supplier: SUMMIT with reference SUT034
+[LOG] Fetching details for SUMMIT with reference SUT034
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: SUMMIT - SUT034
+[LOG] Processing supplier: HELIKON-TEX with reference TS-TSS-CC-11
+[LOG] Fetching details for HELIKON-TEX with reference TS-TSS-CC-11
+[LOG] Record written successfully for reference: TS-TSS-CC-11
+[LOG] Successfully fetched details for HELIKON-TEX with reference TS-TSS-CC-11
+[LOG] Processing supplier: HELIKON-TEX with reference TS-TSS-CC-29
+[LOG] Fetching details for HELIKON-TEX with reference TS-TSS-CC-29
+[LOG] Record written successfully for reference: TS-TSS-CC-29
+[LOG] Successfully fetched details for HELIKON-TEX with reference TS-TSS-CC-29
+[LOG] Processing supplier: SUMMIT with reference SUT011
+[LOG] Fetching details for SUMMIT with reference SUT011
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: SUMMIT - SUT011
+[LOG] Processing supplier: A10 with reference 01.052465
+[LOG] Fetching details for A10 with reference 01.052465
+[LOG] Record written successfully for reference: 01.052465
+[LOG] Successfully fetched details for A10 with reference 01.052465
+[LOG] Processing supplier: SUMMIT with reference TCMARCHE
+[LOG] Fetching details for SUMMIT with reference TCMARCHE
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: SUMMIT - TCMARCHE
+[LOG] Processing supplier: SUMMIT with reference TCMETRO
+[LOG] Fetching details for SUMMIT with reference TCMETRO
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: SUMMIT - TCMETRO
+[LOG] Processing supplier: SUMMIT with reference TCLEGION
+[LOG] Fetching details for SUMMIT with reference TCLEGION
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: SUMMIT - TCLEGION
+[LOG] Processing supplier: SUMMIT with reference TC003
+[LOG] Fetching details for SUMMIT with reference TC003
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: SUMMIT - TC003
+[LOG] Processing supplier: SUMMIT with reference TC053
+[LOG] Fetching details for SUMMIT with reference TC053
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: SUMMIT - TC053
+[LOG] Processing supplier: SUMMIT with reference SU8411
+[LOG] Fetching details for SUMMIT with reference SU8411
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: SUMMIT - SU8411
+[LOG] Processing supplier: SUMMIT with reference SU8414
+[LOG] Fetching details for SUMMIT with reference SU8414
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: SUMMIT - SU8414
+[LOG] Processing supplier: SUMMIT with reference TCOMAR
+[LOG] Fetching details for SUMMIT with reference TCOMAR
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: SUMMIT - TCOMAR
+[LOG] Processing supplier: SUMMIT with reference LDMT001BK
+[LOG] Fetching details for SUMMIT with reference LDMT001BK
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: SUMMIT - LDMT001BK
+[LOG] Supplier DCA not recognized.
+[LOG] Processing supplier: SUMMIT with reference SU8329
+[LOG] Fetching details for SUMMIT with reference SU8329
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: SUMMIT - SU8329
+[LOG] Supplier DCA not recognized.
+[LOG] Processing supplier: TREESCO with reference PHTS001
+[LOG] Fetching details for TREESCO with reference PHTS001
+[LOG] Record written successfully for reference: PHTS001
+[LOG] Successfully fetched details for TREESCO with reference PHTS001
+[LOG] Processing supplier: SUMMIT with reference SU8930
+[LOG] Fetching details for SUMMIT with reference SU8930
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: SUMMIT - SU8930
+[LOG] Processing supplier: A10 with reference 01.052300
+[LOG] Fetching details for A10 with reference 01.052300
+[LOG] Record written successfully for reference: 01.052300
+[LOG] Successfully fetched details for A10 with reference 01.052300
+[LOG] Processing supplier: A10 with reference 01.052350
+[LOG] Fetching details for A10 with reference 01.052350
+[LOG] Record written successfully for reference: 01.052350
+[LOG] Successfully fetched details for A10 with reference 01.052350
+[LOG] Processing supplier: A10 with reference 01.052481
+[LOG] Fetching details for A10 with reference 01.052481
+[LOG] Record written successfully for reference: 01.052481
+[LOG] Successfully fetched details for A10 with reference 01.052481
+[LOG] Processing supplier: A10 with reference 01.052468
+[LOG] Fetching details for A10 with reference 01.052468
+[LOG] Record written successfully for reference: 01.052468
+[LOG] Successfully fetched details for A10 with reference 01.052468
+[LOG] Processing supplier: A10 with reference 01.052462
+[LOG] Fetching details for A10 with reference 01.052462
+[LOG] Record written successfully for reference: 01.052462
+[LOG] Successfully fetched details for A10 with reference 01.052462
+[LOG] Processing supplier: A10 with reference 01.052477
+[LOG] Fetching details for A10 with reference 01.052477
+[LOG] Record written successfully for reference: 01.052477
+[LOG] Successfully fetched details for A10 with reference 01.052477
+[LOG] Processing supplier: A10 with reference 01.052476
+[LOG] Fetching details for A10 with reference 01.052476
+[LOG] Record written successfully for reference: 01.052476
+[LOG] Successfully fetched details for A10 with reference 01.052476
+[LOG] Processing supplier: A10 with reference 01.052464
+[LOG] Fetching details for A10 with reference 01.052464
+[LOG] Record written successfully for reference: 01.052464
+[LOG] Successfully fetched details for A10 with reference 01.052464
+[LOG] Processing supplier: A10 with reference 01.052485
+[LOG] Fetching details for A10 with reference 01.052485
+[LOG] Record written successfully for reference: 01.052485
+[LOG] Successfully fetched details for A10 with reference 01.052485
+[LOG] Processing supplier: A10 with reference 01.200957
+[LOG] Fetching details for A10 with reference 01.200957
+[LOG] Record written successfully for reference: 01.200957
+[LOG] Successfully fetched details for A10 with reference 01.200957
+[LOG] Processing supplier: A10 with reference 01.052473
+[LOG] Fetching details for A10 with reference 01.052473
+[LOG] Record written successfully for reference: 01.052473
+[LOG] Successfully fetched details for A10 with reference 01.052473
+[LOG] Supplier DCA not recognized.
+[LOG] Processing supplier: A10 with reference 01.052402
+[LOG] Fetching details for A10 with reference 01.052402
+[LOG] Record written successfully for reference: 01.052402
+[LOG] Successfully fetched details for A10 with reference 01.052402
+[LOG] Supplier DCA not recognized.
+[LOG] Supplier RIVOLIER SD not recognized.
+[LOG] Supplier RIVOLIER SD not recognized.
+[LOG] Supplier RIVOLIER SD not recognized.
+[LOG] Supplier RIVOLIER SD not recognized.
+[LOG] Supplier RIVOLIER SD not recognized.
+[LOG] Supplier RIVOLIER SD not recognized.
+[LOG] Supplier RIVOLIER SD not recognized.
+[LOG] Processing supplier: A10 with reference 01.097285
+[LOG] Fetching details for A10 with reference 01.097285
+[LOG] Record written successfully for reference: 01.097285
+[LOG] Successfully fetched details for A10 with reference 01.097285
+[LOG] Processing supplier: A10 with reference 01.097283
+[LOG] Fetching details for A10 with reference 01.097283
+[LOG] Record written successfully for reference: 01.097283
+[LOG] Successfully fetched details for A10 with reference 01.097283
+[LOG] Processing supplier: SUMMIT with reference SU2430
+[LOG] Fetching details for SUMMIT with reference SU2430
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: SUMMIT - SU2430
+[LOG] Processing supplier: SUMMIT with reference SU2401
+[LOG] Fetching details for SUMMIT with reference SU2401
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: SUMMIT - SU2401
+[LOG] Processing supplier: A10 with reference 01.072256
+[LOG] Fetching details for A10 with reference 01.072256
+[LOG] Record written successfully for reference: 01.072256
+[LOG] Successfully fetched details for A10 with reference 01.072256
+[LOG] Processing supplier: A10 with reference 01.056200
+[LOG] Fetching details for A10 with reference 01.056200
+[LOG] Record written successfully for reference: 01.056200
+[LOG] Successfully fetched details for A10 with reference 01.056200
+[LOG] Processing supplier: HELIKON-TEX with reference BL-MCD-SP-0L02A
+[LOG] Fetching details for HELIKON-TEX with reference BL-MCD-SP-0L02A
+[LOG] Record written successfully for reference: BL-MCD-SP-0L02A
+[LOG] Successfully fetched details for HELIKON-TEX with reference BL-MCD-SP-0L02A
+[LOG] Processing supplier: A10 with reference 01.202381
+[LOG] Fetching details for A10 with reference 01.202381
+[LOG] Record written successfully for reference: 01.202381
+[LOG] Successfully fetched details for A10 with reference 01.202381
+[LOG] Processing supplier: HELIKON-TEX with reference BL-MCD-NR-3411A
+[LOG] Fetching details for HELIKON-TEX with reference BL-MCD-NR-3411A
+[LOG] Record written successfully for reference: BL-MCD-NR-3411A
+[LOG] Successfully fetched details for HELIKON-TEX with reference BL-MCD-NR-3411A
+[LOG] Processing supplier: HELIKON-TEX with reference BL-MCD-NR-0C01A
+[LOG] Fetching details for HELIKON-TEX with reference BL-MCD-NR-0C01A
+[LOG] Record written successfully for reference: BL-MCD-NR-0C01A
+[LOG] Successfully fetched details for HELIKON-TEX with reference BL-MCD-NR-0C01A
+[LOG] Processing supplier: HELIKON-TEX with reference BL-MCD-NR-4502A
+[LOG] Fetching details for HELIKON-TEX with reference BL-MCD-NR-4502A
+[LOG] Record written successfully for reference: BL-MCD-NR-4502A
+[LOG] Successfully fetched details for HELIKON-TEX with reference BL-MCD-NR-4502A
+[LOG] Processing supplier: MP-SEC with reference A110
+[LOG] Fetching details for MP-SEC with reference A110
+[LOG] Record written successfully for reference: A110
+[LOG] Successfully fetched details for MP-SEC with reference A110
+[LOG] Supplier DCA not recognized.
+[LOG] Processing supplier: GILBERT with reference VE713
+[LOG] Fetching details for GILBERT with reference VE713
+[LOG] Record written successfully for reference: VE713
+[LOG] Successfully fetched details for GILBERT with reference VE713
+[LOG] Processing supplier: HELIKON-TEX with reference BL-MBD-NR-0C
+[LOG] Fetching details for HELIKON-TEX with reference BL-MBD-NR-0C
+[LOG] Record written successfully for reference: BL-MBD-NR-0C
+[LOG] Successfully fetched details for HELIKON-TEX with reference BL-MBD-NR-0C
+[LOG] Processing supplier: A10 with reference 01.202391
+[LOG] Fetching details for A10 with reference 01.202391
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: A10 - 01.202391
+[LOG] Processing supplier: A10 with reference 01.201857
+[LOG] Fetching details for A10 with reference 01.201857
+[ERROR] There was a problem with the initial fetch operation: TypeError: Cannot read properties of undefined (reading 'name')
+[LOG] Unregistered reference: A10 - 01.201857
+[LOG] Processing supplier: A10 with reference 01.201610
+[LOG] Fetching details for A10 with reference 01.201610
+[LOG] Record written successfully for reference: 01.201610
+[LOG] Successfully fetched details for A10 with reference 01.201610
+[LOG] Processing supplier: A10 with reference 01.202385
+[LOG] Fetching details for A10 with reference 01.202385
+[LOG] Record written successfully for reference: 01.202385
+[LOG] Successfully fetched details for A10 with reference 01.202385
+[LOG] Processing supplier: TREESCO with reference 1357N
+[LOG] Fetching details for TREESCO with reference 1357N
+[LOG] Record written successfully for reference: 1357N
+[LOG] Successfully fetched details for TREESCO with reference 1357N
+[LOG] Processing supplier: A10 with reference 01.201897
+[LOG] Fetching details for A10 with reference 01.201897
+[LOG] Record written successfully for reference: 01.201897
+[LOG] Successfully fetched details for A10 with reference 01.201897
+[LOG] Processing supplier: HIGHLANDER with reference JAC076
+[LOG] Fetching details for HIGHLANDER with reference JAC076
+[LOG] Record written successfully for reference: JAC076
+[LOG] Successfully fetched details for HIGHLANDER with reference JAC076
+[LOG] Processing supplier: A10 with reference 01.202384
+[LOG] Fetching details for A10 with reference 01.202384
+[LOG] Record written successfully for reference: 01.202384
+[LOG] Successfully fetched details for A10 with reference 01.202384
+[LOG] Processing supplier: A10 with reference 01.202480
+[LOG] Fetching details for A10 with reference 01.202480
+[LOG] Record written successfully for reference: 01.202480
+[LOG] Successfully fetched details for A10 with reference 01.202480
+[LOG] Processing supplier: A10 with reference 01.202471
+[LOG] Fetching details for A10 with reference 01.202471
+[LOG] Record written successfully for reference: 01.202471
+[LOG] Successfully fetched details for A10 with reference 01.202471
+[LOG] Processing supplier: A10 with reference 01.201621
+[LOG] Fetching details for A10 with reference 01.201621
+[LOG] Record written successfully for reference: 01.201621
+[LOG] Successfully fetched details for A10 with reference 01.201621
+[LOG] Processing supplier: A10 with reference 01.203081
+[LOG] Fetching details for A10 with reference 01.203081
+[LOG] Record written successfully for reference: 01.203081
+[LOG] Successfully fetched details for A10 with reference 01.203081
+[LOG] Processing supplier: A10 with reference 01.203080
+[LOG] Fetching details for A10 with reference 01.203080
+[LOG] Record written successfully for reference: 01.203080
+[LOG] Successfully fetched details for A10 with reference 01.203080
+[LOG] Processing supplier: A10 with reference 01.201600
+[LOG] Fetching details for A10 with reference 01.201600
+[LOG] Record written successfully for reference: 01.201600
+[LOG] Successfully fetched details for A10 with reference 01.201600
+[LOG] Processing supplier: A10 with reference 01.203070
+[LOG] Fetching details for A10 with reference 01.203070
+[LOG] Record written successfully for reference: 01.203070
+[LOG] Successfully fetched details for A10 with reference 01.203070
+[LOG] Processing supplier: A10 with reference 01.203072
+[LOG] Fetching details for A10 with reference 01.203072
+[LOG] Record written successfully for reference: 01.203072
+[LOG] Successfully fetched details for A10 with reference 01.203072
+[LOG] Processing supplier: A10 with reference 01.203071
+[LOG] Fetching details for A10 with reference 01.203071
+[LOG] Record written successfully for reference: 01.203071
+[LOG] Successfully fetched details for A10 with reference 01.203071
+[LOG] All records processed
